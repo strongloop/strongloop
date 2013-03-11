@@ -1,0 +1,18 @@
+{
+  "name": "slnode",
+  "version": "0.0.0",
+  "description": "slnode ======",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/strongloop/slnode.git"
+  },
+  "author": "",
+  "license": "...",
+  "readmeFilename": "README.md",
+  "bin": {
+    "slnode": "./bin/slnode",
+    "sn": "./bin/slnode"
+  },
+  "gitHead": "86a9605a43e216a76f262348fdcd91d346b949dc"
+}

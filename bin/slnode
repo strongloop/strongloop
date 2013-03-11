@@ -1,0 +1,35 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+ 
+var program = require('commander');
+
+/**
+ * Commands
+ */
+
+var COMMANDS = {
+    'build'    :   'compile a standalone version of your app',
+    'clean'    :   'remove any built files',
+    'doc'      :   'run dox on source files',
+    'env'      :   'print node environment information',
+    'lint'     :   'run jshint on source files',
+    'install'  :   'install packages and dependencies',
+    'list'     :   'list available node packages',
+    'run'      :   'a specific version of node',
+    'test'     :   'run tests',
+    'version'  :   'print node version',
+    'debug'    :   'run the debugger',
+    'create'   :   'scaffold projects and modules'
+};
+
+Object.keys(COMMANDS).forEach(function (cmd) {
+  program
+    .command(cmd)
+    .description(COMMANDS[cmd])
+    .action(require('../lib/' + cmd));
+});
+
+program.parse(process.argv);
