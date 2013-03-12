@@ -11,25 +11,51 @@ var program = require('commander');
  */
 
 var COMMANDS = {
-    'build'    :   'compile a standalone version of your app',
-    'clean'    :   'remove any built files',
-    'doc'      :   'run dox on source files',
-    'env'      :   'print node environment information',
-    'lint'     :   'run jshint on source files',
-    'install'  :   'install packages and dependencies',
-    'list'     :   'list available node packages',
-    'run'      :   'a specific version of node',
-    'test'     :   'run tests',
-    'version'  :   'print node version',
-    'debug'    :   'run the debugger',
-    'create'   :   'scaffold projects and modules'
+    'build'             :   'compile a standalone version of your app',
+    'clean'             :   'remove any built files',
+    'doc'               :   'run dox on source files',
+    'env'               :   'print node environment information',
+    'lint'              :   'run jshint on source files',
+    'install <module>'  :   'install packages and dependencies',
+    'list'              :   'list available node packages',
+    'run'               :   'a specific version of node',
+    'test'              :   'run tests',
+    'version'           :   'print node version',
+    'debug'             :   'run the debugger',
+    'publish'           :   'publish "." or the given dir/tarball',
+    'create <name>'     :   'scaffold projects and modules',
+    '*'                 :   'run a node script'
 };
 
 Object.keys(COMMANDS).forEach(function (cmd) {
+  var file = cmd.split(' ')[0];
+  
+  if(file === '*') file = 'script';
+  
+  var module = require('../lib/' + file);
+  
+  if(typeof module !== 'function') return;
+  
   program
     .command(cmd)
     .description(COMMANDS[cmd])
-    .action(require('../lib/' + cmd));
+    .action(module(done));
+
+  function done(err) {
+    if(err) {
+      console.log('failed to %s', cmd);
+      console.error(err);
+    }
+  
+    process.exit(1);
+  }
 });
+
+program
+  .command('*')
+  .description('run a script')
+  .action(function (script) {
+    console.log(script);
+  });
 
 program.parse(process.argv);

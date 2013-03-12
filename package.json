@@ -14,5 +14,8 @@
     "slnode": "./bin/slnode",
     "sn": "./bin/slnode"
   },
-  "gitHead": "86a9605a43e216a76f262348fdcd91d346b949dc"
+  "gitHead": "86a9605a43e216a76f262348fdcd91d346b949dc",
+  "dependencies": {
+    "npm": "git+ssh://git@github.com:strongloop/npm.git"
+  }
 }
