@@ -11,26 +11,26 @@ var program = require('commander');
  */
 
 var COMMANDS = {
-    'build'             :   'compile a standalone version of your app',
-    'clean'             :   'remove any built files',
-    'doc'               :   'run dox on source files',
+    // 'build'             :   'compile a standalone version of your app',
+    // 'clean'             :   'remove any built files',
+    // 'doc'               :   'run dox on source files',
     'env'               :   'print node environment information',
-    'lint'              :   'run jshint on source files',
+    // 'lint'              :   'run jshint on source files',
     'install <module>'  :   'install packages and dependencies',
-    'list'              :   'list available node packages',
-    'run'               :   'a specific version of node',
+    // 'list'              :   'list available node packages',
+    'run'               :   'run a specified script',
     'test'              :   'run tests',
     'version'           :   'print node version',
     'debug'             :   'run the debugger',
-    'publish'           :   'publish "." or the given dir/tarball',
+    // 'publish'           :   'publish "." or the given dir/tarball',
     'create <name>'     :   'scaffold projects and modules',
-    '*'                 :   'run a node script'
+    '*'                 :   'run a script'
 };
 
 Object.keys(COMMANDS).forEach(function (cmd) {
   var file = cmd.split(' ')[0];
   
-  if(file === '*') file = 'script';
+  if(file === '*') file = 'run';
   
   var module = require('../lib/' + file);
   
@@ -39,7 +39,7 @@ Object.keys(COMMANDS).forEach(function (cmd) {
   program
     .command(cmd)
     .description(COMMANDS[cmd])
-    .action(module(done));
+    .action(module(program, done));
 
   function done(err) {
     if(err) {
@@ -50,12 +50,5 @@ Object.keys(COMMANDS).forEach(function (cmd) {
     process.exit(1);
   }
 });
-
-program
-  .command('*')
-  .description('run a script')
-  .action(function (script) {
-    console.log(script);
-  });
 
 program.parse(process.argv);
