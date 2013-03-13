@@ -7,6 +7,13 @@
 var program = require('commander');
 
 /**
+ * Usage
+ */
+ 
+program.usage(   '\n    slnode [script]'
+               + '\n    slnode [options] [command]');
+
+/**
  * Commands
  */
 
@@ -14,32 +21,28 @@ var COMMANDS = {
     // 'build'             :   'compile a standalone version of your app',
     // 'clean'             :   'remove any built files',
     // 'doc'               :   'run dox on source files',
+    'run'               :   'run a specified script',
     'env'               :   'print node environment information',
     // 'lint'              :   'run jshint on source files',
-    'install <module>'  :   'install packages and dependencies',
+    'install'  :   'install packages and dependencies',
     // 'list'              :   'list available node packages',
-    'run'               :   'run a specified script',
+    // 'use'               :   'switch node versions'
     'test'              :   'run tests',
     'version'           :   'print node version',
-    'debug'             :   'run the debugger',
+    'help'        :   'print usage info for [cmd]'
+    // 'debug'             :   'run the debugger',
     // 'publish'           :   'publish "." or the given dir/tarball',
-    'create <name>'     :   'scaffold projects and modules',
-    '*'                 :   'run a script'
+    // 'create <name>'     :   'scaffold projects and modules',
 };
 
 Object.keys(COMMANDS).forEach(function (cmd) {
   var file = cmd.split(' ')[0];
   
-  if(file === '*') file = 'run';
-  
   var module = require('../lib/' + file);
   
-  if(typeof module !== 'function') return;
-  
-  program
-    .command(cmd)
-    .description(COMMANDS[cmd])
-    .action(module(program, done));
+  if(typeof module === 'function') {
+    module(program, done);
+  }
 
   function done(err) {
     if(err) {
@@ -50,5 +53,9 @@ Object.keys(COMMANDS).forEach(function (cmd) {
     process.exit(1);
   }
 });
+
+if(process.argv.length === 2) {
+  process.argv.push('-h');
+}
 
 program.parse(process.argv);
