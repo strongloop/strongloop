@@ -18,21 +18,21 @@ program.usage(   '\n    slnode [script]'
  */
 
 var COMMANDS = {
-    // 'build'             :   'compile a standalone version of your app',
-    // 'clean'             :   'remove any built files',
-    // 'doc'               :   'run dox on source files',
+ // 'build'             :   'compile a standalone version of your app',
+ // 'clean'             :   'remove any built files',
+ // 'doc'               :   'run dox on source files',
     'run'               :   'run a specified script',
     'env'               :   'print node environment information',
-    // 'lint'              :   'run jshint on source files',
+ // 'lint'              :   'run jshint on source files',
     'install'  :   'install packages and dependencies',
-    // 'list'              :   'list available node packages',
-    // 'use'               :   'switch node versions'
+ // 'list'              :   'list available node packages',
+ // 'use'               :   'switch node versions'
     'test'              :   'run tests',
     'version'           :   'print node version',
-    'help'        :   'print usage info for [cmd]'
-    // 'debug'             :   'run the debugger',
-    // 'publish'           :   'publish "." or the given dir/tarball',
-    // 'create <name>'     :   'scaffold projects and modules',
+    'help'              :   'print usage info for [cmd]',
+ // 'debug'             :   'run the debugger',
+ // 'publish'           :   'publish "." or the given dir/tarball',
+    'create'            :   'scaffold projects and modules'
 };
 
 Object.keys(COMMANDS).forEach(function (cmd) {
