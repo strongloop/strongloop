@@ -46,8 +46,7 @@ Object.keys(COMMANDS).forEach(function (cmd) {
 
   function done(err) {
     if(err) {
-      console.log('failed to %s', cmd);
-      console.error(err);
+      console.error(err.message);
     }
   
     process.exit(1);
