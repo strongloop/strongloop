@@ -31,11 +31,11 @@ To generate a console program for issue the following `slnode` command:
 
 The program will be available to your terminal as a command:
 
-    $ my-console-program
+    $ ./my-console-program/bin/my-console-program
 
 This command will output:
 
-    hello from `my-console-program`
+    hello from my-console-program
 
 ## Create a Simple Web App
 
