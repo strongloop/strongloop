@@ -63,70 +63,18 @@ Well designed modules often require a significant amount of boilerplate. This is
     
     $ slnode create module my-module
     
-This will generate the following JavaScript file `./my-module.js`:
+This will generate a module in the lib folder `./lib/my-module.js`.
 
-    /**
-     * Expose `MyModule`.
-     */
+This command also supports automatically generating tests.
 
-    module.exports = MyModule;
+    $ slnode create module my-module --test
 
-    /**
-     * Module dependencies.
-     */
- 
-    var EventEmitter = require('events').EventEmitter
-      , debug = require('debug')('my-module')
-      , util = require('util')
-      , inherits = util.inherits
-      , assert = require('assert');
-  
-    /**
-     * Create a new `MyModule` with the given `options`.
-     *
-     * @param {Object} options
-     * @return {MyModule}
-     */
+It also allows you to supply a stream type to implement
 
-    function MyModule(options) {
-      EventEmitter.apply(this, arguments);
-  
-      // throw an error if args are not supplied
-      // assert(typeof options === 'object', 'MyModule requires an options object');
-  
-      this.options = options;
-  
-      debug('created with options', options);
-    }
+    $ slnode create module my-module --stream transform
 
-    /**
-     * Inherit from `EventEmitter`.
-     */
+For more information see the help for each command.
 
-    inherits(MyModule, EventEmitter);
-
-    /**
-     * Simplified APIs
-     */
-
-    MyModule.create =
-    MyModule.createMyModule = function () {
-      // add simplified construction / sugar here
-      return new MyModule();
-    }
-
-    /**
-     * Methods.
-     */
- 
-    MyModule.prototype.myMethod = function () {
-  
-    }
-    
-Below is an example using the module above:
-
-    var MyModule = require('./my-module');
-    
-    var mod = MyModule.create();
-
-Its
+    $ slnode create -h
+    $ slnode create module -h
+    $ slnode test -h
