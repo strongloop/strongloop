@@ -24,7 +24,7 @@ var COMMANDS = {
     'run'               :   'run a specified script',
     'env'               :   'print node environment information',
  // 'lint'              :   'run jshint on source files',
- //  'install'          :   'install packages and dependencies',
+    'install'           :   'install packages and dependencies',
  // 'list'              :   'list available node packages',
  // 'use'               :   'switch node versions'
     'test'              :   'run tests',
