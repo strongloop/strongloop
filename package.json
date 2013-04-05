@@ -15,7 +15,6 @@
     "sn": "./bin/slnode"
   },
   "scripts": {
-    "postinstall" : "cd node_modules/npm && make doc"
   },
   "dependencies": {
     "npm": "git+ssh://git@github.com:strongloop/npm.git",
