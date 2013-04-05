@@ -1,6 +1,6 @@
 {
   "name": "slnode",
-  "version": "1.0.0-beta2",
+  "version": "1.0.0-0.3.beta",
   "description": "StrongLoop Node tools",
   "main": "index.js",
   "repository": {
@@ -14,7 +14,9 @@
     "slnode": "./bin/slnode",
     "sn": "./bin/slnode"
   },
-  "gitHead": "86a9605a43e216a76f262348fdcd91d346b949dc",
+  "scripts": {
+    "postinstall" : "cd node_modules/npm && make doc"
+  },
   "dependencies": {
     "npm": "git+ssh://git@github.com:strongloop/npm.git",
     "commander": "~1.1.1",
