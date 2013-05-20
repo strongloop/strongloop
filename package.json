@@ -1,6 +1,6 @@
 {
   "name": "slnode",
-  "version": "1.0.0-0.3.beta",
+  "version": "1.0.0-1",
   "description": "StrongLoop Node tools",
   "main": "index.js",
   "repository": {
