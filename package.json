@@ -20,6 +20,7 @@
     "npm": "git+ssh://git@github.com:strongloop/npm.git",
     "commander": "~1.1.1",
     "slnode-create": "git+ssh://git@github.com:strongloop/slnode-create.git",
-    "node-inspector": "git+ssh://git@github.com:strongloop/node-inspector.git"
+    "node-inspector": "git+ssh://git@github.com:strongloop/node-inspector.git",
+    "slnode-debug": "git+ssh://git@github.com:strongloop/slnode-debug.git"
   }
 }
