@@ -1,5 +1,5 @@
 # slnode 
-**v1.0.0-0.3.beta**
+**v1.0.0**
 
 `slnode` is a tool for managing **Node.js** source code.
 
