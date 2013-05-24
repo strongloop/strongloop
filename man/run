@@ -1,0 +1,6 @@
+
+  Usage: slnode run <script-file> [script-options]
+
+  Options:
+
+    -h, --help  output usage information
