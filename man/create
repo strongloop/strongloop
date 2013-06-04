@@ -1,0 +1,16 @@
+
+  Usage: create [options]
+
+  Options:
+
+    -h, --help  output usage information
+
+  Types:
+
+    cli - creates an empty cli program
+    module - creates an empty module in the current application
+    package - creates a full node module package
+    web - a simple express app with optional mongoose support
+    * - defaults to web
+
+  Type: slnode create <type> -h or --help for more info

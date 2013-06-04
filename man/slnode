@@ -1,0 +1,31 @@
+
+  Usage: slnode
+    slnode [options] [command] [args]
+    slnode <npm-command> [npm-command-args]
+    slnode <script-file> [args]
+
+  Commands:
+
+    npm                    run a npm command - [npm] <npm-command> [npm-command-args]
+    run                    run a specified script - [run] <script-file> [args]
+    env                    print node environment information
+    version                print node version
+    help [command]         print usage info for [command]
+    debug                  debug a script
+    create                 generate modules and applications
+
+  Options:
+
+    -h, --help  output usage information
+
+  Note that npm and run are optional if the npm-command name or script-file
+  doesn't conflict with other slnode commands.
+
+  Examples:
+
+    $ slnode create web mywebapp
+    $ slnode run app.js
+    $ slnode npm list
+    $ slnode npm install -f express
+    Same as above, but omitting optional "npm":
+    $ slnode install -f express
