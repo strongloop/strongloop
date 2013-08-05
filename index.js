@@ -1,3 +1,3 @@
 if (require.main === module) {
-  require('./bin/slnode');
+  require('./bin/slc');
 }
