@@ -13,4 +13,4 @@
     web - a simple express app with optional mongoose support
     * - defaults to web
 
-  Type: slnode create <type> -h or --help for more info
+  Type: slc create <type> -h or --help for more info
