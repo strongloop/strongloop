@@ -1,8 +1,8 @@
 
-  Usage: slnode
-    slnode [options] [command] [args]
-    slnode <npm-command> [npm-command-args]
-    slnode <script-file> [args]
+  Usage: slc
+    slc [options] [command] [args]
+    slc <npm-command> [npm-command-args]
+    slc <script-file> [args]
 
   Commands:
 
@@ -19,13 +19,13 @@
     -h, --help  output usage information
 
   Note that npm and run are optional if the npm-command name or script-file
-  doesn't conflict with other slnode commands.
+  doesn't conflict with other slc commands.
 
   Examples:
 
-    $ slnode create web mywebapp
-    $ slnode run app.js
-    $ slnode npm list
-    $ slnode npm install -f express
+    $ slc create web mywebapp
+    $ slc run app.js
+    $ slc npm list
+    $ slc npm install -f express
     Same as above, but omitting optional "npm":
-    $ slnode install -f express
+    $ slc install -f express

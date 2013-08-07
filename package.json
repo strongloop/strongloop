@@ -11,8 +11,8 @@
   "license": "...",
   "readmeFilename": "README.md",
   "bin": {
-    "slnode": "./bin/slnode",
-    "sn": "./bin/slnode"
+    "slnode": "./bin/slc",
+    "slc": "./bin/slc"
   },
   "scripts": {
   },

@@ -1,11 +1,11 @@
-# slnode 
-**v1.0.0**
+# slc
 
-`slnode` is a tool for managing **Node.js** source code.
+`slc` is a tool for managing **Node.js** source code.
 
 ## Install
 
-[StrongLoop Node](http://strongloop.com/products#downloads) includes `slnode` and other tools required to build `Node.js` programs.
+[StrongLoop Node](http://strongloop.com/products#downloads) includes `slc` and
+other tools required to build `Node.js` programs.
 
 ## Hello World
 
@@ -15,7 +15,7 @@ The following program will print `hello world` to the console and exit.
     
 Save the above as `hello-world.js` and run the following command:
 
-    $ slnode hello-world
+    $ slc hello-world
     
 This will run the `hello-world.js` script with `StrongLoop Node` and output:
 
@@ -23,11 +23,12 @@ This will run the `hello-world.js` script with `StrongLoop Node` and output:
     
 ## Create a Simple Program
 
-`slnode`'s `create` command allows you to generate conventional `Node.js` boilerplate for modules and entire programs.
+`slc`'s `create` command allows you to generate conventional `Node.js`
+boilerplate for modules and entire programs.
 
-To generate a console program for issue the following `slnode` command:
+To generate a console program for issue the following `slc` command:
 
-    $ slnode create cli my-console-program
+    $ slc create cli my-console-program
 
 The program will be available to your terminal as a command:
 
@@ -41,11 +42,11 @@ This command will output:
 
 The `create` command supports several program types. The `web` type is used by default. Both of the following will do the same thing.
 
-    $ slnode create my-app
+    $ slc create my-app
     
 or
 
-    $ slnode create web my-app
+    $ slc create web my-app
     
 By default, the generated web app will contain the following:
 
@@ -61,20 +62,20 @@ To simplify complex applications, separate your code into small discrete modules
 
 Well designed modules often require a significant amount of boilerplate. This is generated for you with the following command:
     
-    $ slnode create module my-module
+    $ slc create module my-module
     
 This will generate a module in the lib folder `./lib/my-module.js`.
 
 This command also supports automatically generating tests.
 
-    $ slnode create module my-module --test
+    $ slc create module my-module --test
 
 It also allows you to supply a stream type to implement
 
-    $ slnode create module my-module --stream transform
+    $ slc create module my-module --stream transform
 
 For more information see the help for each command.
 
-    $ slnode create -h
-    $ slnode create module -h
-    $ slnode test -h
+    $ slc create -h
+    $ slc create module -h
+    $ slc test -h
