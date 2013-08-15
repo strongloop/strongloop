@@ -14,7 +14,9 @@
     "slnode": "./bin/slc",
     "slc": "./bin/slc"
   },
-  "scripts": {},
+  "scripts": {
+    "lint": "./node_modules/.bin/jshint *.js lib"
+  },
   "dependencies": {
     "npm": "git+ssh://git@github.com:strongloop/npm.git",
     "commander": "~1.1.1",
@@ -25,6 +27,7 @@
     "debug": "~0.7.2"
   },
   "devDependencies": {
-    "automation": "git+ssh://git@github.com:strongloop/automation-strongnode.git"
+    "automation": "git+ssh://git@github.com:strongloop/automation-strongnode.git",
+    "jshint": "~2.1.9"
   }
 }
