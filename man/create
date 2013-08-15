@@ -1,16 +1,17 @@
+Usage: create <type> <name> [...]
 
-  Usage: create [options]
+Create node script boilerplate.
 
-  Options:
+Options:
 
-    -h, --help  output usage information
+  -h, --help  print usage information
+  name        name of boiler-plate to create
 
-  Types:
+Types:
 
-    cli - creates an empty cli program
-    module - creates an empty module in the current application
-    package - creates a full node module package
-    web - a simple express app with optional mongoose support
-    * - defaults to web
+  cli         empty cli program
+  module      node single-file class module in ./lib
+  package     npm module with package.json and typical layout
+  web         simple express app with optional mongoose support
 
-  Type: slc create <type> -h or --help for more info
+See slc create <type> -h or --help for more information
