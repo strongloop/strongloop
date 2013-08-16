@@ -1,4 +1,4 @@
-Usage: create <type> <name> [...]
+Usage: slc create <type> <name> [...]
 
 Create node script boilerplate.
 

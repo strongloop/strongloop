@@ -1,4 +1,4 @@
-Usage: npm <npm-command> [npm-command-args]
+Usage: slc npm <npm-command> [npm-command-args]
 
 Run a npm command.
 

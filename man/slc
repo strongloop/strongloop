@@ -2,7 +2,7 @@ Usage: slc [options] [command] [args]
 Usage: slc <npm-command> [npm-command-args]
 Usage: slc <script-file> [args]
 
-Utility for StrongLoop Node development.
+Utility for StrongNode development.
 
 Options:
 

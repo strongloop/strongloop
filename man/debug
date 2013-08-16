@@ -1,4 +1,4 @@
-Usage: debug [options] <module>
+Usage: slc debug [options] <module>
 
 Debug module with node-inspector.
 
