@@ -1,0 +1,20 @@
+VERSION()                                                            VERSION()
+
+
+
+NNAAMMEE
+       vveerrssiioonn - Print versions
+
+       Print StrongLoop Node and Node.js versions.
+
+SSYYNNOOPPSSIISS
+       slc version [options]
+
+OOPPTTIIOONNSS
+       --hh, ----hheellpp
+              print usage information
+
+
+
+
+                                  August 2013                        VERSION()

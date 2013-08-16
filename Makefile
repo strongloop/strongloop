@@ -1,12 +1,16 @@
-test:
-	export PATH=$PATH:$PWD/bin
-	export testFolder=/tmp
-	cd node_modules/automation-strongnode/ ; cucumber -f pretty features/cli_slc*
+build: man
 
-install:
-	ruby -v
-	gem list
-	which cucumber || gem install cucumber rspec || sudo gem install cucumber rspec
-	npm install
+MKD = $(wildcard man/*.md)
+TXT = $(MKD:.md=)
 
-.PHONY: test
+.PHONY: man
+man: $(TXT)
+
+man/%.md2: man/%.md
+	perl -pes'/^#//' < $< > $@
+
+man/%.roff: man/%.md2
+	ronn --pipe -r $< > $@
+
+man/%: man/%.roff
+	man -Tascii $< > $@

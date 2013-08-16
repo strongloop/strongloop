@@ -1,8 +1,13 @@
-Usage: slc env [options]
+## slc env -- Print node runtime environment information
 
-Print information about node from the process module (versions,
+Print information about node run-time from the process module (versions,
 platform, config, execPath, and features).
 
-Options:
+### SYNOPSIS
 
-  -h, --help  print usage information
+    slc env [options]
+
+### OPTIONS
+
+* `-h`, `--help`:
+  print usage information

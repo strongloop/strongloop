@@ -1,0 +1,23 @@
+HELP()                                                                  HELP()
+
+
+
+NNAAMMEE
+       hheellpp - Print usage information
+
+       Print usage for slc, or for a specific slc command.
+
+SSYYNNOOPPSSIISS
+       slc help [options] [command]
+
+OOPPTTIIOONNSS
+       --hh, ----hheellpp
+              print usage information
+
+       ccoommmmaanndd
+              command to print usage for
+
+
+
+
+                                  August 2013                           HELP()

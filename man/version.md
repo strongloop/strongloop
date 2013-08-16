@@ -1,7 +1,12 @@
-Usage: version [options]
+## slc version -- Print versions
 
 Print StrongLoop Node and Node.js versions.
 
-Options:
+### SYNOPSIS
 
-  -h, --help  print usage information
+    slc version [options]
+
+### OPTIONS
+
+* `-h`, `--help`:
+  print usage information

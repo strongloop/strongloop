@@ -1,7 +1,12 @@
-Usage: slc run <script-file> [script-options]
+## slc run -- Run a node script
 
-Run a node script.
+### SYNOPSIS
 
-Options:
+    slc run <script-file> [script-options]
 
-  -h, --help  print usage information
+### OPTIONS
+
+* `-h`, `--help`:
+  print usage information
+* `script-file`:
+  node script file to run

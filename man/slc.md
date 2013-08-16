@@ -1,35 +1,47 @@
-Usage: slc [options] [command] [args]
-Usage: slc <npm-command> [npm-command-args]
-Usage: slc <script-file> [args]
+## slc -- Utility for StrongNode development
 
 Utility for StrongNode development.
 
-Options:
+### SYNOPSIS
 
-  -h, --help  print usage information
+    slc [options] [command] [args]
+    slc <npm-command> [npm-command-args]
+    slc <script-file> [args]
 
 Note that the second and third command forms are short forms of the npm and run
 commands described below. An unrecognized slc command that is an npm command
 will be passed to npm, any other unrecognized command will be passed to the run
 command.
 
-Commands:
+### OPTIONS
 
-  npm         run a npm command
-  run         run a node script
-  env         print node environment information
-  version     print node version
-  help        print usage information for a command
-  debug       debug a script
-  create      create node script boilerplate
+* `-h`, `--help`:
+  print usage information
 
-Examples:
+### COMMANDS
 
-  $ slc create web mywebapp
-  $ slc run app.js
-  $ slc npm list
-  $ slc npm install -f express
+* `npm:`:
+  run a npm command
+* `run:`:
+  run a node script
+* `env:`:
+  print node environment information
+* `version:`:
+  print node version
+* `help:`:
+  print usage information for a command
+* `debug:`:
+  debug a script
+* `create:`:
+  create node script boilerplate
 
-  As above, but omitting optional "npm":
+### EXAMPLES
 
-  $ slc install -f express
+    $ slc create web mywebapp
+    $ slc run app.js
+    $ slc npm list
+    $ slc npm install -f express
+
+As above, but omitting optional "npm":
+
+    $ slc install -f express
