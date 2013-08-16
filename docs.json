@@ -1,13 +1,6 @@
 {
   "content": [
     "README.md",
-    "man/create.md",
-    "man/debug.md",
-    "man/env.md",
-    "man/help.md",
-    "man/npm.md",
-    "man/run.md",
-    "man/slc.md",
-    "man/version.md"
+    "man/*.md"
   ]
 }
