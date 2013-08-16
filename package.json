@@ -15,7 +15,8 @@
     "slc": "./bin/slc"
   },
   "scripts": {
-    "lint": "./node_modules/.bin/jshint *.js lib"
+    "lint": "./node_modules/.bin/jshint *.js lib",
+    "docs": "./node_modules/.bin/sdocs --out docs"
   },
   "dependencies": {
     "npm": "git+ssh://git@github.com:strongloop/npm.git",
@@ -28,6 +29,7 @@
   },
   "devDependencies": {
     "automation": "git+ssh://git@github.com:strongloop/automation-strongnode.git",
-    "jshint": "~2.1.9"
+    "jshint": "~2.1.9",
+    "strong-docs": "strongloop/strong-docs"
   }
 }
