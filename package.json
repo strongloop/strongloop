@@ -17,7 +17,7 @@
   "scripts": {
   },
   "dependencies": {
-    "npm": "git+ssh://git@github.com:strongloop/npm.git",
+    "npm": "git+ssh://git@github.com:strongloop/npm.git#sl-v1.1",
     "commander": "~1.1.1",
     "slnode-create": "git+ssh://git@github.com:strongloop/slnode-create.git#v1.1",
     "optimist": "~0.5.0",
