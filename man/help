@@ -1,0 +1,18 @@
+HELP()                                                                  HELP()
+
+
+
+NNAAMMEE
+       hheellpp
+
+       Usage: slc help [options] [command]
+
+       Print usage for slc, or for a specific slc command.
+
+       Options:
+
+       -h, --help print usage information
+
+
+
+                                  August 2013                           HELP()
