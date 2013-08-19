@@ -1,8 +1,8 @@
-### slc debug -- Debug module with node-inspector
+## slc debug -- Debug module with node-inspector
 
 ### SYNOPSIS
 
-    slc debug [options] <module>
+    slc debug [options] [module]
 
 ### OPTIONS
 
@@ -17,4 +17,9 @@
 * `-d`, `--debug-port <port>`:
   use an alternate debug port
 * `module`:
-  module to debug
+  module to debug.
+
+  Use `.` to debug the application in the current directory.
+
+  If no module is specified, then slc will start REPL and load the
+  module in the current directory.

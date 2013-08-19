@@ -7,6 +7,7 @@ NNAAMMEE
 
 SSYYNNOOPPSSIISS
        slc run <script-file> [script-options]
+       slc run
 
 OOPPTTIIOONNSS
        --hh, ----hheellpp
@@ -14,6 +15,11 @@ OOPPTTIIOONNSS
 
        ssccrriipptt--ffiillee
               node script file to run
+
+              Use .. to run the application in the current directory.
+
+              If no module is specified, then slc will start REPL and load the
+              module in the current directory.
 
 
 
