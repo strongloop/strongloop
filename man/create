@@ -1,36 +1,63 @@
-Usage: slc create <type> <name> [...]
-
-Create node script boilerplate.
-
-Options:
-
-  -h, --help  print usage information
-  name        name of boiler-plate to create
-  ...         options specific to type, see below
-
-Types:
-
-  web         simple express app with optional mongoose support
-  package     npm module with package.json and typical layout
-  module      node single-file class module in ./lib
-  cli         empty cli program (no options)
+CREATE()                                                              CREATE()
 
 
-Web options:
 
-  -E, --disable-express  disable express support
-  -c, --cors             enable CORS for routes
-  -m, --mongoose         add mongoose/mongodb support
-  -r, --rest             add REST apis for mongoose models
-  -t, --title <title>    set the title of your application
+NNAAMMEE
+       ccrreeaattee - Create node script boilerplate
 
-Package options:
+SSYYNNOOPPSSIISS
+       slc create <type> <name> [...]
 
-  -i, --inherit-from     module to inherit from, default: EventEmitter
+OOPPTTIIOONNSS
+       --hh, ----hheellpp
+              print usage information
 
-Module options:
+       nnaammee   name of boiler-plate to create
 
-  -i, --inherit-from     module to inherit from, default: EventEmitter
-  -t, --test             included a generated test
-  -s, --stream <type>    implement a stream interface (readable, writeable,
-                         duplex, transform)
+       ......    options specific to type, see below
+
+   TTyyppeess
+       wweebb    simple express app with optional mongoose support
+
+       ppaacckkaaggee
+              npm module with package.json and typical layout
+
+       mmoodduullee node single-file class module in ./lib
+
+       ccllii    empty cli program (no options)
+
+   WWeebb ooppttiioonnss
+       --EE, ----ddiissaabbllee--eexxpprreessss
+              disable express support
+
+       --cc, ----ccoorrss
+              enable CORS for routes
+
+       --mm, ----mmoonnggoooossee
+              add mongoose/mongodb support
+
+       --rr, ----rreesstt
+              add REST apis for mongoose models
+
+       --tt, ----ttiittllee <<ttiittllee>>
+              set the title of your application
+
+   PPaacckkaaggee ooppttiioonnss
+       --ii, ----iinnhheerriitt--ffrroomm
+              module to inherit from, default: EventEmitter
+
+   MMoodduullee ooppttiioonnss
+       --ii, ----iinnhheerriitt--ffrroomm
+              module to inherit from, default: EventEmitter
+
+       --tt, ----tteesstt
+              included a generated test
+
+       --ss, ----ssttrreeaamm <<ttyyppee>>
+              implement  a  stream  interface  (readable,  writeable,  duplex,
+              transform)
+
+
+
+
+                                  August 2013                         CREATE()
