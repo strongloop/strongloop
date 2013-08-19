@@ -1,7 +1,8 @@
+Usage: slc env [options]
 
-  Usage: env [options]
+Print information about node from the process module (versions,
+platform, config, execPath, and features).
 
-  Options:
+Options:
 
-    -h, --help  output usage information
-
+  -h, --help  print usage information

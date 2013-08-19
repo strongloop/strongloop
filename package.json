@@ -14,7 +14,10 @@
     "slnode": "./bin/slc",
     "slc": "./bin/slc"
   },
-  "scripts": {},
+  "scripts": {
+    "lint": "./node_modules/.bin/jshint *.js lib",
+    "docs": "./node_modules/.bin/sdocs --out docs"
+  },
   "dependencies": {
     "npm": "git+ssh://git@github.com:strongloop/npm.git",
     "commander": "~1.1.1",
@@ -23,5 +26,10 @@
     "node-inspector": "~0.3.2",
     "opener": "~1.3.0",
     "debug": "~0.7.2"
+  },
+  "devDependencies": {
+    "automation": "git+ssh://git@github.com:strongloop/automation-strongnode.git",
+    "jshint": "~2.1.9",
+    "strong-docs": "strongloop/strong-docs"
   }
 }

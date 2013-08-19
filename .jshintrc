@@ -1,0 +1,5 @@
+{
+  "camelcase": true
+  , "quotmark": "single"
+  , "eqnull": true
+}

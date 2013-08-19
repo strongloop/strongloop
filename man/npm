@@ -1,7 +1,15 @@
+Usage: slc npm <npm-command> [npm-command-args]
 
-  Usage: npm [npm] <npm-command> [npm-command-args]
+Run a npm command.
 
-  Options:
+Supported packages are installed from the StrongLoop registry, if available.
 
-    -h, --help  output usage information
+Options:
 
+  -h, --help  print usage information
+
+Supports all npm commands, the most commonly used are:
+
+  install     install a package
+  ls          list packages with their support status
+  update      update packages to latest

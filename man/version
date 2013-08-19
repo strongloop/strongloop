@@ -1,6 +1,7 @@
+Usage: version [options]
 
-  Usage: version [options]
+Print StrongLoop Node and Node.js versions.
 
-  Options:
+Options:
 
-    -h, --help  output usage information
+  -h, --help  print usage information
