@@ -1,11 +1,33 @@
-Usage: slc debug [options] <module>
+DEBUG()                                                                DEBUG()
 
-Debug module with node-inspector.
 
-Options:
 
-  -h, --help               print usage information
-  -c, --cli                prevent auto opening web browser
-  -p, --port <port>        start debugger on port
-  -s, --suspend            suspend on first line
-  -d, --debug-port <port>  use an alternate debug port
+NNAAMMEE
+       ddeebbuugg
+
+ssllcc ddeebbuugg ---- DDeebbuugg mmoodduullee wwiitthh nnooddee--iinnssppeeccttoorr
+SSYYNNOOPPSSIISS
+       slc debug [options] <module>
+
+OOPPTTIIOONNSS
+       --hh, ----hheellpp
+              print usage information
+
+       --cc, ----ccllii
+              prevent auto opening web browser
+
+       --pp, ----ppoorrtt <<ppoorrtt>>
+              start debugger on port
+
+       --ss, ----ssuussppeenndd
+              suspend on first line
+
+       --dd, ----ddeebbuugg--ppoorrtt <<ppoorrtt>>
+              use an alternate debug port
+
+       mmoodduullee module to debug
+
+
+
+
+                                  August 2013                          DEBUG()

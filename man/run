@@ -1,7 +1,21 @@
-Usage: slc run <script-file> [script-options]
+RUN()                                                                    RUN()
 
-Run a node script.
 
-Options:
 
-  -h, --help  print usage information
+NNAAMMEE
+       rruunn - Run a node script
+
+SSYYNNOOPPSSIISS
+       slc run <script-file> [script-options]
+
+OOPPTTIIOONNSS
+       --hh, ----hheellpp
+              print usage information
+
+       ssccrriipptt--ffiillee
+              node script file to run
+
+
+
+
+                                  August 2013                            RUN()
