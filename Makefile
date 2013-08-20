@@ -10,7 +10,6 @@ test-cucumber: check_cucumber
 
 test: test-cucumber
 
-
 check_cucumber:
 	gem list cucumber
 	gem list rspec
@@ -20,6 +19,13 @@ test-mocha:
 	JENKINS_HOME=true ./node_modules/.bin/mocha
 
 test: test-mocha
+
+.PHONY: test-cli
+test-cli:
+	cd cli-test/cmd_strongops && node drv_stronops_test.js
+	cd cli-test/prompt && node drv_prompt_test.js
+
+test: test-cli
 
 .PHONY: build
 build: man

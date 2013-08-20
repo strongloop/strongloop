@@ -7,28 +7,50 @@
 
 exports.strings = {
 
-  // the outputs expected in the strongops command
-  output: {
-    namePrompt: 'Please enter your: [90mfull name [39m[90m: [39m (Edmond Meinfelder) ',
-    emailPrompt: 'Please enter your: [90memail address[39m[90m: [39m (edmond@stdarg.com) ',
-    passwordPrompt: 'Please enter your: [90mpassword[39m[90m: [39m ',
-    password2Prompt: 'Please enter your: [90mpassword again for confirmation[39m[90m: [39m ',
-    msg1: 'You are now registered. Welcome to StrongOps!\n',
-    msg2: 'Your StrongOps credentials were written to: ./strongloop.json\n',
-    msg3: 'Please answer the following to register with StrongOps:\n\n',
+  testReg: {
+    // the outputs expected in the strongops command
+    prompts: {
+      namePrompt: /^Please enter your: full name/,
+      emailPrompt: /^Please enter your: email address/,
+      passwordPrompt: /^Please enter your: password/,
+      password2Prompt: /^Please enter your: password again for confirmation/,
+    },
+
+    // the inputs used in the strong ops command
+    input: {
+      name: 'E. L. Meinfelder',
+      email: '-test@strongloop.com',   // we need to add a time prefix to ensure each is unique
+      password: '12345678',
+    },
+
+    // the expected response
+    expected: [
+      /^Please answer the following/,
+      /^You are now registered./,
+      /^Your StrongOps credentials were written/,
+    ],
   },
 
-  // the inputs used in the strong ops command
-  input: {
-    name: 'E. L. Meinfelder',
-    email: '-test@strongloop.com',   // we need to add a time prefix to ensure each is unique
-    password: '12345678',
-    error: '^[[31mError: Either the user is not registered or has a different password.^[[39m'
-  },
+  testLogin: {
+    // the outputs expected in the strongops command
+    prompts: {
+      namePrompt: /^xxxx$/,
+      emailPrompt: /^Please enter your: email address/,
+      passwordPrompt: /^Please enter your: password/,
+      password2Prompt: /^xxxx$/
+    },
 
-  // the expected response
-  expected: [
-    /^You are now registered.+/,
-    /^'Your StrongOps credentials were written/
-  ],
+    // the inputs used in the strong ops command
+    input: {
+      name: 'E. L. Meinfelder',
+      email: '-test@strongloop.com',   // we need to add a time prefix to ensure each is unique
+      password: '12345678',
+    },
+
+    // the expected response
+    expected: [
+      /^You are now logged in. Welcome back./,
+      /^Your StrongOps credentials were written/,
+    ],
+  }
 };
