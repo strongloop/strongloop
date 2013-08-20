@@ -3,11 +3,10 @@ DEBUG()                                                                DEBUG()
 
 
 NNAAMMEE
-       ddeebbuugg
+       ddeebbuugg - Debug module with node-inspector
 
-ssllcc ddeebbuugg ---- DDeebbuugg mmoodduullee wwiitthh nnooddee--iinnssppeeccttoorr
 SSYYNNOOPPSSIISS
-       slc debug [options] <module>
+       slc debug [options] [module]
 
 OOPPTTIIOONNSS
        --hh, ----hheellpp
@@ -25,7 +24,12 @@ OOPPTTIIOONNSS
        --dd, ----ddeebbuugg--ppoorrtt <<ppoorrtt>>
               use an alternate debug port
 
-       mmoodduullee module to debug
+       mmoodduullee module to debug.
+
+              Use .. to debug the application in the current directory.
+
+              If no module is specified, then slc will start REPL and load the
+              module in the current directory.
 
 
 
