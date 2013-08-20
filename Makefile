@@ -1,3 +1,8 @@
+.PHONY: test test-mocha
+
+test: test-mocha
+	./node_modules/.bin/mocha
+
 build: man
 
 MKD = $(wildcard man/*.md)
