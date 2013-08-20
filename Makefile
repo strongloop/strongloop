@@ -1,7 +1,7 @@
 .PHONY: test test-mocha
 
 test: test-mocha
-	./node_modules/.bin/mocha
+	JENKINS_HOME=true ./node_modules/.bin/mocha
 
 build: man
 

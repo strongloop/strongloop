@@ -87,7 +87,7 @@ describe('getFileSync', function() {
 
 describe('getFileSync', function() {
   it('Should return the contents of a file when file is present.', function() {
-    console.log('getFileSync:', test.getFileSync);
+    //console.log('getFileSync:', test.getFileSync);
     assert.ok(is.nonEmptyStr(strops.test.getFileSync(test.getFileSync)) === true);
   });
 });
