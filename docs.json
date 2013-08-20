@@ -8,6 +8,7 @@
     "man/help.md",
     "man/npm.md",
     "man/run.md",
+    "man/strongops.md",
     "man/version.md"
   ]
 }
