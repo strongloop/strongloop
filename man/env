@@ -3,11 +3,16 @@ ENV()                                                                    ENV()
 
 
 NNAAMMEE
-       eennvv - Print runtime environment
+       eennvv - Print or configure runtime environment
 
-       Prints  information about node run-time from the process module (paths,
-       platform, config, execPath, and features). The output can be limited by
-       using one or more selectors, see examples.
+       With  no  options,  prints  information  about  node  run-time from the
+       process module (paths, platform, config, execPath, and  features).  The
+       output can be limited by using one or more selectors, see examples.
+
+       With  ----uussee--nnppmm,  sets the system npm link to either the version of npm
+       bundled with node ("legacy"), or the version of npm  bundled  with  slc
+       ("default").  No  matter  which npm is installed into the path, the slc
+       version can always be called using ssllcc nnppmm .......
 
 SSYYNNOOPPSSIISS
        slc env [options] [selectors...]
@@ -15,6 +20,10 @@ SSYYNNOOPPSSIISS
 OOPPTTIIOONNSS
        --hh, ----hheellpp
               print usage information
+
+       ----uussee--nnppmm ddeeffaauulltt||lleeggaaccyy
+              Use default npm from slc, or the legacy version of  npm  bundled
+              with node.
 
 EEXXAAMMPPLLEESS
        Print zlib version:
