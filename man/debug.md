@@ -19,7 +19,7 @@
 * `module`:
   module to debug.
 
-  Use `.` to debug the application in the current directory.
+Use `.` to debug the application in the current directory.
 
-  If no module is specified, then slc will start REPL and load the
-  module in the current directory.
+If no module is specified, then slc will start REPL and load the module in the
+current directory.
