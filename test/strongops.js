@@ -18,7 +18,7 @@ describe('getGitConfigInfo', function() {
 
 describe('getUserHome', function() {
   it('Should return the home directory for the user', function() {
-    assert.equal(test.getNpmEmail, strops.test.getNpmEmail());
+    assert.equal(test.getUserHome, strops.test.getUserHome());
   });
 });
 
@@ -87,6 +87,7 @@ describe('getFileSync', function() {
 
 describe('getFileSync', function() {
   it('Should return the contents of a file when file is present.', function() {
+    console.log('getFileSync:', test.getFileSync);
     assert.ok(is.nonEmptyStr(strops.test.getFileSync(test.getFileSync)) === true);
   });
 });
