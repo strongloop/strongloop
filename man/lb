@@ -1,0 +1,55 @@
+Usage:
+
+  $ lb <command> <arg> <flags>
+
+Commands:
+
+  workspace <name>
+  
+    Initialize a workspace in a new directory with an optional <name>. The
+    default <name> is "loopback-workspace".
+    
+    $ slc lb workspace my-loopback-workspace
+   
+  api <name>
+ 
+    Create a LoopBack application in a new directory within a workspace
+    using the given <name>. The <name> arg is required.
+    
+    $ cd my-loopback-workspace
+    $ slc lb api my-app
+    $ slc app # to run the app
+    
+  model <name>
+  
+    Create a model in an existing LoopBack application. If you provide the -i
+    or --interactive flage, you will be prompted through a model configuration.
+    
+    $ cd my-app
+    $ slc lb model -i
+
+  api-example
+ 
+    Create a new LoopBack application from the sample template.
+
+    $ slc lb api-example
+    $ slc app # to run the app
+    
+Flags / Options:
+
+  -h, --help
+  
+    Display this help text.
+    
+  -i, --interactive
+  
+    Run an interactive model creation. Only supported with the model command.
+  
+  --data-source <name>
+    
+    Supply a custom data source when creating a model. Defaults to "db".
+    
+  --app <name>
+  
+    Specify a specific app name to attach the model to. Defaults to "app".
+  
