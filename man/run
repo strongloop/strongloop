@@ -1,6 +1,27 @@
+RUN()                                                                    RUN()
 
-  Usage: slc run <script-file> [script-options]
 
-  Options:
 
-    -h, --help  output usage information
+NNAAMMEE
+       rruunn - Run a node script
+
+SSYYNNOOPPSSIISS
+       slc run <script-file> [script-options]
+       slc run
+
+OOPPTTIIOONNSS
+       --hh, ----hheellpp
+              print usage information
+
+       ssccrriipptt--ffiillee
+              node script file to run
+
+              Use .. to run the application in the current directory.
+
+              If no module is specified, then slc will start REPL and load the
+              module in the current directory.
+
+
+
+
+                                  August 2013                            RUN()

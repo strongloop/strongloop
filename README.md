@@ -1,11 +1,11 @@
 # slc
 
-`slc` is a tool for managing **Node.js** source code.
+`slc` is a tool for StrongNode development.
 
 ## Install
 
-[StrongLoop Node](http://strongloop.com/products#downloads) includes `slc` and
-other tools required to build `Node.js` programs.
+[StrongNode](http://strongloop.com/products#downloads) includes `slc` and other
+tools for developing with `Node.js`.
 
 ## Hello World
 
@@ -40,7 +40,8 @@ This command will output:
 
 ## Create a Simple Web App
 
-The `create` command supports several program types. The `web` type is used by default. Both of the following will do the same thing.
+The `create` command supports several program types. The `web` type is used by
+default. Both of the following will do the same thing.
 
     $ slc create my-app
     
@@ -50,17 +51,21 @@ or
     
 By default, the generated web app will contain the following:
 
- - package.json - dependencies and other package configuration
- - app.js       - app entry point and runtime configuration
- - public       - static assets available over http
- - routes       - route handler functions
- - views        - templates for rendering html
+- `package.json`: dependencies and other package configuration
+- `app.js`: app entry point and runtime configuration
+- `public/`: static assets available over http
+- `routes/`: route handler functions
+- `views/`: templates for rendering html
  
 ## Adding Modules
 
-To simplify complex applications, separate your code into small discrete modules. A module is a JavaScript file with a single distinct purpose. It should accept some form of validateable input, and generate meaningful output preferably with an asynchronous api.
+To simplify complex applications, separate your code into small discrete
+modules. A module is a JavaScript file with a single distinct purpose. It should
+accept some form of input, and generate meaningful output preferably with an
+asynchronous api.
 
-Well designed modules often require a significant amount of boilerplate. This is generated for you with the following command:
+Well designed modules often require a significant amount of boilerplate. This is
+generated for you with the following command:
     
     $ slc create module my-module
     
@@ -77,5 +82,3 @@ It also allows you to supply a stream type to implement
 For more information see the help for each command.
 
     $ slc create -h
-    $ slc create module -h
-    $ slc test -h

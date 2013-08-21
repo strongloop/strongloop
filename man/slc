@@ -1,31 +1,58 @@
+SLC()                                                                    SLC()
 
-  Usage: slc
-    slc [options] [command] [args]
-    slc <npm-command> [npm-command-args]
-    slc <script-file> [args]
 
-  Commands:
 
-    npm                    run a npm command - [npm] <npm-command> [npm-command-args]
-    run                    run a specified script - [run] <script-file> [args]
-    env                    print node environment information
-    version                print node version
-    help [command]         print usage info for [command]
-    debug                  debug a script
-    create                 generate modules and applications
+NNAAMMEE
+       ssllcc - Utility for StrongNode development
 
-  Options:
+       Utility for StrongNode development.
 
-    -h, --help  output usage information
+SSYYNNOOPPSSIISS
+       slc [options] [command] [args]
+       slc <npm-command> [npm-command-args]
+       slc <script-file> [args]
 
-  Note that npm and run are optional if the npm-command name or script-file
-  doesn't conflict with other slc commands.
+       Note that the second and third command forms are short forms of the npm
+       and run commands described below. An unrecognized slc command  that  is
+       an  npm  command  will be passed to npm, any other unrecognized command
+       will be passed to the run command.
 
-  Examples:
+OOPPTTIIOONNSS
+       --hh, ----hheellpp
+              print usage information
 
-    $ slc create web mywebapp
-    $ slc run app.js
-    $ slc npm list
-    $ slc npm install -f express
-    Same as above, but omitting optional "npm":
-    $ slc install -f express
+CCOOMMMMAANNDDSS
+       nnppmm::   run a npm command
+
+       rruunn::   run a node script
+
+       eennvv::   print node environment information
+
+       vveerrssiioonn::
+              print node version
+
+       hheellpp::  print usage information for a command
+
+       ddeebbuugg:: debug a script
+
+       ccrreeaattee::
+              create node script boilerplate
+
+EEXXAAMMPPLLEESS
+       $ slc create web mywebapp
+       $ slc run app.js
+       $ slc npm list
+       $ slc npm install -f express
+
+       As above, but omitting optional "npm":
+
+
+
+           $ slc install -f express
+
+
+
+
+
+
+                                  August 2013                            SLC()
