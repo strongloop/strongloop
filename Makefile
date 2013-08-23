@@ -1,8 +1,27 @@
-.PHONY: test test-mocha
+.PHONY: test
 
-test: test-mocha
+# Pre-conditions:
+#   ruby 1.9.3
+#   gem install cucumber rspec
+
+.PHONY: test-cucumber
+test-cucumber: check_cucumber
+	export PATH=${PATH}:${PWD}/bin;export testFolder=/tmp;cd node_modules/automation/strongnode && cucumber -f pretty features/cli_slc*
+
+test: test-cucumber
+
+
+check_cucumber:
+	gem list cucumber
+	gem list rspec
+
+.PHONY: test-mocha
+test-mocha:
 	JENKINS_HOME=true ./node_modules/.bin/mocha
 
+test: test-mocha
+
+.PHONY: build
 build: man
 
 MKD = $(wildcard man/*.md)
