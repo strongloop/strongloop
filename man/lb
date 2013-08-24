@@ -4,7 +4,7 @@ Usage:
 
 Commands:
 
-  workspace <name>
+  workspace [name]
   
     Initialize a workspace in a new directory with an optional <name>. The
     default <name> is "loopback-workspace".
