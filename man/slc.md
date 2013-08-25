@@ -34,6 +34,8 @@ command.
   debug a script
 * `create:`:
   create node script boilerplate
+* `lb:`:
+  create LoopBack workspaces, applications, and models
 
 ### EXAMPLES
 
