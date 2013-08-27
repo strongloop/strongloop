@@ -3,17 +3,56 @@ ENV()                                                                    ENV()
 
 
 NNAAMMEE
-       eennvv - Print node runtime environment information
+       eennvv - Print or configure runtime environment
 
-       Print  information  about  node  run-time from the process module (ver-
-       sions, platform, config, execPath, and features).
+       With  no  options,  prints  information  about  node  run-time from the
+       process module (paths, platform, config, execPath, and  features).  The
+       output can be limited by using one or more selectors, see examples.
+
+       With  ----uussee--nnppmm,  sets the system npm link to either the version of npm
+       bundled with node ("legacy"), or the version of npm  bundled  with  slc
+       ("default").  No  matter  which npm is installed into the path, the slc
+       version can always be called using ssllcc nnppmm .......
 
 SSYYNNOOPPSSIISS
-       slc env [options]
+       slc env [options] [selectors...]
 
 OOPPTTIIOONNSS
        --hh, ----hheellpp
               print usage information
+
+       ----uussee--nnppmm ddeeffaauulltt||lleeggaaccyy
+              Use default npm from slc, or the legacy version of  npm  bundled
+              with node.
+
+EEXXAAMMPPLLEESS
+       Print zlib version:
+
+
+
+           % slc env versions zlib
+           { versions: { zlib: '1.2.3' } }
+
+
+
+       Print paths:
+
+
+
+           % slc env paths
+           { paths:
+              { link:
+                 { node: '/usr/local/bin/node',
+                   npm: '/usr/local/bin/npm',
+                   slc: '/usr/local/bin/slc' },
+                exec:
+                 { node: '/usr/local/stow/installed-node/bin/node',
+                   npm: '/usr/local/lib/node_modules/slc/node_modules/npm/bin/npm-cli.js',
+                   slc: '/usr/local/lib/node_modules/slc/bin/slc',
+                   slcNpm: '/usr/local/lib/node_modules/slc/node_modules/.bin/npm',
+                   nodeNpm: '/usr/local/stow/installed-node/bin/npm' } } }
+
+
 
 
 
