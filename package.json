@@ -15,7 +15,7 @@
     "slc": "./bin/slc"
   },
   "scripts": {
-    "lint": "./node_modules/.bin/jshint *.js lib test",
+    "lint": "./node_modules/.bin/jshint --exclude test/sandbox *.js lib test",
     "docs": "./node_modules/.bin/sdocs --out docs",
     "test": "./node_modules/.bin/mocha --reporter list"
   },
@@ -45,6 +45,10 @@
     "automation": "git+ssh://git@github.com:strongloop/automation.git",
     "jshint": "~2.1.9",
     "mocha": "~1.12.0",
-    "strong-docs": "git+ssh://git@github.com:strongloop/strong-docs.git"
+    "chai": "latest",
+    "nexpect": "git://github.com/strongloop/nexpect.git#spawn-env",
+    "npm-registry-mock": "latest",
+    "fs.extra": "latest",
+    "strong-docs": "strongloop/strong-docs"
   }
 }
