@@ -15,7 +15,7 @@
     "slc": "./bin/slc"
   },
   "scripts": {
-    "lint": "./node_modules/.bin/jshint *.js lib",
+    "lint": "./node_modules/.bin/jshint *.js lib test",
     "docs": "./node_modules/.bin/sdocs --out docs",
     "test": "./node_modules/.bin/mocha --reporter list"
   },

@@ -8,9 +8,9 @@ var fs = require('fs');
 var path = require('path');
 
 // We need to fudge a bit for Jenkins. If under Jenkins, we point to ./test as the home directory
-var home = isRunningOnJenkins()
-  ? path.join(process.cwd(), 'test')
-  : process.env['HOME'];
+var home = isRunningOnJenkins() ?
+  path.join(process.cwd(), 'test') :
+  process.env.HOME;
 
 var getFileSyncFile = path.join(home, '.gitconfig');
 
@@ -30,7 +30,7 @@ exports.strongops = {
 exports.strongops.getDefaults = exports.strongops.getGitConfigInfo;
 
 function isRunningOnJenkins() {
-  return process.env['JENKINS_HOME'] || process.env['SLC_TEST'];
+  return process.env.JENKINS_HOME || process.env.SLC_TEST;
 }
 
 function getFromRc(rcText, localName, defaultValue) {
