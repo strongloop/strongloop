@@ -34,14 +34,13 @@ command.
   debug a script
 * `create:`:
   create node script boilerplate
+* `lb:`:
+  create LoopBack workspaces, applications, and models
 
 ### EXAMPLES
 
-    $ slc create web mywebapp
-    $ slc run app.js
-    $ slc npm list
-    $ slc npm install -f express
-
-As above, but omitting optional "npm":
-
-    $ slc install -f express
+        $ slc create web mywebapp
+        $ slc run app.js
+        $ slc npm list
+        $ slc npm install -f express
+        $ slc install -f express

@@ -38,19 +38,14 @@ CCOOMMMMAANNDDSS
        ccrreeaattee::
               create node script boilerplate
 
+       llbb::    create LoopBack workspaces, applications, and models
+
 EEXXAAMMPPLLEESS
-       $ slc create web mywebapp
-       $ slc run app.js
-       $ slc npm list
-       $ slc npm install -f express
-
-       As above, but omitting optional "npm":
-
-
-
+           $ slc create web mywebapp
+           $ slc run app.js
+           $ slc npm list
+           $ slc npm install -f express
            $ slc install -f express
-
-
 
 
 

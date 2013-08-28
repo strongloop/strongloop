@@ -33,12 +33,18 @@
     "prompt": "~0.2.11",
     "is2": "~0.0.3",
     "debug": "~0.7.2",
+    "async": "~0.2.9",
+    "colors": "~0.6.1",
+    "read": "~1.0.5",
+    "inflection": "~1.2.6",
+    "loopback-workspace": "git+ssh://git@github.com:strongloop/loopback-workspace.git",
+    "mkdirp": "~0.3.5",
     "which": "~1.0.5"
   },
   "devDependencies": {
     "automation": "git+ssh://git@github.com:strongloop/automation.git",
     "jshint": "~2.1.9",
     "mocha": "~1.12.0",
-    "strong-docs": "strongloop/strong-docs"
+    "strong-docs": "git+ssh://git@github.com:strongloop/strong-docs.git"
   }
 }
