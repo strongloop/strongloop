@@ -53,7 +53,7 @@ EEXXAAMMPPLLEESS
 
 
 
-           slc strongops
+               $ slc strongops
 
 
 
@@ -62,7 +62,7 @@ EEXXAAMMPPLLEESS
 
 
 
-           slc strongops --package
+               $ slc strongops --package
 
 
 
@@ -71,7 +71,7 @@ EEXXAAMMPPLLEESS
 
 
 
-           slc strongops --name "Bill Williams" --email "bw@strongops.com" --password "12345678"
+               $ slc strongops --name "Bill Williams" --email "bw@strongops.com" --password "12345678"
 
 
 
@@ -80,7 +80,7 @@ EEXXAAMMPPLLEESS
 
 
 
-           slc strongops --saveall
+               $ slc strongops --saveall
 
 
 

@@ -17,20 +17,20 @@ selectors, see examples.
 
 Print zlib version:
 
-    % slc env versions zlib
-    { versions: { zlib: '1.2.3' } }
+        % slc env versions zlib
+        { versions: { zlib: '1.2.3' } }
 
 Print paths:
 
-    % slc env paths
-    { paths:
-       { link:
-          { node: '/usr/local/bin/node',
-            npm: '/usr/local/bin/npm',
-            slc: '/usr/local/bin/slc' },
-         exec:
-          { node: '/usr/local/stow/installed-node/bin/node',
-            npm: '/usr/local/lib/node_modules/slc/node_modules/npm/bin/npm-cli.js',
-            slc: '/usr/local/lib/node_modules/slc/bin/slc',
-            slcNpm: '/usr/local/lib/node_modules/slc/node_modules/.bin/npm',
-            nodeNpm: '/usr/local/stow/installed-node/bin/npm' } } }
+        % slc env paths
+        { paths:
+           { link:
+              { node: '/usr/local/bin/node',
+                npm: '/usr/local/bin/npm',
+                slc: '/usr/local/bin/slc' },
+             exec:
+              { node: '/usr/local/stow/installed-node/bin/node',
+                npm: '/usr/local/lib/node_modules/slc/node_modules/npm/bin/npm-cli.js',
+                slc: '/usr/local/lib/node_modules/slc/bin/slc',
+                slcNpm: '/usr/local/lib/node_modules/slc/node_modules/.bin/npm',
+                nodeNpm: '/usr/local/stow/installed-node/bin/npm' } } }
