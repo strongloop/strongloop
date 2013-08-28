@@ -41,18 +41,18 @@ specified on the command line.
 The following will have strongops prompt for the name, email and password.  The
 JSON containing the strongops credentials are sent to standard output:
 
-    slc strongops
+        $ slc strongops
 
 Next, the strongops credentials are saved to the local `./package.json` file:
 
-    slc strongops --package
+        $ slc strongops --package
 
 By using the options for name, email and password, you can have a
 non-interactive registration, e.g. that will not prompt:
 
-    slc strongops --name "Bill Williams" --email "bw@strongops.com" --password "12345678"
+        $ slc strongops --name "Bill Williams" --email "bw@strongops.com" --password "12345678"
 
 Using the saveall option causes strongops to save the credentials to
 `./package.json`, `./strongloop.json` and `~/strongloop.json`:
 
-    slc strongops --saveall
+        $ slc strongops --saveall

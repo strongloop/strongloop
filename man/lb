@@ -9,32 +9,57 @@ SSYYNNOOPPSSIISS
        slc lb <command> <arg> [flags]
 
 CCOOMMMMAANNDDSS
-       workspace [name]
+       Supported llbb commands are:
+
+       wwoorrkkssppaaccee [[nnaammee]]
               Initialize a workspace as a new empty directory with an optional
               _n_a_m_e. The default _n_a_m_e is "loopback-workspace".
 
-              $ slc lb workspace my-loopback-workspace
 
-       api _n_a_m_e
-              Create a LoopBack  application  in  a  new  directory  within  a
-              workspace using the given _n_a_m_e. The _n_a_m_e arg is required.
 
-              $  cd  my-loopback-workspace  $ slc lb api my-app $ slc app # to
-              run the app
+             $ slc lb workspace my-loopback-workspace
 
-       model _n_a_m_e
-              Create a model in an existing LoopBack application. If you  pro-
-              vide the --ii or ----iinntteerraaccttiivvee flags, you will be prompted through
-              a model configuration.
 
-              $ cd my-app $ slc lb model -i
 
-       api-example
-              Create a new LoopBack application from the sample template, in a
-              directory named llooooppbbaacckk--ssaammppllee--aapppp.
 
-              $ slc lb api-example $ cd loopback-sample-app $ slc app # to run
-              the app
+       aappii <<nnaammee>>
+       Create a LoopBack application in a new  directory  within  a  workspace
+       using the given _n_a_m_e. The _n_a_m_e arg is required.
+
+
+
+             $ cd my-loopback-workspace
+             $ slc lb api my-app
+             $ slc app # to run the app
+
+
+
+
+       mmooddeell <<nnaammee>>
+       Create  a model in an existing LoopBack application. If you provide the
+       --ii or ----iinntteerraaccttiivvee flags, you will be prompted through a model config-
+       uration.
+
+
+
+             $ cd my-app
+             $ slc lb model -i
+
+
+
+
+       aappii--eexxaammppllee [[nnaammee]]
+       Create a new LoopBack application from the sample template, in a direc-
+       tory with the given name (defaults to ssllss--ssaammppllee--aapppp).
+
+
+
+             $ slc lb api-example
+             $ cd sls-sample-app
+             $ slc app # to run the app
+
+
+
 
 OOPPTTIIOONNSS
        --hh, ----hheellpp

@@ -39,11 +39,8 @@ command.
 
 ### EXAMPLES
 
-    $ slc create web mywebapp
-    $ slc run app.js
-    $ slc npm list
-    $ slc npm install -f express
-
-As above, but omitting optional "npm":
-
-    $ slc install -f express
+        $ slc create web mywebapp
+        $ slc run app.js
+        $ slc npm list
+        $ slc npm install -f express
+        $ slc install -f express
