@@ -36,6 +36,8 @@ command.
   create node script boilerplate
 * `lb:`:
   create LoopBack workspaces, applications, and models
+* `example:`:
+  create example applications
 
 ### EXAMPLES
 
@@ -44,3 +46,4 @@ command.
         $ slc npm list
         $ slc npm install -f express
         $ slc install -f express
+        $ slc example chat my-chat
