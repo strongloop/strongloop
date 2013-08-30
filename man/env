@@ -1,7 +1,5 @@
 ENV()                                                                    ENV()
 
-
-
 NNAAMMEE
        eennvv - Print runtime environment
 
@@ -19,16 +17,10 @@ OOPPTTIIOONNSS
 EEXXAAMMPPLLEESS
        Print zlib version:
 
-
-
                % slc env versions zlib
                { versions: { zlib: '1.2.3' } }
 
-
-
        Print paths:
-
-
 
                % slc env paths
                { paths:
@@ -42,10 +34,5 @@ EEXXAAMMPPLLEESS
                        slc: '/usr/local/lib/node_modules/slc/bin/slc',
                        slcNpm: '/usr/local/lib/node_modules/slc/node_modules/.bin/npm',
                        nodeNpm: '/usr/local/stow/installed-node/bin/npm' } } }
-
-
-
-
-
 
                                   August 2013                            ENV()

@@ -1,7 +1,5 @@
 CREATE()                                                              CREATE()
 
-
-
 NNAAMMEE
        ccrreeaattee - Create node script boilerplate
 
@@ -56,8 +54,5 @@ OOPPTTIIOONNSS
        --ss, ----ssttrreeaamm <<ttyyppee>>
               implement  a  stream  interface  (readable,  writeable,  duplex,
               transform)
-
-
-
 
                                   August 2013                         CREATE()

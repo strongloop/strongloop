@@ -1,7 +1,5 @@
 DEBUG()                                                                DEBUG()
 
-
-
 NNAAMMEE
        ddeebbuugg - Debug module with node-inspector
 
@@ -30,7 +28,5 @@ OOPPTTIIOONNSS
 
        If no module is specified, then slc will start REPL and load the module
        in the current directory.
-
-
 
                                   August 2013                          DEBUG()

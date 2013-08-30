@@ -1,7 +1,5 @@
 NPM()                                                                    NPM()
 
-
-
 NNAAMMEE
        nnppmm - Run an npm command
 
@@ -21,8 +19,5 @@ OOPPTTIIOONNSS
        llss     list packages with their support status
 
        uuppddaattee update packages to latest
-
-
-
 
                                   August 2013                            NPM()

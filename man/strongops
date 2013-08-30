@@ -1,7 +1,5 @@
 STRONGOPS()                                                        STRONGOPS()
 
-
-
 NNAAMMEE
        ssttrroonnggooppss - Register with StrongOps
 
@@ -51,40 +49,21 @@ EEXXAAMMPPLLEESS
        word. The JSON containing the strongops credentials are sent  to  stan-
        dard output:
 
-
-
                $ slc strongops
-
-
 
        Next,  the  strongops credentials are saved to the local ..//ppaacckkaaggee..jjssoonn
        file:
 
-
-
                $ slc strongops --package
-
-
 
        By using the options for name, email  and  password,  you  can  have  a
        non-interactive registration, e.g. that will not prompt:
 
-
-
                $ slc strongops --name "Bill Williams" --email "bw@strongops.com" --password "12345678"
-
-
 
        Using  the  saveall  option causes strongops to save the credentials to
        ..//ppaacckkaaggee..jjssoonn, ..//ssttrroonngglloooopp..jjssoonn and ~~//ssttrroonngglloooopp..jjssoonn:
 
-
-
                $ slc strongops --saveall
-
-
-
-
-
 
                                   August 2013                      STRONGOPS()

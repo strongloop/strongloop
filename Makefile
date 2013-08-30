@@ -37,7 +37,7 @@ man/%.roff: man/%.md2 $(RONN)
 	ronn --pipe -r $< > $@
 
 man/%: man/%.roff
-	groff -Tascii -mandoc -c $< > $@
+	groff -Tascii -mandoc -c $< | uniq > $@
 
 check-ronn:
 ifeq ($(shell which ronn),)

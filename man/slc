@@ -1,7 +1,5 @@
 SLC()                                                                    SLC()
 
-
-
 NNAAMMEE
        ssllcc - Utility for StrongNode development
 
@@ -46,8 +44,5 @@ EEXXAAMMPPLLEESS
            $ slc npm list
            $ slc npm install -f express
            $ slc install -f express
-
-
-
 
                                   August 2013                            SLC()
