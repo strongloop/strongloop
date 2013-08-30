@@ -36,6 +36,10 @@ specified on the command line.
   Saves StrongOps account credentials to `./strongloop.json`, `./package.json` and
   `~/strongloop.json` files.
 
+See [strong-agent](http://docs.strongops.com/strong-agent) for a description of
+the format of the `package.json` and `strongloop.json` properties used by Strong
+Ops.
+
 ### EXAMPLES
 
 The following will have strongops prompt for the name, email and password.  The
@@ -56,3 +60,15 @@ Using the saveall option causes strongops to save the credentials to
 `./package.json`, `./strongloop.json` and `~/strongloop.json`:
 
         $ slc strongops --saveall
+
+Applications can be set up so that whether Strong Ops profiling occurs is
+configured at deploy/run time, based on whether the credentials have been
+saved. To do this, call `profile()` with no arguments, as below:
+
+        // app.js
+        // Call profile() before any modules which need profiling are
+        // required. In the absence of credentials, this is effectively
+        // a null op.
+        require('strong-agent').profile();
+
+        // ... rest of application is required ...

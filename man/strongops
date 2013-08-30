@@ -44,6 +44,10 @@ OOPPTTIIOONNSS
               Saves  StrongOps  account  credentials   to   ..//ssttrroonngglloooopp..jjssoonn,
               ..//ppaacckkaaggee..jjssoonn and ~~//ssttrroonngglloooopp..jjssoonn files.
 
+       See  strong-agent _h_t_t_p_:_/_/_d_o_c_s_._s_t_r_o_n_g_o_p_s_._c_o_m_/_s_t_r_o_n_g_-_a_g_e_n_t for a descrip-
+       tion of the format of the ppaacckkaaggee..jjssoonn and  ssttrroonngglloooopp..jjssoonn  properties
+       used by Strong Ops.
+
 EEXXAAMMPPLLEESS
        The  following will have strongops prompt for the name, email and pass-
        word. The JSON containing the strongops credentials are sent  to  stan-
@@ -65,5 +69,17 @@ EEXXAAMMPPLLEESS
        ..//ppaacckkaaggee..jjssoonn, ..//ssttrroonngglloooopp..jjssoonn and ~~//ssttrroonngglloooopp..jjssoonn:
 
                $ slc strongops --saveall
+
+       Applications can be set up so that whether Strong Ops profiling  occurs
+       is configured at deploy/run time, based on whether the credentials have
+       been saved. To do this, call pprrooffiillee(()) with no arguments, as below:
+
+               // app.js
+               // Call profile() before any modules which need profiling are
+               // required. In the absence of credentials, this is effectively
+               // a null op.
+               require('strong-agent').profile();
+
+               // ... rest of application is required ...
 
                                   August 2013                      STRONGOPS()
