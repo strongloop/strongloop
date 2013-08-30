@@ -26,7 +26,7 @@ This will run the `hello-world.js` script with `StrongLoop Node` and output:
 `slc`'s `create` command allows you to generate conventional `Node.js`
 boilerplate for modules and entire programs.
 
-To generate a console program for issue the following `slc` command:
+To generate a console program issue the following `slc` command:
 
     $ slc create cli my-console-program
 
@@ -40,12 +40,7 @@ This command will output:
 
 ## Create a Simple Web App
 
-The `create` command supports several program types. The `web` type is used by
-default. Both of the following will do the same thing.
-
-    $ slc create my-app
-    
-or
+The `create` command supports several program types. The following generates the boilerplate for a web app.
 
     $ slc create web my-app
     
@@ -59,8 +54,7 @@ By default, the generated web app will contain the following:
  
 ## Adding Modules
 
-To simplify complex applications, separate your code into small discrete
-modules. A module is a JavaScript file with a single distinct purpose. It should
+A module is a JavaScript file with a single distinct purpose. It should
 accept some form of input, and generate meaningful output preferably with an
 asynchronous api.
 
@@ -75,10 +69,18 @@ This command also supports automatically generating tests.
 
     $ slc create module my-module --test
 
-It also allows you to supply a stream type to implement
+It also allows you to supply a stream type to implement. This will generate the
+methods required by the specified [streams2](http://nodejs.org/api/stream.html) interface.
 
-    $ slc create module my-module --stream transform
+ - [readable](http://nodejs.org/api/stream.html#stream_class_stream_readable)
+ - [writeable](http://nodejs.org/api/stream.html#stream_class_stream_writable)
+ - [duplex](http://nodejs.org/api/stream.html#stream_class_stream_duplex)
+ - [transform](http://nodejs.org/api/stream.html#stream_class_stream_transform)
 
-For more information see the help for each command.
+```sh
+$ slc create module my-module --stream transform
+```
+
+For more information see the help for the create command.
 
     $ slc create -h
