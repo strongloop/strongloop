@@ -38,11 +38,15 @@ CCOOMMMMAANNDDSS
 
        llbb::    create LoopBack workspaces, applications, and models
 
+       eexxaammppllee::
+              create example applications
+
 EEXXAAMMPPLLEESS
            $ slc create web mywebapp
            $ slc run app.js
            $ slc npm list
            $ slc npm install -f express
            $ slc install -f express
+           $ slc example chat my-chat
 
                                   August 2013                            SLC()
