@@ -84,3 +84,11 @@ $ slc create module my-module --stream transform
 For more information see the help for the create command.
 
     $ slc create -h
+
+## Note on `npm test`
+
+To have the tests work on your system, type:
+
+    $ export SLC_TEST=1
+
+This changes what slc considers home, for the strongops command.
