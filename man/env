@@ -35,4 +35,4 @@ EEXXAAMMPPLLEESS
                        slcNpm: '/usr/local/lib/node_modules/slc/node_modules/.bin/npm',
                        nodeNpm: '/usr/local/stow/installed-node/bin/npm' } } }
 
-                                  August 2013                            ENV()
+                                September 2013                           ENV()
