@@ -32,6 +32,9 @@ set by default, if no other save options exist.
   exists.
 * `--global`:
   Saves StrongOps account credentials in a `~/strongloop.json` file.
+* `--register`:
+  Skips attempt to login and registers a new user. By default, the command
+  logs users into StrongOps.
 * `--saveall`:
   Saves StrongOps account credentials to `./strongloop.json`, `./package.json` and
   `~/strongloop.json` files.
