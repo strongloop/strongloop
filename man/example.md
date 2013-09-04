@@ -19,14 +19,14 @@ Create StrongLoop example applications.
 
 Supported example types are:
 
-- `suite`: loopback API server, demonstrates loopback integrated with
-  strongnode, this is the default type
+- `suite`: LoopBack API server, demonstrates LoopBack integrated with
+  StrongNode, this is the default type
 - `chat`: web chat application, demonstrates socket.io and express integrated
-  with strongnode clustering
+  with StrongNode clustering
 - `urlsaver`: document storage API server, demonstrates creating an API server
-  with express, request, Q, and strongnode clustering
+  with express, request, Q, and StrongNode clustering
 - `blog`: weblog application, demonstates an express web app integrated with
-  strongnode clustering
+  StrongNode clustering
 
 ### Examples
 
