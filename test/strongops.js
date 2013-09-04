@@ -1,36 +1,45 @@
 var assert = require('assert');
+var path = require('path');
 var is = require('is2');
 var strops = require('../lib/commands/strongops');
 var test = require('./config').strongops;
 
+var originalUserHome = strops.userHome;
+
+beforeEach(function() { strops.userHome = originalUserHome; });
+
 describe('getNpmEmail', function() {
   it('Should return the email string from ~/.npmrc', function() {
-    assert.equal(test.getNpmEmail, strops.test.getNpmEmail());
+    givenUserHomeInTestFolder();
+    assert.equal(test.npmEmail, strops.test.npmEmail());
   });
 });
 
 describe('getGitConfigInfo', function() {
   it('Should return the user name and email string from ~/.gitconfig', function() {
-    var git = strops.test.getGitConfigInfo();
-    assert.deepEqual(git, strops.test.getGitConfigInfo());
+    givenUserHomeInTestFolder();
+    var git = strops.test.gitConfig();
+    assert.deepEqual(git, strops.test.gitConfig());
   });
 });
 
 describe('getUserHome', function() {
   it('Should return the home directory for the user', function() {
-    assert.equal(test.getUserHome, strops.test.getUserHome());
+    assert.equal(test.userHome, strops.userHome);
   });
 });
 
 // FIXME: make another test with a config, to test .npmrc email retrieval
 describe('getDefaults', function() {
   it('Should get the defaults from ~/.gitconfig and possibly ~/.npmrc', function() {
+    givenUserHomeInTestFolder();
     assert.deepEqual(test.getDefaults, strops.test.getDefaults());
   });
 });
 
 describe('getCmdLineOverrides', function() {
   it('Given an empty options object, should an empty object', function() {
+    givenUserHomeInTestFolder();
     assert.deepEqual({}, strops.test.getCmdLineOverrides());
   });
 });
@@ -88,7 +97,10 @@ describe('getFileSync', function() {
 describe('getFileSync', function() {
   it('Should return the contents of a file when file is present.', function() {
     //console.log('getFileSync:', test.getFileSync);
-    assert.ok(is.nonEmptyStr(strops.test.getFileSync(test.getFileSync)) === true);
+    assert.ok(is.nonEmptyStr(strops.test.getFileSync(test.anExistingFile)) === true);
   });
 });
 
+function givenUserHomeInTestFolder() {
+  strops.userHome = path.resolve(__dirname);
+}
