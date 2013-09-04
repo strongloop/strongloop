@@ -8,6 +8,8 @@
 
 * `-h`, `--help`:
   print usage information
+* `--no-install`:
+  skip the `slc npm install` step after boilerplate is created
 * `name`:
   name of boiler-plate to create
 * `...`:
