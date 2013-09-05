@@ -22,7 +22,7 @@ var expected = strings.expected;
 // for logic flow must be in global scope.
 var prompt;
 var ecount = 0;
-var debug = false;
+var debug = true;
 var email = Date.now().toString()+input.email;
 
 main();
@@ -34,7 +34,7 @@ main();
 function main() {
 
   // create the child process that runs the slc strongops command
-  prompt  = spawn('/usr/bin/env', ['slc', 'strongops']);  // make a child process
+  prompt  = spawn('/usr/bin/env', ['slc', 'strongops', '--register']);
 
   // handle data events on the child process's stdout stream
   // specifically, we are looking for the prompts, so we can respond
@@ -98,9 +98,15 @@ function handleStdOut(data) {
   case output.password2Prompt:
     respond(input.password);
     break;
+  case output.msg1:
+  case output.msg2:
+  case output.msg3:
+  case '\n':
+    break;
   default:
     var lines = data.split('\n');
 
+    ecount = 0;
     for (var i=0; i<lines.length; i++) {
       // Here we match the expected output 1 line at a time.
       // A line is what is output by the command and it may contain '/n'
@@ -112,9 +118,14 @@ function handleStdOut(data) {
 
         // If we are at the LAST expected line and the text is valid
         // then mark the global, expectedResultSeen, as true
-        if (ecount === expected.length && isValid(lines[i]))
-          expectedResultSeen = true;
-      } else if (debug) {
+        if (ecount > 0) {
+          if (fs.existsSync('./strongloop.json') &&
+              isValid(require('./strongloop.json'))) {
+            expectedResultSeen = true;
+            process.exit(0);
+          }
+        }
+      } else if (debug && lines[i] !== '') {
         process.stdout.write('??? \''+lines[i]+'\'');
       }
     }
@@ -128,9 +139,8 @@ function handleStdOut(data) {
  */
 function isValid(data) {
   var status = true;
-  var data = JSON.parse(data);
 
-  if (data.email !== email) {
+  if (!is.nonEmptyStr(data.email)) {
     console.error('Unexpected email:', data.email);
     status = false;
   }
@@ -145,13 +155,13 @@ function isValid(data) {
     status = false;
   }
 
-  if (!is.nonEmptyStr(data.created)) {
+  if (!is.nonEmptyStr(data.userKey)) {
     console.error('Unexpected id:', data.id);
     status = false;
   }
 
-  if (!is.array(data.apps)) {
-    console.error('Unexpected apps:', data.apps);
+  if (!is.nonEmptyStr(data.created)) {
+    console.error('Unexpected id:', data.id);
     status = false;
   }
 

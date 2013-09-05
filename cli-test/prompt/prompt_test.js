@@ -20,4 +20,4 @@ var cb = function(err, userData) {
   process.exit(0);
 };
 
-strops.test.promptUserForData(overrides, defaults, cb);
+strops.test.promptUserForReg(overrides, defaults, cb);

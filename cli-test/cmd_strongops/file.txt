@@ -1,3 +1,2 @@
 
-Since your StrongOps credentials were not saved, here they are:
-{"id":"99cb290b978c6395ac4ab9d57c8cb571","name":"E. L. Meinfelder","userKey":"99cb290b978c6395ac4ab9d57c8cb571","email":"1376613215888-test@strongloop.com","created":"2013-08-16T05:33:37.000Z","apps":[],"sid":"SaC8W9Ctg83wJ02o7lcuCOoA.v4+bSkpvfeBfFKsH/1eBEfRAznvPUgBQeOwr3eX8K54"}
+You are now registered. Welcome to StrongOps!
