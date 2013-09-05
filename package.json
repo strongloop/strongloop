@@ -8,7 +8,6 @@
     "url": "git://github.com/strongloop/slc.git"
   },
   "author": "",
-  "license": "...",
   "readmeFilename": "README.md",
   "bin": {
     "slnode": "./bin/slc",
