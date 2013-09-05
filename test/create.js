@@ -12,7 +12,7 @@ describe('create cli', function() {
   beforeEach(sandbox.reset);
 
   it('sets "main" entry in package.json', function (done) {
-    spawnCliInSandbox(['create', 'cli', 'test-app'])
+    spawnCliInSandbox(['create', 'cli', 'test-app', '--no-install'])
       .run(function(err) {
         if (err) done(err);
         var packageMeta = parsePackageJsonOf('test-app');
@@ -26,7 +26,7 @@ describe('create web', function() {
   beforeEach(sandbox.reset);
 
   it('sets "main" entry in package.json', function (done) {
-    spawnCliInSandbox(['create', 'web', 'test-app'])
+    spawnCliInSandbox(['create', 'web', 'test-app', '--no-install'])
       .run(function(err) {
         if (err) done(err);
         var packageMeta = parsePackageJsonOf('test-app');

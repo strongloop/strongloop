@@ -3,6 +3,7 @@
 var path = require('path');
 
 var nspawn = require('nexpect').spawn;
+var debug = require('debug')('slc');
 
 var sandbox = require('./sandbox.js');
 
@@ -19,13 +20,15 @@ function spawnCliInSandbox(args) {
     cwd: sandbox.PATH,
     env: envCleanOfNpm(),
     stripColors: true,
-    verbose: /\btest([,*]|$)/.test(process.env.DEBUG)
+    verbose: debug.enabled // undocumented feature, means we are in debug mode
   };
+  debug('nspawn node <%s> args <%s> at cwd <%s>', node, nodeArgs, opts.cwd);
   return nspawn(node, nodeArgs, opts);
 }
 
 exports.spawnCliInSandbox = spawnCliInSandbox;
 
+/** Return process.env copy, with all variables starting with 'npm_' removed */
 function envCleanOfNpm() {
   var result = {};
   for (var k in process.env) {
