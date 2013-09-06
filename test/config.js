@@ -7,34 +7,23 @@
 var fs = require('fs');
 var path = require('path');
 
-// We need to fudge a bit for Jenkins. If under Jenkins, we point to ./test as the home directory
-var home = isRunningOnJenkins() ?
-  path.join(process.cwd(), 'test') :
-  process.env.HOME;
+// This is a duplication of the same code in the module under test
+// (i.e. stronops.js) It's questionable whether such test brings any benefit
+var home = process.env[(process.platform === 'win32') ? 'USERPROFILE'  : 'HOME'];
 
 var getFileSyncFile = path.join(home, '.gitconfig');
 
-var gitConfig = fs.readFileSync(path.join(home, '.gitconfig'), 'utf-8');
-var npmConfig = fs.readFileSync(path.join(home, '.npmrc'), 'utf-8');
-
+/**
+ * Configuration options as set in test gitconfig and npmrc
+ */
 exports.strongops = {
-  getNpmEmail: getFromRc(npmConfig, 'email', 'edmond@stdarg.com'),
-  getGitConfigInfo: {
-    name: getFromRc(gitConfig, 'name', 'Edmond Meinfelder'),
-    email: getFromRc(gitConfig, 'email', 'edmond@stdarg.com'),
+  npmEmail: 'npmrc@example.com',
+  gitConfig: {
+    name: 'GitConfig Name',
+    email: 'gitconfig@example.com'
   },
-  getUserHome: home,
-  getFileSync: getFileSyncFile,
+  userHome: home,
+  anExistingFile: path.resolve(__dirname, '.gitconfig')
 };
 
-exports.strongops.getDefaults = exports.strongops.getGitConfigInfo;
-
-function isRunningOnJenkins() {
-  return process.env.JENKINS_HOME || process.env.SLC_TEST;
-}
-
-function getFromRc(rcText, localName, defaultValue) {
-  var regex = new RegExp('^\\s*' + localName + '\\s*=\\s*(.*)\\s*$', 'm');
-  var match = rcText.match(regex);
-  return match ? match[1] : defaultValue;
-}
+exports.strongops.getDefaults = exports.strongops.gitConfig;
