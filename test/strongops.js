@@ -104,3 +104,4 @@ describe('getFileSync', function() {
 function givenUserHomeInTestFolder() {
   strops.userHome = path.resolve(__dirname);
 }
+

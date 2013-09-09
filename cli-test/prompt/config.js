@@ -19,3 +19,4 @@ exports.strings = {
     password: "12345678\n",
   },
 }
+

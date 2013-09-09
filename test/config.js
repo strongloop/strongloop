@@ -27,3 +27,4 @@ exports.strongops = {
 };
 
 exports.strongops.getDefaults = exports.strongops.gitConfig;
+
