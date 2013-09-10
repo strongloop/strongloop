@@ -1,6 +1,6 @@
 {
   "name": "slc",
-  "version": "1.2.0-1",
+  "version": "1.2.0",
   "description": "Strongloop node command line",
   "main": "index.js",
   "repository": {
