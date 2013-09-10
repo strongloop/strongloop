@@ -37,7 +37,7 @@
     "colors": "~0.6.1",
     "read": "~1.0.5",
     "inflection": "~1.2.6",
-    "loopback-workspace": "git+ssh://git@github.com:strongloop/loopback-workspace.git#strongloopsuite-1.0.0-2",
+    "loopback-workspace": "~1.0.0",
     "mkdirp": "~0.3.5",
     "which": "~1.0.5"
   },
