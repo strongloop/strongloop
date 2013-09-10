@@ -3,4 +3,23 @@
   , "quotmark": "single"
   , "eqnull": true
   , "node": true
+  , "browser": false
+  , "expr": true
+  , "indent": 2
+  , "maxdepth": 5
+  , "maxlen": 80
+  , "maxstatements": 100
+  , "eqeqeq": true
+  , "undef": true
+  , "unused": true
+  , "trailing": true
+  , "white": false
+  , "globals" : {
+      "it": true,
+      , "console": true
+      , "logger": true
+      , "describe": true
+      , "expect": true
+      , "beforeEach": true
+    }
 }
