@@ -38,8 +38,10 @@ set by default, if no other save options exist.
 * `--saveall`:
   Saves StrongOps account credentials to `./strongloop.json`, `./package.json` and
   `~/strongloop.json` files.
-* `--nocolors`: does not use ANSI colors in the responses. The default is to use
-  colors.
+* `--nocolors`:
+  Does not use ANSI colors in the responses - this is the default.
+* `--colors`: Use ANSI colors. If used with `--nocolors`, overrides
+  `--nocolors`.
 
 See [strong-agent](http://docs.strongops.com/strong-agent) for a description of
 the format of the `package.json` and `strongloop.json` properties used by Strong
