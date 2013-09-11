@@ -1,6 +1,6 @@
 {
   "name": "slc",
-  "version": "1.2.0-1",
+  "version": "1.2.0",
   "description": "Strongloop node command line",
   "main": "index.js",
   "repository": {
@@ -8,6 +8,7 @@
     "url": "git://github.com/strongloop/slc.git"
   },
   "author": "",
+  "license": "...",
   "readmeFilename": "README.md",
   "bin": {
     "slnode": "./bin/slc",
@@ -21,7 +22,7 @@
   "dependencies": {
     "npm": "git+ssh://git@github.com:strongloop/npm.git",
     "nodefly-register": "git+ssh://git@github.com:NodeFly/nodefly-register.git",
-    "slc-create": "git+ssh://git@github.com:strongloop/slc-create.git",
+    "slc-create": "git+ssh://git@github.com:strongloop/slc-create.git#strongloopsuite-1.0.0-2",
     "async": "~0.2.9",
     "commander": "~1.1.1",
     "ini": "~1.1.0",
@@ -36,7 +37,7 @@
     "colors": "~0.6.1",
     "read": "~1.0.5",
     "inflection": "~1.2.6",
-    "loopback-workspace": "git+ssh://git@github.com:strongloop/loopback-workspace.git",
+    "loopback-workspace": "~1.0.0",
     "mkdirp": "~0.3.5",
     "which": "~1.0.5"
   },
