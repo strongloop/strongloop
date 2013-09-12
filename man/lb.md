@@ -9,23 +9,24 @@
 Supported `lb` commands are:
 
 * `workspace [name]`:
-  Initialize a workspace as a new empty directory with an optional <name>.  The
-  default <name> is "loopback-workspace".
-   
+  Initialize a workspace as a new empty directory with an optional name.  The
+  default name is "loopback-workspace".
+
         $ slc lb workspace my-loopback-workspace
-  
-* `api <name>`:
+
+* `project <name>`:
   Create a LoopBack application in a new directory within a workspace
-  using the given <name>. The <name> arg is required.
-   
+  using the given name. The <name> argument is required.
+
         $ cd my-loopback-workspace
-        $ slc lb api my-app
-        $ slc app # to run the app
-   
+        $ slc lb project my-app
+        $ slc run my-app # to run the app
+
 * `model <name>`:
-  Create a model in an existing LoopBack application. If you provide the `-i`
-  or `--interactive` flags, you will be prompted through a model configuration.
-   
+  Create a model in an existing LoopBack application using the given name.
+  If you provide the `-i` or `--interactive` flags, you will be prompted
+  through a model configuration. The <name> argument is required.
+
         $ cd my-app
         $ slc lb model -i
 
@@ -35,8 +36,8 @@ Supported `lb` commands are:
 
         $ slc lb api-example
         $ cd sls-sample-app
-        $ slc app # to run the app
-    
+        $ slc run app # to run the app
+
 ### OPTIONS
 
 * `-h`, `--help`:
