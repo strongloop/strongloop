@@ -22,7 +22,7 @@
   "dependencies": {
     "npm": "git+ssh://git@github.com:strongloop/npm.git",
     "nodefly-register": "git+ssh://git@github.com:NodeFly/nodefly-register.git",
-    "slc-create": "git+ssh://git@github.com:strongloop/slc-create.git#strongloopsuite-1.0.0-3",
+    "slc-create": "git+ssh://git@github.com:strongloop/slc-create.git#strongloopsuite-1.0.0-5",
     "async": "~0.2.9",
     "commander": "~1.1.1",
     "ini": "~1.1.0",
