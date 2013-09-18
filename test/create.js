@@ -20,6 +20,14 @@ describe('create cli', function() {
         done();
       });
   });
+
+  it('installs dependencies', function (done) {
+    spawnCliInSandbox(['create', 'cli', 'test-app'])
+      .run(function(err) {
+        if (err) done(err);
+        checkDependencyExists('test-app', 'commander', done);
+      });
+  });
 });
 
 describe('create web', function() {
@@ -42,3 +50,6 @@ function parsePackageJsonOf(appName) {
   return JSON.parse(content);
 }
 
+function checkDependencyExists(pkg, dependency, cb) {
+  fs.stat(path.join(sandbox.PATH, pkg, 'node_modules', dependency, 'package.json'), cb);
+}
