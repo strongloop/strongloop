@@ -22,7 +22,7 @@ test: test-mocha
 
 .PHONY: test-cli
 test-cli:
-	cd cli-test/cmd_strongops && node drv_stronops_test.js
+	cd cli-test/cmd_strongops && node drv_strongops_test.js
 	cd cli-test/prompt && node drv_prompt_test.js
 
 test: test-cli
