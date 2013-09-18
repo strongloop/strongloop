@@ -71,12 +71,14 @@ describe('getCmdLineOverrides', function() {
     var options = {
       name: 'Monkey',
       email: 'monkey@monkey.com',
-      password: '12345678' };
+      password: '12345678'
+    };
     var expected = {
       name: 'Monkey',
       email: 'monkey@monkey.com',
       password: '12345678',
-      password2: '12345678' };
+      password2: '12345678'
+    };
     assert.deepEqual(expected, strops.test.getCmdLineOverrides(options));
   });
 });
