@@ -17,6 +17,7 @@ describe('create cli', function() {
         if (err) done(err);
         var packageMeta = parsePackageJsonOf('test-app');
         expect(packageMeta.main).to.equal('./bin/test-app');
+        expect(packageMeta.name).to.equal('test-app');
         done();
       });
   });
@@ -26,6 +27,16 @@ describe('create cli', function() {
       .run(function(err) {
         if (err) done(err);
         checkDependencyExists('test-app', 'commander', done);
+      });
+  });
+
+  it('installs into nested path', function (done) {
+    spawnCliInSandbox(['create', 'cli', 'path/to/test-app'])
+      .run(function(err) {
+        if (err) done(err);
+        var packageMeta = parsePackageJsonOf('path/to/test-app');
+        expect(packageMeta.name).to.equal('test-app');
+        checkDependencyExists('path/to/test-app', 'commander', done);
       });
   });
 });
