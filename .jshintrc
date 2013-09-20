@@ -15,7 +15,7 @@
   , "trailing": true
   , "white": false
   , "globals" : {
-      "it": true,
+      "it": true
       , "console": true
       , "logger": true
       , "describe": true
