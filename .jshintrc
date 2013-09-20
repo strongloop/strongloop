@@ -7,11 +7,11 @@
   , "expr": true
   , "indent": 2
   , "maxdepth": 5
-  , "maxlen": 80
+  , "maxlen": 90
   , "maxstatements": 100
   , "eqeqeq": true
   , "undef": true
-  , "unused": true
+  , "unused": "vars"
   , "trailing": true
   , "white": false
   , "globals" : {
