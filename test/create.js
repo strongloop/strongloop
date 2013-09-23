@@ -17,7 +17,26 @@ describe('create cli', function() {
         if (err) done(err);
         var packageMeta = parsePackageJsonOf('test-app');
         expect(packageMeta.main).to.equal('./bin/test-app');
+        expect(packageMeta.name).to.equal('test-app');
         done();
+      });
+  });
+
+  it('installs dependencies', function (done) {
+    spawnCliInSandbox(['create', 'cli', 'test-app'])
+      .run(function(err) {
+        if (err) done(err);
+        checkDependencyExists('test-app', 'commander', done);
+      });
+  });
+
+  it('installs into nested path', function (done) {
+    spawnCliInSandbox(['create', 'cli', 'path/to/test-app'])
+      .run(function(err) {
+        if (err) done(err);
+        var packageMeta = parsePackageJsonOf('path/to/test-app');
+        expect(packageMeta.name).to.equal('test-app');
+        checkDependencyExists('path/to/test-app', 'commander', done);
       });
   });
 });
@@ -42,3 +61,6 @@ function parsePackageJsonOf(appName) {
   return JSON.parse(content);
 }
 
+function checkDependencyExists(pkg, dependency, cb) {
+  fs.stat(path.join(sandbox.PATH, pkg, 'node_modules', dependency, 'package.json'), cb);
+}
