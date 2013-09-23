@@ -1,5 +1,7 @@
 # slc
 
+try DVCS connector
+
 `slc` is a tool for StrongNode development.
 
 ## Install
