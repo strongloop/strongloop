@@ -33,13 +33,13 @@
     "prompt": "~0.2.11",
     "is2": "~0.0.3",
     "debug": "~0.7.2",
-    "async": "~0.2.9",
     "colors": "~0.6.1",
     "read": "~1.0.5",
     "inflection": "~1.2.6",
     "loopback-workspace": "~1.0.0",
     "mkdirp": "~0.3.5",
-    "which": "~1.0.5"
+    "which": "~1.0.5",
+    "fs.extra": "~1.2.1"
   },
   "devDependencies": {
     "automation": "git+ssh://git@github.com:strongloop/automation.git",
@@ -48,7 +48,6 @@
     "chai": "latest",
     "nexpect": "git://github.com/strongloop/nexpect.git#spawn-env",
     "npm-registry-mock": "latest",
-    "fs.extra": "latest",
     "strong-docs": "strongloop/strong-docs"
   }
 }
