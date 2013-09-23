@@ -14,7 +14,7 @@ describe('create cli', function() {
   it('sets "main" entry in package.json', function (done) {
     spawnCliInSandbox(['create', 'cli', 'test-app', '--no-install'])
       .run(function(err) {
-        if (err) done(err);
+        if (err) return done(err);
         var packageMeta = parsePackageJsonOf('test-app');
         expect(packageMeta.main).to.equal('./bin/test-app');
         expect(packageMeta.name).to.equal('test-app');
@@ -47,7 +47,7 @@ describe('create web', function() {
   it('sets "main" entry in package.json', function (done) {
     spawnCliInSandbox(['create', 'web', 'test-app', '--no-install'])
       .run(function(err) {
-        if (err) done(err);
+        if (err) return done(err);
         var packageMeta = parsePackageJsonOf('test-app');
         expect(packageMeta.main).to.equal('app.js');
         done();

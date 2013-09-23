@@ -1,0 +1,44 @@
+CLUSTERCTL()                                                      CLUSTERCTL()
+
+NNAAMMEE
+       cclluusstteerrccttll - Control a clustered application
+
+       Control an application that has been clustered with strong-cluster-con-
+       trol.
+
+SSYYNNOOPPSSIISS
+       slc clusterctl [options] [command]
+
+OOPPTTIIOONNSS
+       --hh, ----hheellpp
+              print usage information
+
+       --pp, ----ppaatthh, ----ppoorrtt <<ppaatthh>>
+              cluster control socket to connect to, defaults to ..//cclluusstteerrccttll
+
+       ccoommmmaanndd
+              one of the supported commands, see below (defaults to ssttaattuuss)
+
+       Supported commands are:
+
+       +o   ssttaattuuss: report status of cluster workers, the default command
+
+       +o   sseett--ssiizzee: set-size N, set cluster size to N workers
+
+       +o   ddiissccoonnnneecctt: disconnect all workers
+
+       +o   ffoorrkk: fork one worker
+
+EExxaammpplleess
+       Run an app in the local directory, with two workers, and see status:
+
+               slc example urlsaver my-url
+               cd my-url
+               slc run . --size=cpus &
+               slc clusterctl # => print status of workers
+
+       Get status on an app at a specific path:
+
+               slc clusterctl -p /apps/my-app/clusterctl status
+
+                                September 2013                    CLUSTERCTL()
