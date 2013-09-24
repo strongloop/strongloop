@@ -39,5 +39,5 @@ describe('install', function() {
 });
 
 function setupProjectInSandbox(next) {
-  fs.mkdir(path.join(sandbox.PATH, 'node_modules'), next);
+  fs.mkdir(sandbox.path('node_modules'), next);
 }

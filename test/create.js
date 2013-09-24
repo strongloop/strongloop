@@ -56,11 +56,11 @@ describe('create web', function() {
 });
 
 function parsePackageJsonOf(appName) {
-  var packageJson = path.join(sandbox.PATH, appName, 'package.json');
+  var packageJson = sandbox.path(appName, 'package.json');
   var content = fs.readFileSync(packageJson, { enc: 'utf-8' });
   return JSON.parse(content);
 }
 
 function checkDependencyExists(pkg, dependency, cb) {
-  fs.stat(path.join(sandbox.PATH, pkg, 'node_modules', dependency, 'package.json'), cb);
+  fs.stat(sandbox.path(pkg, 'node_modules', dependency, 'package.json'), cb);
 }
