@@ -9,6 +9,8 @@ var sandbox = require('./helpers/sandbox.js');
 var spawnCliInSandbox = require('./helpers/runner.js').spawnCliInSandbox;
 
 describe('create cli', function() {
+  this.timeout(5000);
+
   beforeEach(sandbox.reset);
 
   it('sets "main" entry in package.json', function (done) {
