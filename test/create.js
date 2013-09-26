@@ -1,6 +1,7 @@
 /*global describe, it, beforeEach */
 'use strict';
 
+var assert = require('assert');
 var fs = require('fs');
 var path = require('path');
 
@@ -42,6 +43,10 @@ describe('create cli', function() {
         checkDependencyExists('path/to/test-app', 'commander', done);
       });
   });
+
+  it('fails with no name argument', function (done) {
+    createFailsWithNoNameArgument('cli', done);
+  });
 });
 
 describe('create web', function() {
@@ -56,6 +61,38 @@ describe('create web', function() {
         done();
       });
   });
+
+  it('fails with no name argument', function (done) {
+    createFailsWithNoNameArgument('web', done);
+  });
+});
+
+describe('create package', function() {
+  beforeEach(sandbox.reset);
+
+  it('fails with no name argument', function (done) {
+    createFailsWithNoNameArgument('package', done);
+  });
+});
+
+describe('create module', function() {
+  beforeEach(sandbox.reset);
+
+  it('fails with no name argument', function (done) {
+    createFailsWithNoNameArgument('module', done);
+  });
+});
+
+describe('create', function() {
+  beforeEach(sandbox.reset);
+
+  it('fails with no type argument', function (done) {
+    assertFailsToRun(['--no-install', 'create'], done);
+  });
+
+  it('fails with invalid type argument', function (done) {
+    createFailsWithNoNameArgument('NO_SUCH_NAME', done);
+  });
 });
 
 function parsePackageJsonOf(appName) {
@@ -66,4 +103,20 @@ function parsePackageJsonOf(appName) {
 
 function checkDependencyExists(pkg, dependency, cb) {
   fs.stat(sandbox.path(pkg, 'node_modules', dependency, 'package.json'), cb);
+}
+
+function createFailsWithNoNameArgument(type, done) {
+    assertFailsToRun(['create', '--no-install', type], function(err, stdout) {
+      assert.equal(stdout.length, 0);
+      done();
+    });
+}
+
+function assertFailsToRun(args, done) {
+  return spawnCliInSandbox(args)
+  .run(function(err, stdout, code) {
+    if (err) done(err);
+    assert.equal(code, 1);
+    done(err, stdout, code);
+  });
 }
