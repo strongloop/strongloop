@@ -25,6 +25,7 @@ describe('create cli', function() {
   });
 
   it('installs dependencies', function (done) {
+    this.timeout(60000);
     spawnCliInSandbox(['create', 'cli', 'test-app'])
       .run(function(err) {
         if (err) done(err);
