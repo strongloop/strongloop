@@ -7,7 +7,7 @@ var sandbox = require('./helpers/sandbox.js');
 var spawnCliInSandbox = require('./helpers/runner.js').spawnCliInSandbox;
 
 describe('suite example', function() {
-  this.timeout(5000);
+  this.timeout(60000);
 
   before(function(done) {
     sandbox.reset();
