@@ -25,6 +25,8 @@ OOPPTTIIOONNSS
 
        +o   sseett--ssiizzee: set-size N, set cluster size to N workers
 
+       +o   ssttoopp: stop the cluster controller
+
        +o   ddiissccoonnnneecctt: disconnect all workers
 
        +o   ffoorrkk: fork one worker
@@ -41,4 +43,4 @@ EExxaammpplleess
 
                slc clusterctl -p /apps/my-app/clusterctl status
 
-                                September 2013                    CLUSTERCTL()
+                                 October 2013                     CLUSTERCTL()
