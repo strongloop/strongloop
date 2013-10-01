@@ -19,6 +19,7 @@ Supported commands are:
 
 - `status`: report status of cluster workers, the default command
 - `set-size`: set-size N, set cluster size to N workers
+- `stop`: stop the cluster controller
 - `disconnect`: disconnect all workers
 - `fork`: fork one worker
 
