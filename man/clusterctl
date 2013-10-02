@@ -27,6 +27,10 @@ OOPPTTIIOONNSS
 
        +o   ssttoopp: stop the cluster controller
 
+       +o   rreessttaarrtt: restart all workers
+
+       Useful mostly for debugging:
+
        +o   ddiissccoonnnneecctt: disconnect all workers
 
        +o   ffoorrkk: fork one worker
