@@ -49,5 +49,6 @@ Supported `lb` commands are:
 * `--data-source <name>`:
   Supply a custom data source when creating a model. Defaults to "db".
     
-* `--app <name>`:
-  Specify a specific app name to attach the model to. Defaults to "app".
+* `--private`:
+  Do not expose the model's API remotely. 
+

@@ -27,6 +27,8 @@ function spawnCli(args, inPath) {
   return nspawn(node, nodeArgs, opts);
 }
 
+exports.spawnCli = spawnCli;
+
 /**
  * Sets up an `nexpect` session for slc program in a sandbox working directory.
  * @param {Array} args list of arguments for slc, e.g. `['create', 'cli']`
