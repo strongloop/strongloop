@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+set -x
+
+(cd node_modules/sls-sample-app; npm update)
+(cd node_modules/sn-example-blog; npm update)
+(cd node_modules/sn-example-chat; npm update)
+(cd node_modules/sn-example-urlsaver; npm update)
