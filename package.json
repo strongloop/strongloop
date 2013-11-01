@@ -18,8 +18,7 @@
   "scripts": {
     "lint": "./node_modules/.bin/jshint --exclude test/sandbox *.js lib test",
     "docs": "./node_modules/.bin/sdocs --out docs",
-    "test": "./node_modules/.bin/mocha --reporter list",
-    "postinstall": "./npm-update-examples"
+    "test": "./node_modules/.bin/mocha --reporter list"
   },
   "dependencies": {
     "npm": "git+ssh://git@github.com:strongloop/npm.git",
