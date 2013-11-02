@@ -46,7 +46,7 @@
     "sn-example-chat": "strongloop/sn-example-chat#strongloopsuite-1.1.0-4",
     "sn-example-urlsaver": "strongloop/sn-example-urlsaver#strongloopsuite-1.1.0-4",
     "fs.extra": "~1.2.1",
-    "ncp": "~0.4.2"
+    "cpr": "~0.1.1"
   },
   "devDependencies": {
     "automation": "git+ssh://git@github.com:strongloop/automation.git",
