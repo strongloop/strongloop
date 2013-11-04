@@ -23,7 +23,7 @@
   "dependencies": {
     "npm": "git+ssh://git@github.com:strongloop/npm.git",
     "nodefly-register": "git+ssh://git@github.com:NodeFly/nodefly-register.git",
-    "slc-create": "git+ssh://git@github.com:strongloop/slc-create.git#strongloopsuite-1.1.0-4",
+    "slc-create": "git+ssh://git@github.com:strongloop/slc-create.git#strongloopsuite-1.1.0-5",
     "async": "~0.2.9",
     "commander": "~1.1.1",
     "ini": "~1.1.0",
@@ -41,10 +41,10 @@
     "mkdirp": "~0.3.5",
     "which": "~1.0.5",
     "strong-cluster-control": "~0.2.0",
-    "sls-sample-app": "strongloop/sls-sample-app#strongloopsuite-1.1.0-4",
-    "sn-example-blog": "strongloop/sn-example-blog#strongloopsuite-1.1.0-4",
-    "sn-example-chat": "strongloop/sn-example-chat#strongloopsuite-1.1.0-4",
-    "sn-example-urlsaver": "strongloop/sn-example-urlsaver#strongloopsuite-1.1.0-4",
+    "sls-sample-app": "strongloop/sls-sample-app#strongloopsuite-1.1.0-5",
+    "sn-example-blog": "strongloop/sn-example-blog#strongloopsuite-1.1.0-5",
+    "sn-example-chat": "strongloop/sn-example-chat#strongloopsuite-1.1.0-5",
+    "sn-example-urlsaver": "strongloop/sn-example-urlsaver#strongloopsuite-1.1.0-5",
     "fs.extra": "~1.2.1",
     "cpr": "~0.1.1"
   },
