@@ -2,6 +2,7 @@
   "content": [
     "README.md",
     "man/slc.md",
+    "man/clusterctl.md",
     "man/create.md",
     "man/debug.md",
     "man/env.md",
