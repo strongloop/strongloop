@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -x
+
+env | grep NPM
+npm --version
+which npm
+
+set -e
+
+(cd node_modules/sls-sample-app; npm update)
+(cd node_modules/sn-example-blog; npm update)
+(cd node_modules/sn-example-chat; npm update)
+(cd node_modules/sn-example-urlsaver; npm update)

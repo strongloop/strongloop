@@ -51,8 +51,7 @@ OOPPTTIIOONNSS
               Supply  a  custom data source when creating a model. Defaults to
               "db".
 
-       ----aapppp <<nnaammee>>
-              Specify a specific app name to attach the model to. Defaults  to
-              "app".
+       ----pprriivvaattee
+              Do not expose the model's API remotely.
 
-                                September 2013                            LB()
+                                 November 2013                            LB()
