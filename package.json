@@ -16,8 +16,10 @@
   },
   "scripts": {
     "lint": "./node_modules/.bin/jshint --exclude test/sandbox *.js lib test",
-    "test": "./node_modules/.bin/mocha --reporter spec"
+    "test": "./node_modules/.bin/mocha --reporter spec",
+    "prepublish": "./prepublish.sh"
   },
+
   "dependencies": {
     "npm": "git+ssh://git@github.com:strongloop/npm.git",
     "nodefly-register": "git+ssh://git@github.com:NodeFly/nodefly-register.git",
