@@ -19,7 +19,16 @@
     "test": "./node_modules/.bin/mocha --reporter spec",
     "prepublish": "./prepublish.sh"
   },
-
+  "bundledDependencies": [
+    "npm",
+    "nodefly-register",
+    "slc-create",
+    "json-file-plus",
+    "sls-sample-app",
+    "sn-example-blog",
+    "sn-example-chat",
+    "sn-example-urlsaver"
+  ],
   "dependencies": {
     "npm": "git+ssh://git@github.com:strongloop/npm.git",
     "nodefly-register": "git+ssh://git@github.com:NodeFly/nodefly-register.git",
