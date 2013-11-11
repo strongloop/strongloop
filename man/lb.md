@@ -28,27 +28,28 @@ Supported `lb` commands are:
   through a model configuration. The <name> argument is required.
 
         $ cd my-app
-        $ slc lb model -i
+        $ slc lb model product -i
 
-* `api-example [name]`:
-  Create a new LoopBack application from the sample template, in a directory
-  with the given name (defaults to `sls-sample-app`).
+* `datasource <name>`:
+  Create a datasource in an existing LoopBack application using the given name.
+  You must supply a connector name using the `--connector` option.
 
-        $ slc lb api-example
-        $ cd sls-sample-app
-        $ slc run app # to run the app
+        $ cd my-app
+        $ slc lb datasource mongo --connector mongodb
 
 ### OPTIONS
 
 * `-h`, `--help`:
   Display this help text.
-    
+
 * `-i`, `--interactive`:
   Run an interactive model creation. Only supported with the model command.
-  
+
 * `--data-source <name>`:
   Supply a custom data source when creating a model. Defaults to "db".
-    
+
 * `--private`:
   Do not expose the model's API remotely. 
 
+* `-c`, `--connector`:
+  Specify the connector name when creating a datasource (required).
