@@ -88,7 +88,6 @@ describe('create module', function() {
   it('creates somemodule', function (done) {
     spawnCliInSandbox(['create', 'module', 'somemodule'])
       .run(function(err, stdout, code) {
-        console.log(arguments);
         if (err) return done(err);
 
         assert.equal(code, 0);
