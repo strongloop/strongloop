@@ -1,7 +1,7 @@
 {
-  "name": "slc",
+  "name": "strong-cli",
   "version": "1.2.0",
-  "description": "Strongloop node command line",
+  "description": "StrongLoop command line interface",
   "main": "index.js",
   "repository": {
     "type": "git",
