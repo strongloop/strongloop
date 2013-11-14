@@ -12,7 +12,9 @@ var spawnCli = runner.spawnCli;
 var Project = require('loopback-workspace').models.Project;
 
 describe('lb', function() {
-  this.timeout(10000);
+  // 45 seconds for project install has been observed on dev machine, I will
+  // allow ten times this for CI
+  this.timeout(10 * 45 * 1000);
 
   describe('lb workspace', function() {
     beforeEach(sandbox.reset);
