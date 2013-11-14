@@ -29,15 +29,14 @@ CCOOMMMMAANNDDSS
        prompted through a model configuration. The _n_a_m_e argument is required.
 
              $ cd my-app
-             $ slc lb model -i
+             $ slc lb model product -i
 
-       aappii--eexxaammppllee [[nnaammee]]
-       Create a new LoopBack application from the sample template, in a direc-
-       tory with the given name (defaults to ssllss--ssaammppllee--aapppp).
+       ddaattaassoouurrccee <<nnaammee>>
+       Create a datasource in an existing LoopBack application using the given
+       name. You must supply a connector name using the ----ccoonnnneeccttoorr option.
 
-             $ slc lb api-example
-             $ cd sls-sample-app
-             $ slc run app # to run the app
+             $ cd my-app
+             $ slc lb datasource mongo --connector mongodb
 
 OOPPTTIIOONNSS
        --hh, ----hheellpp
@@ -53,5 +52,9 @@ OOPPTTIIOONNSS
 
        ----pprriivvaattee
               Do not expose the model's API remotely.
+
+       --cc, ----ccoonnnneeccttoorr
+              Specify  the  connector  name   when   creating   a   datasource
+              (required).
 
                                  November 2013                            LB()

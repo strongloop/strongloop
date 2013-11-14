@@ -19,4 +19,4 @@ OOPPTTIIOONNSS
        If no module is specified, then slc will start REPL and load the module
        in the current directory.
 
-                                September 2013                           RUN()
+                                 November 2013                           RUN()
