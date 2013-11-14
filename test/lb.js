@@ -109,7 +109,7 @@ function createProject(projectName, done) {
       var rootFiles = fs.readdirSync(sandbox.path(projectName)).sort();
       expect(rootFiles).to.eql([
         'app.js', 'models', 'package.json', 'models.json',
-        'datasources.json', 'app.json'
+        'datasources.json', 'app.json', 'node_modules'
       ].sort());
       done();
     });
