@@ -51,7 +51,7 @@ describe('lb', function() {
     });
   });
 
-  describe('lb project', function() {
+  describe.skip('lb project', function() {
     beforeEach(sandbox.reset);
 
     it('creates a loopback project', function(done) {
@@ -62,7 +62,7 @@ describe('lb', function() {
     });
   });
 
-  describe('lb model', function() {
+  describe.skip('lb model', function() {
     beforeEach(sandbox.reset);
     
     it('creates a loopback model', function(done) {
@@ -73,7 +73,7 @@ describe('lb', function() {
     });
   });
 
-  describe('lb datasource', function() {
+  describe.skip('lb datasource', function() {
     beforeEach(sandbox.reset);
     
     it('creates a loopback datasource', function(done) {
