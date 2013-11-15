@@ -1,14 +1,14 @@
 {
-  "name": "slc",
+  "name": "strong-cli",
   "version": "1.2.0",
-  "description": "Strongloop node command line",
+  "description": "StrongLoop command line interface",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/strongloop/slc.git"
   },
-  "author": "",
-  "license": "...",
+  "author": "engineering@strongloop.com",
+  "license": "PROPRIETARY",
   "readmeFilename": "README.md",
   "bin": {
     "slnode": "./bin/slc",
@@ -16,10 +16,20 @@
   },
   "scripts": {
     "lint": "./node_modules/.bin/jshint --exclude test/sandbox *.js lib test",
-    "test": "./node_modules/.bin/mocha --reporter list"
+    "test": "./node_modules/.bin/mocha --reporter spec",
+    "prepublish": "./prepublish.sh"
   },
+  "bundledDependencies": [
+    "nodefly-register",
+    "slc-create",
+    "json-file-plus",
+    "sls-sample-app",
+    "sn-example-blog",
+    "sn-example-chat",
+    "sn-example-urlsaver"
+  ],
   "dependencies": {
-    "npm": "git+ssh://git@github.com:strongloop/npm.git",
+    "npm": "~1.3.5",
     "nodefly-register": "git+ssh://git@github.com:NodeFly/nodefly-register.git",
     "slc-create": "git+ssh://git@github.com:strongloop/slc-create.git",
     "async": "~0.2.9",
