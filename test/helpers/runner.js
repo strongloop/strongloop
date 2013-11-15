@@ -15,7 +15,7 @@ var sandbox = require('./sandbox.js');
  */
 function spawnCli(args, inPath) {
   var node = process.execPath;
-  var slc = path.resolve(__dirname, '../../bin/slc');
+  var slc = process.env.SLC || path.resolve(__dirname, '../../bin/slc');
   var nodeArgs = [slc].concat(args);
   var opts = {
     cwd: inPath,
