@@ -21,10 +21,23 @@ function spawnCli(args, inPath) {
     cwd: inPath,
     env: envCleanOfNpm(),
     stripColors: true,
-    verbose: debug.enabled // undocumented feature, means we are in debug mode
   };
   debug('nspawn node <%s> args <%s> at cwd <%s>', node, nodeArgs, opts.cwd);
-  return nspawn(node, nodeArgs, opts);
+  // Use debug() to output verbose log info, instead of what nexpect does -
+  // process.stdout.write(), not distinguishing between stderr and stdout.
+  var expect = nspawn(node, nodeArgs, opts);
+  expect._run = expect.run;
+  expect.run = function(callback) {
+    var child = this._run(callback);
+    child.stdout.on('data', function(data) {
+      debug('nspawn stdout:', data.toString());
+    });
+    child.stderr.on('data', function(data) {
+      debug('nspawn stderr:', data.toString());
+    });
+    return child;
+  }
+  return expect;
 }
 
 exports.spawnCli = spawnCli;
