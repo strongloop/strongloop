@@ -12,10 +12,6 @@ var spawnCli = runner.spawnCli;
 var Project = require('loopback-workspace').models.Project;
 
 describe('lb', function() {
-  // 45 seconds for project install has been observed on dev machine, I will
-  // allow ten times this for CI
-  this.timeout(10 * 45 * 1000);
-
   describe('lb workspace', function() {
     beforeEach(sandbox.reset);
 
@@ -51,18 +47,22 @@ describe('lb', function() {
     });
   });
 
-  describe.skip('lb project', function() {
+  describe('lb project', function() {
     beforeEach(sandbox.reset);
 
     it('creates a loopback project', function(done) {
-      createProject('test-project', done);
+      // 45 seconds for project install has been observed on dev machine, I will
+      // allow ten times this for CI
+      this.timeout(10 * 45 * 1000);
+
+      createProject('test-project', done, true);
     });
     it('fails without a name argument', function(done) {
       assertFailsWithoutName('project', done);
     });
   });
 
-  describe.skip('lb model', function() {
+  describe('lb model', function() {
     beforeEach(sandbox.reset);
     
     it('creates a loopback model', function(done) {
@@ -73,7 +73,7 @@ describe('lb', function() {
     });
   });
 
-  describe.skip('lb datasource', function() {
+  describe('lb datasource', function() {
     beforeEach(sandbox.reset);
     
     it('creates a loopback datasource', function(done) {
@@ -104,15 +104,21 @@ describe('lb', function() {
   });
 });
 
-function createProject(projectName, done) {
-  spawnCliInSandbox(['lb', 'project', projectName])
+function createProject(projectName, done, install) {
+  var installOption = install ? '--install' : '--no-install';
+  spawnCliInSandbox(['lb', 'project', projectName, installOption])
     .run(function(err) {
       if (err) return done(err);
       var rootFiles = fs.readdirSync(sandbox.path(projectName)).sort();
-      expect(rootFiles).to.eql([
+      // node_modules exist only if project is installed
+      var expectFiles = [
         'app.js', 'models', 'package.json', 'models.json',
-        'datasources.json', 'app.json', 'node_modules'
-      ].sort());
+        'datasources.json', 'app.json'
+      ];
+      if(install) {
+        expectFiles.push('node_modules');
+      }
+      expect(rootFiles).to.eql(expectFiles.sort());
       done();
     });
 }

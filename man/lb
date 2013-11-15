@@ -15,17 +15,18 @@ CCOOMMMMAANNDDSS
 
              $ slc lb workspace my-loopback-workspace
 
-       pprroojjeecctt <<nnaammee>>
+       pprroojjeecctt <<nnaammee>> [[----nnoo--iinnssttaallll]]
        Create a LoopBack application in a new  directory  within  a  workspace
-       using the given name. The _n_a_m_e argument is required.
+       using the given name. The _n_a_m_e argument is required. With ----nnoo--iinnssttaallll,
+       will not install the npm dependencies.
 
              $ cd my-loopback-workspace
              $ slc lb project my-app
              $ slc run my-app # to run the app
 
        mmooddeell <<nnaammee>>
-       Create  a  model  in  an  existing LoopBack application using the given
-       name. If you provide  the  --ii  or  ----iinntteerraaccttiivvee  flags,  you  will  be
+       Create a model in an existing  LoopBack  application  using  the  given
+       name.  If  you  provide  the  --ii  or  ----iinntteerraaccttiivvee  flags, you will be
        prompted through a model configuration. The _n_a_m_e argument is required.
 
              $ cd my-app
@@ -47,14 +48,14 @@ OOPPTTIIOONNSS
               command.
 
        ----ddaattaa--ssoouurrccee <<nnaammee>>
-              Supply  a  custom data source when creating a model. Defaults to
+              Supply a custom data source when creating a model.  Defaults  to
               "db".
 
        ----pprriivvaattee
               Do not expose the model's API remotely.
 
        --cc, ----ccoonnnneeccttoorr
-              Specify  the  connector  name   when   creating   a   datasource
+              Specify   the   connector   name   when  creating  a  datasource
               (required).
 
                                  November 2013                            LB()

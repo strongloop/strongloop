@@ -14,9 +14,10 @@ Supported `lb` commands are:
 
         $ slc lb workspace my-loopback-workspace
 
-* `project <name>`:
+* `project <name> [--no-install]`:
   Create a LoopBack application in a new directory within a workspace
-  using the given name. The <name> argument is required.
+  using the given name. The <name> argument is required. With `--no-install`,
+  will not install the npm dependencies.
 
         $ cd my-loopback-workspace
         $ slc lb project my-app
