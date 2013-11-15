@@ -15,8 +15,8 @@
     "slc": "./bin/slc"
   },
   "scripts": {
-    "lint": "./node_modules/.bin/jshint --exclude test/sandbox *.js lib test",
-    "test": "./node_modules/.bin/mocha --reporter spec",
+    "lint": "jshint --exclude test/sandbox *.js lib test",
+    "test": "mocha --reporter spec",
     "prepublish": "./prepublish.sh"
   },
   "bundledDependencies": [
