@@ -40,7 +40,8 @@ This command will output:
 
 ## Create a Simple Web App
 
-The `create` command supports several program types. The following generates the boilerplate for a web app.
+The `create` command supports several program types. The following generates
+the boilerplate for a web app.
 
     $ slc create web my-app
     
@@ -58,8 +59,8 @@ A module is a JavaScript file with a single distinct purpose. It should
 accept some form of input, and generate meaningful output preferably with an
 asynchronous api.
 
-Well designed modules often require a significant amount of boilerplate. This is
-generated for you with the following command:
+Well designed modules often require a significant amount of boilerplate. This
+is generated for you with the following command:
     
     $ slc create module my-module
     
@@ -70,7 +71,8 @@ This command also supports automatically generating tests.
     $ slc create module my-module --test
 
 It also allows you to supply a stream type to implement. This will generate the
-methods required by the specified [streams2](http://nodejs.org/api/stream.html) interface.
+methods required by the specified [streams2](http://nodejs.org/api/stream.html)
+interface.
 
  - [readable](http://nodejs.org/api/stream.html#stream_class_stream_readable)
  - [writeable](http://nodejs.org/api/stream.html#stream_class_stream_writable)
