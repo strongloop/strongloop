@@ -16,7 +16,7 @@
   },
   "scripts": {
     "lint": "./node_modules/.bin/jshint --exclude test/sandbox *.js lib test",
-    "test": "./node_modules/.bin/mocha --reporter list"
+    "test": "./node_modules/.bin/mocha --reporter spec"
   },
   "dependencies": {
     "npm": "git+ssh://git@github.com:strongloop/npm.git",
