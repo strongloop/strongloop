@@ -8,7 +8,7 @@
     "url": "git://github.com/strongloop/strong-cli.git"
   },
   "author": "engineering@strongloop.com",
-  "license": "PROPRIETARY",
+  "license": "MIT",
   "readmeFilename": "README.md",
   "bin": {
     "slnode": "./bin/slc",
