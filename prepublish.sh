@@ -8,8 +8,18 @@ rm -rf data
 mkdir -p data
 for e in $EXAMPLES
 do
-  cp -fr node_modules/$e data/
+  # Remove old data
+  rm -rf data/$e
+
+  # If sl-install fails, it just does an npm install, so module won't be in
+  # data/.
+  sl-install -d data $e || cp -fr node_modules/$e data/
+
+  # Remove the dependencies, we don't package them
   rm -rf data/$e/node_modules
+
+  # npm shrinkwrap fails with extraneous installed modules
+  rm -rf node_modules/$e
 done
 
 echo Prune oracle connector
