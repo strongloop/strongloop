@@ -12,4 +12,4 @@ Use the -help command to get basic comand help:
 
     slc -help
 
-See [Using the slc command-line tool](http://docs.strongloop.com/display/DOC/Using+the+slc+command-line+tool).
+For more documentation, see [Using the slc command-line tool](http://docs.strongloop.com/display/DOC/Using+the+slc+command-line+tool).
