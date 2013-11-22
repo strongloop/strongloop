@@ -54,7 +54,9 @@
     "mocha": "~1.12.0",
     "chai": "latest",
     "nexpect": "strongloop/nexpect",
-    "npm-registry-mock": "~0.5.3",
-    "strong-install": "~0.6.3"
+    "strong-install": "~0.6.3",
+    "npm-registry-mock": "latest",
+    "chai-fs": "0.0.3",
+    "chai-json-schema": "~1.0.7"
   }
 }

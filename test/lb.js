@@ -1,7 +1,10 @@
 /*global describe, it, beforeEach */
 'use strict';
 
-var assert = require('assert');
+var chai = require('chai');
+chai.use(require('chai-fs'));
+chai.use(require('chai-json-schema'));
+var assert = chai.assert;
 var async = require('async');
 var fs = require('fs');
 var expect = require('chai').expect;
@@ -102,6 +105,53 @@ describe('lb', function() {
       ], done);
     });
   });
+
+  describe('lb acl', function() {
+    beforeEach(sandbox.reset);
+    
+    it('should add an acl to the model', function (done) {
+      var projectName = 'test-acl-project';
+      var modelName = 'test-model';
+      createModel(projectName, modelName, function() {  
+        spawnCli(
+          ['lb', 'acl',
+          '--everyone',
+          '--model', modelName,
+          '--method', 'create',
+          '--deny'],
+          sandbox.path(projectName)
+        ).run(function(err) {
+          if(err) return done(err);
+
+          var path = sandbox.path(projectName, 'models.json');
+          expect(path).to.be.a.file().using.json.schema({
+            "properties": {
+              "test-model": {
+                "type": "object",
+                "minItems": 1,
+                "uniqueItems": true,
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          });
+
+          var json = fileAsJSON(path);
+
+          expect(json['test-model'].options.acls[0]).to.eql({
+            principalType: 'ROLE',
+            principalId: '$everyone',
+            property: 'create',
+            permission: 'DENY',
+            accessType: '*'
+          });
+
+          done();
+        });
+      });
+    });
+  });
 });
 
 function createProject(projectName, done, install) {
@@ -163,4 +213,8 @@ function assertFailsToRun(args, done) {
     assert.equal(code, 1);
     done(err, stdout, code);
   });
+}
+
+function fileAsJSON(path) {
+  return JSON.parse(fs.readFileSync(path).toString());
 }
