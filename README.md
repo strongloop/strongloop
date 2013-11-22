@@ -1,6 +1,6 @@
 # slc
 
-`slc` is a tool for StrongNode development.
+`slc` is a tool for application development with StrongLoop Suite.
 
 ## Install
 
