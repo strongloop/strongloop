@@ -50,7 +50,7 @@ routes(app, options);
 http.createServer(app).listen(app.get('port'), function(){
   console.log('<%= name %> listening on port ' + app.get('port'));
 });
-<% } else { %>    
+<% } else { %>
 var options = {};
 <% if (mongoose) { %>
 var mongo = require('./db/mongo-store');

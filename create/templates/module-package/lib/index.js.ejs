@@ -7,13 +7,13 @@ module.exports = <%= functionName %>;
 /**
  * Module dependencies.
  */
- 
+
 var <%= inheritFrom %> = require(<%= streamType ? "'stream'" : "'events'" %>).<%= inheritFrom %>;
 var debug = require('debug')('<%= debugNamespace %>');
 var util = require('util');
 var inherits = util.inherits;
 var assert = require('assert');
-  
+
 /**
  * Create a new `<%= functionName %>` with the given `options`.
  *
@@ -23,12 +23,12 @@ var assert = require('assert');
 
 function <%= functionName %>(options) {
   <%= inheritFrom %>.apply(this, arguments);
-  
+
   // throw an error if args are not supplied
   // assert(typeof options === 'object', '<%= functionName %> requires an options object');
-  
+
   this.options = options;
-  
+
   debug('created with options', options);
 }
 
@@ -51,7 +51,7 @@ inherits(<%= functionName %>, <%= inheritFrom %>);
 /**
  * Methods.
  */
- 
+
 <%= functionName %>.prototype.myMethod = function () {
   throw new Error('<%= functionName %>.myMethod not implemented');
 };

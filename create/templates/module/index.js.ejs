@@ -7,13 +7,13 @@ module.exports = <%= functionName %>;
 /**
  * Module dependencies.
  */
- 
+
 var <%= inheritFrom %> = require(<%= streamType ? "'stream'" : "'events'" %>).<%= inheritFrom %>
   , debug = require('debug')('<%= debugNamespace %>')
   , util = require('util')
   , inherits = util.inherits
   , assert = require('assert');
-  
+
 /**
  * Create a new `<%= functionName %>` with the given `options`.
  *
@@ -23,12 +23,12 @@ var <%= inheritFrom %> = require(<%= streamType ? "'stream'" : "'events'" %>).<%
 
 function <%= functionName %>(options) {
   <%= inheritFrom %>.apply(this, arguments);
-  
+
   // throw an error if args are not supplied
   // assert(typeof options === 'object', '<%= functionName %> requires an options object');
-  
+
   this.options = options;
-  
+
   debug('created with options', options);
 }
 
@@ -79,7 +79,7 @@ switch(streamType) {
  */
 
 <%= functionName %>.prototype._write = function (chunk, encoding, fn) {
-  
+
 }
 <%
     break;
@@ -94,7 +94,7 @@ switch(streamType) {
  */
 
 <%= functionName %>.prototype._transform = function (chunk, encoding, fn) {
-  
+
 }
 
 <%
@@ -109,7 +109,7 @@ switch(streamType) {
  * @param {Number} b
  * @return {Number}
  */
- 
+
 <%= functionName %>.prototype.myMethod = function (a, b) {
   throw new Error('not implemented');
 }

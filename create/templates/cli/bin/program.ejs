@@ -10,5 +10,5 @@ program
   .version('0.0.1')
   .option('-s, --say <text>', 'override the sample text')
   .parse(process.argv);
-  
+
 console.log(program.say || 'hello from', '<%= name %>');

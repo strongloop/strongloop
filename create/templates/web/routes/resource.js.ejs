@@ -1,5 +1,5 @@
 /**
- * REST APIs for mongoose models that supports CRUD operations 
+ * REST APIs for mongoose models that supports CRUD operations
  */
 
 /**
@@ -26,21 +26,21 @@ exports.create = function(mongoose) {
 }
 
 /**
- * List all entities 
+ * List all entities
  */
 exports.list = function(mongoose) {
   var mongo = mongoose;
   return function(req, res, next) {
-    var mongoModel = null; 
+    var mongoModel = null;
     try {
       mongoModel = mongo.model(req.params.resource);
     } catch(err) {
       console.log(err);
-    } 
+    }
     if(!mongoModel) {
       next();
       return;
-    } 
+    }
     var options = {};
     if(req.query.skip) {
       options.skip = req.query.skip;
@@ -56,7 +56,7 @@ exports.list = function(mongoose) {
         res.send(200, objs);
       }
     });
-  }; 
+  };
 }
 
 /**
@@ -137,9 +137,9 @@ exports.updateById = function(mongoose) {
 exports.setup = function(app, options) {
   options = options || {};
   mongoose = options.mongoose || require('../db/mongo-store').mongoose;
-  
+
   var base = options.path || '/rest';
-  
+
   // Create a new entity
   app.post(base + '/:resource', exports.create(mongoose));
 
