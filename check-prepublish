@@ -7,6 +7,7 @@ rm -rf node_modules/
 rm -rf npm-shrinkwrap.json
 npm install
 npm test
+make man
 npm shrinkwrap
 npm pack
 ls -hl *.tgz
