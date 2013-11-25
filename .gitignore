@@ -6,7 +6,6 @@
 *.pid
 *.seed
 *.xml
-*.tgz
 .project
 data
 logs
