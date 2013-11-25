@@ -1,0 +1,17 @@
+#!/bin/sh
+
+set -v
+set -e
+
+rm -rf node_modules/
+rm -rf npm-shrinkwrap.json
+npm install
+npm test
+npm shrinkwrap
+npm pack
+ls -hl *.tgz
+mv *.tgz ../
+
+: check upload size is ~5M
+: git hf release finish x.y.z
+: npm publish (from master branch?)

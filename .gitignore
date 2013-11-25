@@ -5,6 +5,7 @@
 *.out
 *.pid
 *.seed
+*.xml
 .project
 data
 logs
@@ -13,3 +14,4 @@ npm-debug.log
 pids
 results
 test/sandbox
+coverage
