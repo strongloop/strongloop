@@ -1,6 +1,6 @@
 ## slc version -- Print versions
 
-Print StrongLoop Node and Node.js versions.
+Print slc and Node.js versions.
 
 ### SYNOPSIS
 
