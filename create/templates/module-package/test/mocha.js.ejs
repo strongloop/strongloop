@@ -1,0 +1,24 @@
+var <%= functionName %> = require('<%= testPath || "../" %>');
+
+describe('<%= functionName %>', function(){
+  var <%= varName %>;
+  
+  beforeEach(function(){
+    <%= varName %> = new <%= functionName %>();
+  });
+  
+  describe('.myMethod', function(){
+    // example sync test
+    it('should <description of behavior>', function() {
+      <%= varName %>.myMethod();
+    });
+    
+    // example async test
+    it('should <description of behavior>', function(done) {
+      setTimeout(function () {
+        <%= varName %>.myMethod();
+        done();
+      }, 0);
+    });
+  });
+});

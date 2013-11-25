@@ -1,0 +1,115 @@
+/**
+ * Expose `<%= functionName %>`.
+ */
+
+module.exports = <%= functionName %>;
+
+/**
+ * Module dependencies.
+ */
+ 
+var <%= inheritFrom %> = require(<%= streamType ? "'stream'" : "'events'" %>).<%= inheritFrom %>
+  , debug = require('debug')('<%= debugNamespace %>')
+  , util = require('util')
+  , inherits = util.inherits
+  , assert = require('assert');
+  
+/**
+ * Create a new `<%= functionName %>` with the given `options`.
+ *
+ * @param {Object} options
+ * @return {<%= functionName %>}
+ */
+
+function <%= functionName %>(options) {
+  <%= inheritFrom %>.apply(this, arguments);
+  
+  // throw an error if args are not supplied
+  // assert(typeof options === 'object', '<%= functionName %> requires an options object');
+  
+  this.options = options;
+  
+  debug('created with options', options);
+}
+
+/**
+ * Inherit from `<%= inheritFrom %>`.
+ */
+
+inherits(<%= functionName %>, <%= inheritFrom %>);
+
+/*!
+ * Simplified APIs
+ */
+
+<%= functionName %>.create =
+<%= functionName %>.create<%= functionName%> = function (options) {
+  // add simplified construction / sugar here
+  return new <%= functionName %>(options);
+}
+
+<%
+switch(streamType) {
+    case 'readable':
+    case 'duplex':
+%>
+
+/*!
+ * size {Number} Number of bytes to read asynchronously
+ * Note: This function should NOT be called directly.
+ */
+
+<%= functionName %>.prototype._read = function (size) {
+  // When data is available, put it into the read queue by calling `readable.push(chunk)`.
+  // If push returns false, then you should stop reading. When `_read` is called again, you
+  // should start pushing more data.
+}
+
+<%
+    break;
+    case 'writeable':
+    case 'duplex':
+%>
+
+/*!
+ * chunk {Buffer | String} The chunk to be written.
+ * encoding {String} If the chunk is a string, then this is the encoding type.
+ * fn {Function} Call this function (optionally with an error argument) when you are done processing the supplied chunk.
+ * Note: This function should NOT be called directly.
+ */
+
+<%= functionName %>.prototype._write = function (chunk, encoding, fn) {
+  
+}
+<%
+    break;
+    case 'transform':
+%>
+
+/*!
+ * chunk {Buffer | String} The chunk to be transformed.
+ * encoding {String} If the chunk is a string, then this is the encoding type.
+ * fn {Function} Call this function (optionally with an error argument) when you are done processing the supplied chunk.
+ * Note: This function should NOT be called directly.
+ */
+
+<%= functionName %>.prototype._transform = function (chunk, encoding, fn) {
+  
+}
+
+<%
+    break;
+} // end swtich
+%>
+
+/**
+ * A sample method. Add two numbers and return their sum.
+ *
+ * @param {Number} a
+ * @param {Number} b
+ * @return {Number}
+ */
+ 
+<%= functionName %>.prototype.myMethod = function (a, b) {
+  throw new Error('not implemented');
+}

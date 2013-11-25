@@ -1,0 +1,27 @@
+{
+  "name": "<%= name %>",
+  "description": "<%= name %>",
+  "private": true,
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": { "start": "node app" },
+  <% 
+    var deps = [];
+    if(express) {
+      deps.push('"express": "~3.2.4"', '"ejs": "~0.8.4"');
+    }
+    if(mongoose) {
+      deps.push('"mongoose": "~3.6.11"');
+    }
+    deps.push('"async": "~0.2.8"');
+    deps.push('"connect": "~2.7.9"')
+    deps.push('"passport": "~0.1.17"');
+    deps.push('"q": "~0.9.3"');
+    deps.push('"request": "~2.21.0"');
+    deps.push('"strong-cluster-control": "~0.1.0"');
+    deps.push('"strong-agent": "~0.2.15"');
+  %>
+  "dependencies": {
+    <%- deps.join(',\n    ') %>
+  }
+}

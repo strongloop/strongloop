@@ -1,0 +1,21 @@
+<% if(express && mongoose && rest) { %>var resource = require('./resource'); <% } %><% if(express && cors) { %>var cors = require('./cors'); <% } %>/*
+ * GET home page.
+ */
+ 
+function index(req, res){
+  res.render('index', { title: '<%= title %>' });
+}
+
+/**
+ * Set up routes
+ */
+ 
+module.exports = function(app, options) {
+  app.get('/', index);
+  <% if(express && cors) { %>
+  cors.setup(app, options);
+  <% } %>
+  <% if(express && mongoose && rest) { %>
+  resource.setup(app, options);
+  <% } %>
+};

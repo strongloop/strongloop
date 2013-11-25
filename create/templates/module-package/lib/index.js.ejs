@@ -1,0 +1,57 @@
+/**
+ * Expose `<%= functionName %>`.
+ */
+
+module.exports = <%= functionName %>;
+
+/**
+ * Module dependencies.
+ */
+ 
+var <%= inheritFrom %> = require(<%= streamType ? "'stream'" : "'events'" %>).<%= inheritFrom %>;
+var debug = require('debug')('<%= debugNamespace %>');
+var util = require('util');
+var inherits = util.inherits;
+var assert = require('assert');
+  
+/**
+ * Create a new `<%= functionName %>` with the given `options`.
+ *
+ * @param {Object} options
+ * @return {<%= functionName %>}
+ */
+
+function <%= functionName %>(options) {
+  <%= inheritFrom %>.apply(this, arguments);
+  
+  // throw an error if args are not supplied
+  // assert(typeof options === 'object', '<%= functionName %> requires an options object');
+  
+  this.options = options;
+  
+  debug('created with options', options);
+}
+
+/**
+ * Inherit from `<%= inheritFrom %>`.
+ */
+
+inherits(<%= functionName %>, <%= inheritFrom %>);
+
+/**
+ * Simplified APIs
+ */
+
+<%= functionName %>.create =
+<%= functionName %>.create<%= functionName%> = function () {
+  // add simplified construction / sugar here
+  return new <%= functionName %>();
+};
+
+/**
+ * Methods.
+ */
+ 
+<%= functionName %>.prototype.myMethod = function () {
+  throw new Error('<%= functionName %>.myMethod not implemented');
+};
