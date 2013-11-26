@@ -16,3 +16,6 @@ mv *.tgz ../
 : check upload size is ~5M
 : git hf release finish x.y.z
 : npm publish (from master branch?)
+: npm cache clear
+: npm install -g strong-cli
+: SLC=`which slc` npm test
