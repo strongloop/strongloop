@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 require('../lib/loader')
   .createLoader({
-    fallback: 'run',
     manuals: require('path').resolve(__dirname, '..', 'man')
   })
   .on('error', function (err) {
