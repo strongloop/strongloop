@@ -1,0 +1,16 @@
+INSTALL()                                                            INSTALL()
+
+NNAAMMEE
+       iinnssttaallll - Install dependencies
+
+       Identical to ssllcc nnppmm iinnssttaallll.
+
+SSYYNNOOPPSSIISS
+       slc install [...]
+
+OOPPTTIIOONNSS
+       --hh, ----hheellpp
+              print usage information
+
+EEXXAAMMPPLLEESS
+                                 November 2013                       INSTALL()
