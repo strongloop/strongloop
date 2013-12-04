@@ -43,9 +43,9 @@ set by default, if no other save options exist.
 * `--colors`: Use ANSI colors. If used with `--nocolors`, overrides
   `--nocolors`.
 
-See [strong-agent](http://docs.strongops.com/strong-agent) for a description of
-the format of the `package.json` and `strongloop.json` properties used by Strong
-Ops.
+See [strong-agent](http://docs.strongloop.com/display/DOC/Strong+agent) for a
+description of the format of the `package.json` and `strongloop.json` properties
+used by StrongOps.
 
 ### EXAMPLES
 
