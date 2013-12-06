@@ -1,6 +1,6 @@
 {
   "name": "strong-cli",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "StrongLoop command line interface",
   "main": "index.js",
   "repository": {
