@@ -3,8 +3,7 @@
 set -v
 set -e
 
-rm -rf node_modules/
-rm -rf npm-shrinkwrap.json
+git clean -x -d
 npm install
 npm test
 make man
@@ -15,7 +14,7 @@ mv *.tgz ../
 
 : check upload size is ~5M
 : git hf release finish x.y.z
-: npm publish (from master branch?)
+: npm publish "(from master branch?)"
 : npm cache clear
 : npm install -g strong-cli
 : SLC=`which slc` npm test
