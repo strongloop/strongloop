@@ -1,0 +1,23 @@
+/**
+ * Define a callback to set up CORS related headers
+ */
+function allowCrossDomain(req, res, next) {
+  res.header('Access-Control-Allow-Origin', this.allowedDomains || '*');
+  res.header('Access-Control-Allow-Methods', this.allowedMethods || 'GET, PUT, POST, DELETE, OPTIONS');
+  res.header('Access-Control-Allow-Headers', this.allowedHeaders || '*');
+  // deal with OPTIONS method
+  if (req.method == 'OPTIONS') {
+    res.send(200);
+  } else {
+    next();
+  }
+};
+
+/**
+ * Set up CORS
+ */
+exports.setup = function(app, options) {
+  options = options || {};
+  var path = options.path || '/';
+  app.use(path, allowCrossDomain.bind(options.cors || {}));
+}
