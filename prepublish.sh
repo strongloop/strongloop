@@ -11,9 +11,7 @@ do
   # Remove old data
   rm -rf data/$e
 
-  # If sl-install fails, it just does an npm install, so module won't be in
-  # data/.
-  sl-install -d data $e || cp -fr node_modules/$e data/
+  sl-install -d data install $e || (npm install strongloop/$e && mv node_modules/$e data/)
 
   # Remove the dependencies, we don't package them
   rm -rf data/$e/node_modules
