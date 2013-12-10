@@ -7,7 +7,6 @@ git clean -x -d
 npm install
 npm test
 make man
-npm shrinkwrap
 npm pack
 ls -hl *.tgz
 mv *.tgz ../
