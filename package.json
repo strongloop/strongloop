@@ -55,6 +55,6 @@
     "chai": "latest",
     "nexpect": "strongloop/nexpect",
     "npm-registry-mock": "~0.5.3",
-    "strong-install": "~0.3.2"
+    "strong-install": "~0.6.3"
   }
 }
