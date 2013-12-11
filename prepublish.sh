@@ -4,6 +4,7 @@ set -e
 
 echo Updating example dependencies
 EXAMPLES="sls-sample-app sn-example-blog sn-example-chat sn-example-urlsaver"
+BRANCHES=`sl-install branches`
 rm -rf data
 mkdir -p data
 for e in $EXAMPLES
@@ -11,9 +12,7 @@ do
   # Remove old data
   rm -rf data/$e
 
-  # If sl-install fails, it just does an npm install, so module won't be in
-  # data/.
-  sl-install -d data $e || cp -fr node_modules/$e data/
+  sl-install -d data install $e $BRANCHES || (npm install strongloop/$e && mv node_modules/$e data/)
 
   # Remove the dependencies, we don't package them
   rm -rf data/$e/node_modules
