@@ -27,7 +27,7 @@ CCOOMMMMAANNDDSS
        mmooddeell <<nnaammee>>
        Create a model in an existing  LoopBack  application  using  the  given
        name.  If  you  provide  the  --ii  or  ----iinntteerraaccttiivvee  flags, you will be
-       prompted through a model configuration. The _n_a_m_e argument is required.
+       prompted through a model configuration. The _n_a_m_e argument is  required.
 
              $ cd my-app
              $ slc lb model product -i
@@ -38,6 +38,97 @@ CCOOMMMMAANNDDSS
 
              $ cd my-app
              $ slc lb datasource mongo --connector mongodb
+
+       aaccll
+       Add a new permission to an existing model or to all models. Creates  an
+       ACL  entry  Use  options described below to configure the exact permis-
+       sion.
+
+       AACCLL OOppttiioonnss
+
+       ----mmooddeell <<nnaammee>>
+              Specify the model name to apply the new permissions against. You
+              must supply either the ----mmooddeell or ----aallll--mmooddeellss argument.
+
+       ----aallll--mmooddeellss
+              Apply  the  permission to all models. You must supply either the
+              ----mmooddeell or ----aallll--mmooddeellss argument.
+
+       AACCLL AAcccceessss TTyyppeess
+
+       ----aallll  Set the access type to the wildcard. This  matches  rreeaadd,  wwrriittee
+              and eexxeeccuuttee.
+
+       ----rreeaadd Set the access type to RREEAADD.
+
+       ----wwrriittee
+              Set the access type to WWRRIITTEE.
+
+       ----eexxeeccuuttee
+              Set the access type to EEXXEECCUUTTEE.
+
+       AACCLL PPrrooppeerrttiieess aanndd MMeetthhooddss
+
+       ----pprrooppeerrttyy
+              Specify a specific property to apply the permission to. Defaults
+              to all.
+
+       ----mmeetthhoodd
+              Specifiy a specific method to apply the permission to.  Defaults
+              to all.
+
+       AACCLL RRoollee IIddeennttiiffiieerrss
+
+       ----oowwnneerr
+              Only  apply this permission to users who own the specified model
+              instance.
+
+       ----rreellaatteedd
+              Any user with a relationship to the object
+
+       ----aauutthheennttiiccaatteedd
+              Authenticated users
+
+       ----uunnaauutthheennttiiccaatteedd
+              Unauthenticated users
+
+       ----eevveerryyoonnee
+              All users
+
+       AACCLL PPeerrmmiissssiioonnss
+
+       ----aallaarrmm
+              Generate an alarm, in a system dependent way, the access
+
+       ----aallllooww
+              Explicitly grants access to the model.
+
+       ----ddeennyy Explicitly denies access to the model.
+
+       ----aauuddiitt
+              Log, in a system dependent way, the access specified in the per-
+              missions component of the ACL entry.
+
+       AACCLL NNootteess
+
+       +o   you may only supply a single access type
+
+       +o   you may only supply a single role identifier
+
+       +o   you may only supply a single permission
+
+       AACCLL EExxaammpplleess
+
+           # disable all access to all models
+           # note: other permissions will override this
+           $ slc lb acl --deny --all-models --everyone --all
+
+           # allow authors to edit posts
+           $ slc lb acl --model post --allow --owner --all
+
+           # only allow owners to access objects
+           $ slc acl --deny --all-models --everyone --all
+           $ slc acl --allow --all-models --owner --all
 
 OOPPTTIIOONNSS
        --hh, ----hheellpp
