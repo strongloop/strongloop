@@ -49,7 +49,6 @@
     "strong-task-emitter": "~0.0.4"
   },
   "devDependencies": {
-    "automation": "git+ssh://git@github.com:strongloop/automation.git",
     "jshint": "~2.1.10",
     "mocha": "~1.12.0",
     "chai": "latest",
