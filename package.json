@@ -1,6 +1,6 @@
 {
   "name": "strong-cli",
-  "version": "2.0.4",
+  "version": "2.1.0",
   "description": "StrongLoop command line interface",
   "main": "index.js",
   "repository": {
@@ -39,7 +39,7 @@
     "colors": "~0.6.1",
     "read": "~1.0.5",
     "inflection": "~1.2.6",
-    "loopback-workspace": "~2.0.0",
+    "loopback-workspace": "~2.1.0",
     "mkdirp": "~0.3.5",
     "which": "~1.0.5",
     "strong-cluster-control": "~0.2.0",
@@ -49,12 +49,13 @@
     "strong-task-emitter": "~0.0.4"
   },
   "devDependencies": {
-    "automation": "git+ssh://git@github.com:strongloop/automation.git",
     "jshint": "~2.1.10",
     "mocha": "~1.12.0",
     "chai": "latest",
     "nexpect": "strongloop/nexpect",
-    "npm-registry-mock": "~0.5.3",
-    "strong-install": "~0.6.3"
+    "strong-install": "~0.6.3",
+    "npm-registry-mock": "latest",
+    "chai-fs": "0.0.3",
+    "chai-json-schema": "~1.0.7"
   }
 }
