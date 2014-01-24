@@ -56,5 +56,9 @@
     "npm-registry-mock": "latest",
     "chai-fs": "0.0.3",
     "chai-json-schema": "~1.0.7"
+  },
+  "peerDependencies": {
+    "strong-cluster-control": "~0.2.2",
+    "strong-supervisor": "~0.1.0"
   }
 }
