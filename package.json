@@ -14,7 +14,6 @@
   },
   "readmeFilename": "README.md",
   "bin": {
-    "slnode": "./bin/slc",
     "slc": "./bin/slc"
   },
   "scripts": {
