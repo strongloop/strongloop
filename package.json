@@ -25,7 +25,6 @@
     "nodefly-register"
   ],
   "dependencies": {
-    "npm": "~1.3.5",
     "nodefly-register": "git+ssh://git@github.com:NodeFly/nodefly-register.git",
     "async": "~0.2.9",
     "commander": "~1.1.1",
@@ -55,7 +54,6 @@
     "chai": "latest",
     "nexpect": "strongloop/nexpect",
     "strong-install": "~0.6.3",
-    "npm-registry-mock": "latest",
     "chai-fs": "0.0.3",
     "chai-json-schema": "~1.0.7"
   },
