@@ -24,7 +24,7 @@ CCOOMMMMAANNDDSS
        cclluusstteerrccttll
               configure clustering at run time using strong-cluster-control
 
-       ddeebbuugg:: debug a node script
+       ddeebbuugg:: debug a node script using node-inspector
 
        eennvv::   print node environment information
 

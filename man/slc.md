@@ -23,7 +23,7 @@ Utility for StrongNode development.
 * `clusterctl`:
   configure clustering at run time using strong-cluster-control
 * `debug:`:
-  debug a node script
+  debug a node script using node-inspector
 * `env:`:
   print node environment information
 * `version:`:
