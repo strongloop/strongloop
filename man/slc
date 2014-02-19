@@ -18,7 +18,7 @@ CCOOMMMMAANNDDSS
 
        llbb::    create LoopBack workspaces, applications, and models
 
-       rruunn::   run a node script
+       rruunn::   run a node script using strong-supervisor
 
        ddeebbuugg:: debug a node script
 

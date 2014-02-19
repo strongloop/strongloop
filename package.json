@@ -59,6 +59,6 @@
   },
   "peerDependencies": {
     "strong-cluster-control": "~0.3.0",
-    "strong-supervisor": "~0.1.0"
+    "strong-supervisor": "~0.2.0"
   }
 }

@@ -18,7 +18,7 @@ Utility for StrongNode development.
 * `lb:`:
   create LoopBack workspaces, applications, and models
 * `run:`:
-  run a node script
+  run a node script using strong-supervisor
 * `debug:`:
   debug a node script
 * `env:`:
