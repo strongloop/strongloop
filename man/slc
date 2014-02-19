@@ -6,11 +6,12 @@ NNAAMMEE
        Utility for StrongNode development.
 
 SSYYNNOOPPSSIISS
-       slc [options] [command] [args]
+       slc --help
+       slc <command> [--help] [...]
 
 OOPPTTIIOONNSS
        --hh, ----hheellpp
-              print usage information
+              print usage information for slc
 
 CCOOMMMMAANNDDSS
        eexxaammppllee::
@@ -19,6 +20,9 @@ CCOOMMMMAANNDDSS
        llbb::    create LoopBack workspaces, applications, and models
 
        rruunn::   run a node script using strong-supervisor
+
+       cclluusstteerrccttll
+              configure clustering at run time using strong-cluster-control
 
        ddeebbuugg:: debug a node script
 
@@ -30,8 +34,11 @@ CCOOMMMMAANNDDSS
        hheellpp::  print usage information for a command
 
 EEXXAAMMPPLLEESS
+           $ slc example
            $ slc lb project mywebapp
            $ slc run app.js
-           $ slc example
+           $ slc run --cluster=CPUs app.js
+           $ slc clusterctl status
+           $ slc debug app.js
 
                                  February 2014                           SLC()

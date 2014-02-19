@@ -4,12 +4,13 @@ Utility for StrongNode development.
 
 ### SYNOPSIS
 
-    slc [options] [command] [args]
+    slc --help
+    slc <command> [--help] [...]
 
 ### OPTIONS
 
 * `-h`, `--help`:
-  print usage information
+  print usage information for slc
 
 ### COMMANDS
 
@@ -19,6 +20,8 @@ Utility for StrongNode development.
   create LoopBack workspaces, applications, and models
 * `run:`:
   run a node script using strong-supervisor
+* `clusterctl`:
+  configure clustering at run time using strong-cluster-control
 * `debug:`:
   debug a node script
 * `env:`:
@@ -30,6 +33,9 @@ Utility for StrongNode development.
 
 ### EXAMPLES
 
+        $ slc example
         $ slc lb project mywebapp
         $ slc run app.js
-        $ slc example
+        $ slc run --cluster=CPUs app.js
+        $ slc clusterctl status
+        $ slc debug app.js
