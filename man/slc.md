@@ -4,13 +4,16 @@ Utility for StrongNode development.
 
 ### SYNOPSIS
 
-    slc --help
+    slc [-h|--help|-v|--version] [...]
     slc <command> [--help] [...]
 
 ### OPTIONS
 
 * `-h`, `--help`:
-  print usage information for slc
+  print usage for slc (use `slc cmd -h` for help on `cmd`), and exit.
+
+* `-v`, `--version`:
+  print version of slc and node, and exit.
 
 ### COMMANDS
 
@@ -26,10 +29,6 @@ Utility for StrongNode development.
   debug a node script using node-inspector
 * `env:`:
   print node environment information
-* `version:`:
-  print node version
-* `help:`:
-  print usage information for a command
 
 ### EXAMPLES
 

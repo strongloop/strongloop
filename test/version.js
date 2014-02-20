@@ -25,8 +25,8 @@ describe('version', function() {
   });
 
   it('should print slc and node versions', function(done) {
-    spawnCliInSandbox(['version'])
-      .run(function (er, stdout, status) {
+    spawnCliInSandbox(['--version'])
+      .run(function(er, stdout, status) {
         if (er) return done(er);
 
         assert.equal(status, 0);

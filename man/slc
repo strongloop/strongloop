@@ -6,12 +6,15 @@ NNAAMMEE
        Utility for StrongNode development.
 
 SSYYNNOOPPSSIISS
-       slc --help
+       slc [-h|--help|-v|--version] [...]
        slc <command> [--help] [...]
 
 OOPPTTIIOONNSS
        --hh, ----hheellpp
-              print usage information for slc
+              print usage for slc (use ssllcc ccmmdd --hh for help on ccmmdd), and exit.
+
+       --vv, ----vveerrssiioonn
+              print version of slc and node, and exit.
 
 CCOOMMMMAANNDDSS
        eexxaammppllee::
@@ -27,11 +30,6 @@ CCOOMMMMAANNDDSS
        ddeebbuugg:: debug a node script using node-inspector
 
        eennvv::   print node environment information
-
-       vveerrssiioonn::
-              print node version
-
-       hheellpp::  print usage information for a command
 
 EEXXAAMMPPLLEESS
            $ slc example
