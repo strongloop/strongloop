@@ -15,7 +15,7 @@ describe('suite example', function() {
       .run(done);
   });
 
-  it('does not leave a .git folder', function () {
+  it('does not leave a .git folder', function() {
     var dotGit = sandbox.path('sls-sample-app', '.git', 'config');
     assert(!fs.existsSync(dotGit));
   });

@@ -1,6 +1,6 @@
 {
   "name": "strong-cli",
-  "version": "2.2.3",
+  "version": "2.3.0",
   "description": "StrongLoop command line interface",
   "main": "index.js",
   "repository": {
@@ -8,10 +8,12 @@
     "url": "git://github.com/strongloop/strong-cli.git"
   },
   "author": "engineering@strongloop.com",
-  "license": "MIT",
+  "license": {
+    "name": "Dual MIT/StrongLoop",
+    "url": "https://github.com/strongloop/strong-cli/blob/master/LICENSE"
+  },
   "readmeFilename": "README.md",
   "bin": {
-    "slnode": "./bin/slc",
     "slc": "./bin/slc"
   },
   "scripts": {
@@ -23,15 +25,11 @@
     "nodefly-register"
   ],
   "dependencies": {
-    "npm": "~1.3.5",
     "nodefly-register": "git+ssh://git@github.com:NodeFly/nodefly-register.git",
     "async": "~0.2.9",
-    "commander": "~1.1.1",
     "ini": "~1.1.0",
     "json-file-plus": "~0.2.2",
     "optimist": "~0.5.0",
-    "node-inspector": "~0.5.0",
-    "opener": "~1.3.0",
     "prompt": "~0.2.11",
     "is2": "~0.0.3",
     "debug": "~0.7.2",
@@ -41,11 +39,8 @@
     "loopback-workspace": "~2.3.0",
     "mkdirp": "~0.3.5",
     "which": "~1.0.5",
-    "strong-cluster-control": "~0.3.0",
     "fs.extra": "~1.2.1",
-    "cpr": "~0.1.1",
-    "ejs": "0.8.4",
-    "strong-task-emitter": "~0.0.4"
+    "cpr": "~0.1.1"
   },
   "devDependencies": {
     "jshint": "~2.1.10",
@@ -53,12 +48,12 @@
     "chai": "latest",
     "nexpect": "strongloop/nexpect",
     "strong-install": "~0.6.3",
-    "npm-registry-mock": "latest",
     "chai-fs": "0.0.3",
     "chai-json-schema": "~1.0.7"
   },
   "peerDependencies": {
-    "strong-cluster-control": "~0.3.0",
-    "strong-supervisor": "~0.1.0"
+    "node-inspector": "~0.7.0",
+    "strong-cluster-control": "~0.4.0",
+    "strong-supervisor": "~0.2.0"
   }
 }

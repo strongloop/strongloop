@@ -9,9 +9,9 @@ var sandbox = require('./sandbox.js');
 
 /**
  * Sets up an `nexpect` session for slc program in a specific working directory.
- * @param {Array} args list of arguments for slc, e.g. `['create', 'cli']`
- * @param {String} inPath path in which to run slc
- * @returns {Object} nexpect object
+ * @param {Array} args list of arguments for slc, e.g. `['create', 'cli']`.
+ * @param {String} inPath path in which to run slc.
+ * @return {Object} nexpect object
  */
 function spawnCli(args, inPath) {
   var node = process.execPath;
@@ -20,7 +20,7 @@ function spawnCli(args, inPath) {
   var opts = {
     cwd: inPath,
     env: envCleanOfNpm(),
-    stripColors: true,
+    stripColors: true
   };
   debug('nspawn node <%s> args <%s> at cwd <%s>', node, nodeArgs, opts.cwd);
   // Use debug() to output verbose log info, instead of what nexpect does -
@@ -44,8 +44,8 @@ exports.spawnCli = spawnCli;
 
 /**
  * Sets up an `nexpect` session for slc program in a sandbox working directory.
- * @param {Array} args list of arguments for slc, e.g. `['create', 'cli']`
- * @returns {Object} nexpect object
+ * @param {Array} args list of arguments for slc, e.g. `['create', 'cli']`.
+ * @return {Object} nexpect object
  */
 function spawnCliInSandbox(args) {
   return spawnCli(args, sandbox.PATH);
@@ -55,8 +55,8 @@ exports.spawnCliInSandbox = spawnCliInSandbox;
 
 /**
  * Sets up an `nexpect` session for slc program in current working directory.
- * @param {Array} args list of arguments for slc, e.g. `['create', 'cli']`
- * @returns {Object} nexpect object
+ * @param {Array} args list of arguments for slc, e.g. `['create', 'cli']`.
+ * @return {Object} nexpect object
  */
 function spawnCliInCwd(args) {
   return spawnCli(args, process.cwd());
