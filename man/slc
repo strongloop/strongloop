@@ -31,6 +31,9 @@ CCOOMMMMAANNDDSS
 
        eennvv::   print node environment information
 
+       uuppddaattee::
+              bring strong-cli and it's dependencies up-to-date
+
 EEXXAAMMPPLLEESS
            $ slc example
            $ slc lb project mywebapp

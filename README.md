@@ -8,8 +8,8 @@
 
 ## Documentation
 
-Use the -help command to get basic comand help:
+Use the `--help` command to get basic comand help:
 
-    slc -help
+    slc --help
 
 For more documentation, see [Using the slc command-line tool](http://docs.strongloop.com/display/DOC/Using+the+slc+command-line+tool).
