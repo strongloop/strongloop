@@ -1,0 +1,45 @@
+2014-02-28, Version 2.4.0
+
+* v2.4.0 (Sam Roberts)
+
+* Fix usage in README, --help not -help (Sam Roberts)
+
+* slc update command (Sam Roberts)
+
+* Simplify success message. (themitchy)
+
+* Upgrade to loopback-workspace 2.4.0 (Raymond Feng)
+
+* Fix windows spawn (Sam Roberts)
+
+2014-02-20, Version 2.3.0
+
+* v2.3.0 (Sam Roberts)
+
+* Add `slc version` as alias for `slc --version` (Sam Roberts)
+
+* Fix javascript style with fixjsstyle (Sam Roberts)
+
+* Replace help and version commands with options (Sam Roberts)
+
+* Remove create command (Sam Roberts)
+
+* Implement `slc debug` as node-inspector/node-debug (Sam Roberts)
+
+* Implement `slc clusterctl` with clusterctl (Sam Roberts)
+
+* Implement `slc run` as strong-supervisor/sl-run (Sam Roberts)
+
+* Modify loader to help with spawned commmands (Sam Roberts)
+
+* Remove npm and run commands (Sam Roberts)
+
+* Remove fallback to npm or run (Sam Roberts)
+
+* Remove clusterctl test to prepare for cmd removal (Sam Roberts)
+
+* Remove unused bin/slc.cmd (Sam Roberts)
+
+* Remove slnode as an alias for slc (Sam Roberts)
+
+* Apply Dual MIT/StrongLoop license (Sam Roberts)
