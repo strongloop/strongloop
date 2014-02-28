@@ -29,6 +29,8 @@ Utility for StrongNode development.
   debug a node script using node-inspector
 * `env:`:
   print node environment information
+* `update:`:
+  bring strong-cli and it's dependencies up-to-date
 
 ### EXAMPLES
 
