@@ -1,3 +1,12 @@
+2014-03-07, Version 2.4.2
+
+* v2.4.2 (Sam Roberts)
+
+* Update completed registration message (themitchy)
+
+* Allow the npm module to be required on Windows (Raymond Feng)
+
+
 2014-03-06, Version 2.4.1
 
 * v2.4.1 (Sam Roberts)
