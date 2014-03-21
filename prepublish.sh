@@ -3,7 +3,7 @@
 set -e
 
 echo Updating example dependencies
-EXAMPLES="sls-sample-app sn-example-blog sn-example-chat sn-example-urlsaver"
+EXAMPLES="sls-sample-app"
 BRANCHES=`sl-install branches`
 rm -rf data
 mkdir -p data

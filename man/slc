@@ -22,10 +22,13 @@ CCOOMMMMAANNDDSS
 
        llbb::    create LoopBack workspaces, applications, and models
 
+       ssttrroonnggooppss
+              register or login to StrongOps, create strongloop.json
+
        rruunn::   run a node script using strong-supervisor
 
        cclluusstteerrccttll
-              configure clustering at run time using strong-cluster-control
+              control clustering at run-time using strong-cluster-control
 
        ddeebbuugg:: debug a node script using node-inspector
 
@@ -42,4 +45,4 @@ EEXXAAMMPPLLEESS
            $ slc clusterctl status
            $ slc debug app.js
 
-                                 February 2014                           SLC()
+                                  March 2014                             SLC()
