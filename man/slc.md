@@ -21,10 +21,12 @@ Utility for StrongNode development.
   create example applications
 * `lb:`:
   create LoopBack workspaces, applications, and models
+* `strongops`:
+  register or login to StrongOps, create strongloop.json
 * `run:`:
   run a node script using strong-supervisor
 * `clusterctl`:
-  configure clustering at run time using strong-cluster-control
+  control clustering at run-time using strong-cluster-control
 * `debug:`:
   debug a node script using node-inspector
 * `env:`:

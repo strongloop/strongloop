@@ -49,9 +49,9 @@ OOPPTTIIOONNSS
        +o   ----ccoolloorrss: Use ANSI  colors.  If  used  with  ----nnooccoolloorrss,  overrides
            ----nnooccoolloorrss.
 
-       See   strong-agent  _h_t_t_p_:_/_/_d_o_c_s_._s_t_r_o_n_g_l_o_o_p_._c_o_m_/_d_i_s_p_l_a_y_/_D_O_C_/_S_t_r_o_n_g_+_a_g_e_n_t
-       for a description of the format of the ppaacckkaaggee..jjssoonn and ssttrroonngglloooopp..jjssoonn
-       properties used by StrongOps.
+       See   strong-agent  _h_t_t_p_:_/_/_h_t_t_p_:_/_/_d_o_c_s_._s_t_r_o_n_g_l_o_o_p_._c_o_m_/_d_i_s_p_l_a_y_/_D_O_C_/_W_o_r_k_-
+       _i_n_g_+_w_i_t_h_+_s_t_r_o_n_g_-_a_g_e_n_t for a description of  the  format  of  the  ppaacckk--
+       aaggee..jjssoonn and ssttrroonngglloooopp..jjssoonn properties used by StrongOps.
 
 EEXXAAMMPPLLEESS
        The  following will have strongops prompt for the name, email and pass-
@@ -87,4 +87,4 @@ EEXXAAMMPPLLEESS
 
                // ... rest of application is required ...
 
-                                 January 2014                      STRONGOPS()
+                                  March 2014                       STRONGOPS()
