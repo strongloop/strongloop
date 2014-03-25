@@ -1,3 +1,12 @@
+2014-03-25, Version 2.4.7
+
+* Revert "preinstall: update peerDeps before global install" (Sam Roberts)
+
+* Change reference to `slc help` to `slc --help` (Sam Roberts)
+
+* Depend on nodefly-register from npmjs.org (Sam Roberts)
+
+
 2014-03-21, Version 2.4.6
 
 * Update dates on man pages (Sam Roberts)
@@ -17,9 +26,11 @@
 
 * Fix the typo (Raymond Feng)
 
+
 2014-03-07, Version 2.4.3
 
 * Republish because npmjs.org tarball corruption (Sam Roberts)
+
 
 2014-03-07, Version 2.4.2
 
