@@ -1,6 +1,6 @@
 {
   "name": "strong-cli",
-  "version": "2.4.6",
+  "version": "2.4.7",
   "description": "StrongLoop command line interface",
   "main": "index.js",
   "repository": {
@@ -19,14 +19,13 @@
   "scripts": {
     "lint": "jshint --exclude test/sandbox *.js lib test",
     "test": "mocha --reporter spec",
-    "preinstall": "node preinstall.js",
     "prepublish": "./prepublish.sh"
   },
   "bundledDependencies": [
     "nodefly-register"
   ],
   "dependencies": {
-    "nodefly-register": "git+ssh://git@github.com:NodeFly/nodefly-register.git",
+    "nodefly-register": "~0.3.2",
     "async": "~0.2.9",
     "ini": "~1.1.0",
     "json-file-plus": "~0.2.2",
