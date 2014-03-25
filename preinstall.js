@@ -19,9 +19,8 @@ var info = console.log;
 var error = console.error;
 
 var tmpPath = path.resolve(os.tmpdir(), 'slc-install');
-var tmpStat = fs.statSync(tmpPath);
 
-if (!tmpStat.isDirectory()) {
+if (!fs.existsSync(tmpPath)) {
   fs.mkdirSync(tmpPath, 0700);
 }
 
