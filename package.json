@@ -19,7 +19,6 @@
   "scripts": {
     "lint": "jshint --exclude test/sandbox *.js lib test",
     "test": "mocha --reporter spec",
-    "preinstall": "node preinstall.js",
     "prepublish": "./prepublish.sh"
   },
   "bundledDependencies": [
