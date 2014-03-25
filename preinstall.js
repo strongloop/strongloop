@@ -8,6 +8,8 @@ if (!globalInstall) {
 }
 
 var path = require('path');
+var os = require('os');
+var fs = require('fs');
 var npmPath = path.resolve(path.dirname(process.env.npm_execpath), '..');
 var npm = require(npmPath);
 
@@ -16,7 +18,13 @@ var debug = debug_enabled ? console.error : function noop() {};
 var info = console.log;
 var error = console.error;
 
-npm.load({ loglevel: 'silent' }, installPeerDependencies);
+var tmpPath = path.resolve(os.tmpdir(), 'slc-install');
+
+if (!fs.existsSync(tmpPath)) {
+  fs.mkdirSync(tmpPath, 0700);
+}
+
+npm.load({ loglevel: 'silent', cache: tmpPath }, installPeerDependencies);
 
 function installPeerDependencies(err, npm) {
   if (err) {
@@ -27,6 +35,8 @@ function installPeerDependencies(err, npm) {
 
   var peerDeps = require('./package.json').peerDependencies;
   var targets = [];
+
+  debug('Using cache for preinstall: ', npm.cache);
 
   for (name in peerDeps) {
     targets.push(name + '@' + peerDeps[name]);
