@@ -30,9 +30,10 @@ describe('version', function() {
         if (er) return done(er);
 
         assert.equal(status, 0);
-        assert.equal(stdout.length, 1);
+        var PEERS = Object.keys(require('../package.json').peerDependencies);
+        assert.equal(stdout.length, 1 + PEERS.length);
         var line0 = stdout[0];
-        assertMatch(line0, /^slc v[.0-9]* .node v.+$/);
+        assertMatch(line0, /^strong-cli v[.0-9]* .node v.+$/);
         assertContains(line0, process.version);
         return done();
       });
