@@ -1,90 +1,56 @@
 STRONGOPS()                                                        STRONGOPS()
 
 NNAAMMEE
-       ssttrroonnggooppss - Register with StrongOps
+       ssttrroonnggooppss - configure StrongOps
 
-       The  "strongops"  command  registers users with the StrongOps platform.
-       The simplest usage is ssllcc ssttrroonnggooppss. The command prompts for user name,
-       email  and  a  password  and  then  saves  the  credentials to ./stron-
-       gloop.json. If no command line options are given for name or email, the
-       strongops  command  tries  to find defaults from ~~//..ggiittccoonnffiigg (name and
-       email) and then ~~//..nnppmmrrcc  (email).  However,  when  you  specify  valid
-       options  on  the command line, there are no interactive prompts for the
-       data specified on the command line.
+       Generate the configuration files to profile with StrongOps.
+
+       Prompts  for  the email address and password of your StrongOps account,
+       and saves the credentials in the specified configuration file.
+
+       There are no interactive prompts for  data  specified  on  the  command
+       line.
 
 SSYYNNOOPPSSIISS
        slc strongops [options]
 
 OOPPTTIIOONNSS
-       +o   ----nnaammee: Specify the full user  name,  e.g.:  ----nnaammee  ''BBoobb  RRoobbeerrttss''
-           (quotes are needed as the full name contains a space).
+       ----eemmaaiill
+              Specify the email address, e.g.: ----eemmaaiill ssoommeeoonnee@@ssttrroonngglloooopp..ccoomm.
+              The address found in your ~~//..ggiittccoonnffiigg or ~~//..nnppmmrrcc is offered as
+              the default.
 
-       +o   ----eemmaaiill:  Specify  the  email address, e.g.: ----eemmaaiill ssoommeeoonnee@@ssttrroonn--
-           gglloooopp..ccoomm.
+       ----ppaasssswwoorrdd
+              Specify your StrongOps password, e.g.: ----ppaasssswwoorrdd 1122334455667788
 
-       +o   ----ppaasssswwoorrdd:  Specify  your  StrongOps  password,  e.g.:  ----ppaasssswwoorrdd
-           1122334455667788
+       ----nnoossaavvee
+              Prevent  saving of StrongOps account credentials, this overrides
+              any save option.
 
-       +o   ----nnoossaavvee:  Prevent  saving  of  StrongOps account credentials, this
-           overrides any save option.
+       ----llooccaall
+              Saves StrongOps account credentials in a ..//ssttrroonngglloooopp..jjssoonn file.
+              This is set by default, if no other save options exist.
 
-       +o   ----llooccaall: Saves StrongOps account credentials in a ..//ssttrroonngglloooopp..jjssoonn
-           file. This is set by default, if no other save options exist.
+       ----ppaacckkaaggee
+              Saves  StrongOps  account credentials in ..//ppaacckkaaggee..jjssoonn file, if
+              the file exists.
 
-       +o   ----ppaacckkaaggee:  Saves  StrongOps  account credentials in ..//ppaacckkaaggee..jjssoonn
-           file, if the file exists.
+       ----gglloobbaall
+              Saves StrongOps account credentials in a ~~//ssttrroonngglloooopp..jjssoonn file.
 
-       +o   ----gglloobbaall:  Saves  StrongOps  account  credentials  in  a   ~~//ssttrroonn--
-           gglloooopp..jjssoonn file.
-
-       +o   ----rreeggiisstteerr:  Skips  attempt  to  login and registers a new user. By
-           default, the command logs users into StrongOps.
-
-       +o   ----ssaavveeaallll:  Saves  StrongOps  account   credentials   to   ..//ssttrroonn--
-           gglloooopp..jjssoonn, ..//ppaacckkaaggee..jjssoonn and ~~//ssttrroonngglloooopp..jjssoonn files.
-
-       +o   ----nnooccoolloorrss: Does not use ANSI colors in the responses - this is the
-           default.
-
-       +o   ----ccoolloorrss: Use ANSI  colors.  If  used  with  ----nnooccoolloorrss,  overrides
-           ----nnooccoolloorrss.
-
-       See   strong-agent  _h_t_t_p_:_/_/_h_t_t_p_:_/_/_d_o_c_s_._s_t_r_o_n_g_l_o_o_p_._c_o_m_/_d_i_s_p_l_a_y_/_D_O_C_/_W_o_r_k_-
-       _i_n_g_+_w_i_t_h_+_s_t_r_o_n_g_-_a_g_e_n_t for a description of  the  format  of  the  ppaacckk--
+       See      strong-agent      _h_t_t_p_:_/_/_d_o_c_s_._s_t_r_o_n_g_l_o_o_p_._c_o_m_/_d_i_s_p_l_a_y_/_D_O_C_/_W_o_r_k_-
+       _i_n_g_+_w_i_t_h_+_s_t_r_o_n_g_-_a_g_e_n_t  for  a  description  of  the format of the ppaacckk--
        aaggee..jjssoonn and ssttrroonngglloooopp..jjssoonn properties used by StrongOps.
 
 EEXXAAMMPPLLEESS
-       The  following will have strongops prompt for the name, email and pass-
-       word. The JSON containing the strongops credentials are sent  to  stan-
-       dard output:
+       The following will have strongops prompt for the  email  and  password.
+       The credentials are saved in the ..//ssttrroonngglloooopp..jjssoonn file:
 
                $ slc strongops
 
-       Next,  the  strongops credentials are saved to the local ..//ppaacckkaaggee..jjssoonn
-       file:
+       By  using the options for email and password, you can have a non-inter-
+       active registration, e.g. that will not prompt:
 
-               $ slc strongops --package
-
-       By using the options for name, email  and  password,  you  can  have  a
-       non-interactive registration, e.g. that will not prompt:
-
-               $ slc strongops --name "Bill Williams" --email "bw@strongops.com" --password "12345678"
-
-       Using  the  saveall  option causes strongops to save the credentials to
-       ..//ppaacckkaaggee..jjssoonn, ..//ssttrroonngglloooopp..jjssoonn and ~~//ssttrroonngglloooopp..jjssoonn:
-
-               $ slc strongops --saveall
-
-       Applications can be set up so that whether Strong Ops profiling  occurs
-       is configured at deploy/run time, based on whether the credentials have
-       been saved. To do this, call pprrooffiillee(()) with no arguments, as below:
-
-               // app.js
-               // Call profile() before any modules which need profiling are
-               // required. In the absence of credentials, this is effectively
-               // a null op.
-               require('strong-agent').profile();
-
-               // ... rest of application is required ...
+               $ slc strongops --email "bw@example.com" --password "12345678"
 
                                   March 2014                       STRONGOPS()
