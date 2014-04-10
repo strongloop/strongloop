@@ -1,3 +1,24 @@
+2014-04-10, Version 2.5.0
+
+* strongops: point at strongops.com to register (Sam Roberts)
+
+* example,lb: suggest `slc strongops` before run (Sam Roberts)
+
+* strongops: improve password flow for login (Sam Roberts)
+
+* test: versions command (Sam Roberts)
+
+* strongops: remove --register and cleanup options (Sam Roberts)
+
+* Remove unmaintained and unused tests (Sam Roberts)
+
+* version: add peer dependencies to `slc --version` (Sam Roberts)
+
+* Use `slc run` instead of `slc run .` in doc output (Sam Roberts)
+
+* example: remove references to old examples (Sam Roberts)
+
+
 2014-03-25, Version 2.4.7
 
 * Revert "preinstall: update peerDeps before global install" (Sam Roberts)
