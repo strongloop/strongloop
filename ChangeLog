@@ -1,3 +1,8 @@
+2014-04-21, Version 2.5.1
+
+* Add `slc registry` as strong-registry/sl-registry (Miroslav Bajtoš)
+
+
 2014-04-10, Version 2.5.0
 
 * strongops: point at strongops.com to register (Sam Roberts)
