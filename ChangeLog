@@ -1,3 +1,8 @@
+2014-05-07, Version 2.5.2
+
+* Always bundle production branch of sample apps (Sam Roberts)
+
+
 2014-04-21, Version 2.5.1
 
 * Add `slc registry` as strong-registry/sl-registry (Miroslav Bajtoš)
