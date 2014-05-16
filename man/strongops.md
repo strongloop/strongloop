@@ -30,8 +30,7 @@ set by default, if no other save options exist.
 * `--global`:
   Saves StrongOps account credentials in a `~/strongloop.json` file.
 
-See
-[strong-agent](http://docs.strongloop.com/display/DOC/Working+with+strong-agent)
+See [strong-agent](http://docs.strongloop.com/display/DOC/Working+with+strong-agent)
 for a description of the format of the `package.json` and `strongloop.json`
 properties used by StrongOps.
 
