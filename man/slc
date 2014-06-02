@@ -17,6 +17,8 @@ OOPPTTIIOONNSS
               print version of slc and node, and exit.
 
 CCOOMMMMAANNDDSS
+       +o   bbuuiilldd: build a node application package using strong-build
+
        +o   cclluusstteerrccttll:  control  clustering  at  run-time  using  strong-clus-
            ter-control
 

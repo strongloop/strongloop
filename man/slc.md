@@ -17,6 +17,7 @@ Utility for StrongNode development.
 
 ### COMMANDS
 
+* `build`: build a node application package using strong-build
 * `clusterctl`: control clustering at run-time using strong-cluster-control
 * `debug`: debug a node script using node-inspector
 * `env`: print node environment information
