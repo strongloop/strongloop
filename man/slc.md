@@ -22,6 +22,7 @@ Utility for StrongNode development.
 * `env`: print node environment information
 * `example`: create example applications
 * `lb`: create LoopBack workspaces, applications, and models
+* `registry`: switch registries and promote packages with strong-registry
 * `run`: run a node script using strong-supervisor
 * `strongops`: register or login to StrongOps, create strongloop.json
 * `update`: bring strong-cli and it's dependencies up-to-date
