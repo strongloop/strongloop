@@ -1,3 +1,8 @@
+2014-06-19, Version 2.5.5
+
+* Revert "debug: update to node-inspector 0.8.0" (Sam Roberts)
+
+
 2014-06-19, Version 2.5.4
 
 * debug: update to node-inspector 0.8.0 (Sam Roberts)
