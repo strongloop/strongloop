@@ -1,3 +1,20 @@
+2014-06-19, Version 2.5.4
+
+* debug: update to node-inspector 0.8.0 (Sam Roberts)
+
+* build: add strong-build sub-command (Sam Roberts)
+
+* docs: add registry sub-command to usage (Sam Roberts)
+
+* docs: alphabetize sub-commands in usage (Sam Roberts)
+
+* command: always set CMD so children can use it (Sam Roberts)
+
+* version: report peer version using --version (Sam Roberts)
+
+* update: clean up confusing version message (Sam Roberts)
+
+
 2014-05-23, Version 2.5.3
 
 * doc: add CONTRIBUTING.md and LICENSE.md (Ben Noordhuis)
