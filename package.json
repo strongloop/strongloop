@@ -10,7 +10,7 @@
   "author": "engineering@strongloop.com",
   "license": {
     "name": "Dual MIT/StrongLoop",
-    "url": "https://github.com/strongloop/strong-cli/blob/master/LICENSE"
+    "url": "https://github.com/strongloop/strong-cli/blob/master/LICENSE.md"
   },
   "readmeFilename": "README.md",
   "bin": {
