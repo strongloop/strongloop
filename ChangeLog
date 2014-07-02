@@ -1,3 +1,10 @@
+2014-07-02, Version 2.5.6
+
+* Upgrade to loopback-workspace@2.5.0 to pick up loopback@1.9.x (Raymond Feng)
+
+* package: correct link to license (Sam Roberts)
+
+
 2014-06-19, Version 2.5.5
 
 * Revert "debug: update to node-inspector 0.8.0" (Sam Roberts)
