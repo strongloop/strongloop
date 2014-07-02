@@ -1,6 +1,6 @@
 {
   "name": "strong-cli",
-  "version": "2.5.5",
+  "version": "2.5.6",
   "description": "StrongLoop command line interface",
   "main": "index.js",
   "repository": {
@@ -10,7 +10,7 @@
   "author": "engineering@strongloop.com",
   "license": {
     "name": "Dual MIT/StrongLoop",
-    "url": "https://github.com/strongloop/strong-cli/blob/master/LICENSE"
+    "url": "https://github.com/strongloop/strong-cli/blob/master/LICENSE.md"
   },
   "readmeFilename": "README.md",
   "bin": {
@@ -36,7 +36,7 @@
     "colors": "~0.6.1",
     "read": "~1.0.5",
     "inflection": "~1.2.6",
-    "loopback-workspace": "~2.4.0",
+    "loopback-workspace": "~2.5.0",
     "mkdirp": "~0.3.5",
     "which": "~1.0.5",
     "fs.extra": "~1.2.1",
