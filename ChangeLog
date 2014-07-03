@@ -1,3 +1,8 @@
+2014-07-03, Version 2.5.7
+
+* lb: update the usage of workspace and juggler API (Miroslav Bajtoš)
+
+
 2014-07-02, Version 2.5.6
 
 * Upgrade to loopback-workspace@2.5.0 to pick up loopback@1.9.x (Raymond Feng)
