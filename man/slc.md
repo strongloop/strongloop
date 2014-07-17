@@ -26,7 +26,7 @@ Utility for StrongNode development.
 * `registry`: switch registries and promote packages with strong-registry
 * `run`: run a node script using strong-supervisor
 * `runctl`: control a node script using strong-supervisor
-* `strongops`: register or login to StrongOps, create strongloop.json
+* `strongops`: save StrongOps API key into strongloop.json
 * `update`: bring strong-cli and it's dependencies up-to-date
 
 ### EXAMPLES

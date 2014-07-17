@@ -36,7 +36,7 @@ CCOOMMMMAANNDDSS
 
        +o   rruunnccttll: control a node script using strong-supervisor
 
-       +o   ssttrroonnggooppss: register or login to StrongOps, create strongloop.json
+       +o   ssttrroonnggooppss: save StrongOps API key into strongloop.json
 
        +o   uuppddaattee: bring strong-cli and it's dependencies up-to-date
 
