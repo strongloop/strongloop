@@ -36,7 +36,7 @@
     "colors": "~0.6.1",
     "read": "~1.0.5",
     "inflection": "~1.2.6",
-    "loopback-workspace": "~2.5.0",
+    "loopback-workspace": "~2.6.0",
     "mkdirp": "~0.3.5",
     "which": "~1.0.5",
     "fs.extra": "~1.2.1",
@@ -57,6 +57,8 @@
     "node-inspector": "~0.7.0",
     "strong-build": "~0.1.0",
     "strong-registry": "1.x",
-    "strong-supervisor": "~0.2.0"
+    "strong-supervisor": "~0.2.0",
+    "generator-loopback": "1.x",
+    "loopback-sdk-angular-cli": "1.x"
   }
 }
