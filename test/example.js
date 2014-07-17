@@ -16,7 +16,7 @@ describe('suite example', function() {
   });
 
   it('does not leave a .git folder', function() {
-    var dotGit = sandbox.path('sls-sample-app', '.git', 'config');
+    var dotGit = sandbox.path('loopback-example-app', '.git', 'config');
     assert(!fs.existsSync(dotGit));
   });
 });
