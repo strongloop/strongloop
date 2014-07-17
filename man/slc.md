@@ -18,13 +18,14 @@ Utility for StrongNode development.
 ### COMMANDS
 
 * `build`: build a node application package using strong-build
-* `clusterctl`: control clustering at run-time using strong-cluster-control
+* `clusterctl`: same as `runctl`
 * `debug`: debug a node script using node-inspector
 * `env`: print node environment information
 * `example`: create example applications
 * `lb`: create LoopBack workspaces, applications, and models
 * `registry`: switch registries and promote packages with strong-registry
 * `run`: run a node script using strong-supervisor
+* `runctl`: control a node script using strong-supervisor
 * `strongops`: register or login to StrongOps, create strongloop.json
 * `update`: bring strong-cli and it's dependencies up-to-date
 
@@ -34,5 +35,5 @@ Utility for StrongNode development.
         $ slc lb project mywebapp
         $ slc run app.js
         $ slc run --cluster=CPUs app.js
-        $ slc clusterctl status
+        $ slc runctl status
         $ slc debug app.js

@@ -19,8 +19,7 @@ OOPPTTIIOONNSS
 CCOOMMMMAANNDDSS
        +o   bbuuiilldd: build a node application package using strong-build
 
-       +o   cclluusstteerrccttll:  control  clustering  at  run-time  using  strong-clus-
-           ter-control
+       +o   cclluusstteerrccttll: same as rruunnccttll
 
        +o   ddeebbuugg: debug a node script using node-inspector
 
@@ -30,10 +29,12 @@ CCOOMMMMAANNDDSS
 
        +o   llbb: create LoopBack workspaces, applications, and models
 
-       +o   rreeggiissttrryy: switch registries and promote packages  with  strong-reg-
+       +o   rreeggiissttrryy:  switch  registries and promote packages with strong-reg-
            istry
 
        +o   rruunn: run a node script using strong-supervisor
+
+       +o   rruunnccttll: control a node script using strong-supervisor
 
        +o   ssttrroonnggooppss: register or login to StrongOps, create strongloop.json
 
@@ -44,7 +45,7 @@ EEXXAAMMPPLLEESS
            $ slc lb project mywebapp
            $ slc run app.js
            $ slc run --cluster=CPUs app.js
-           $ slc clusterctl status
+           $ slc runctl status
            $ slc debug app.js
 
-                                   June 2014                             SLC()
+                                   July 2014                             SLC()
