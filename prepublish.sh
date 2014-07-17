@@ -3,7 +3,7 @@
 set -e
 
 echo Updating example dependencies
-EXAMPLES="sls-sample-app"
+EXAMPLES="loopback-example-app"
 BRANCHES=`sl-install branches`
 rm -rf data
 mkdir -p data
