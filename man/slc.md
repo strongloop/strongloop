@@ -20,6 +20,7 @@ Utility for StrongNode development.
 * `build`: build a node application package using strong-build
 * `clusterctl`: same as `runctl`
 * `debug`: debug a node script using node-inspector
+* `deploy`: deploy a node application package using strong-deploy
 * `env`: print node environment information
 * `example`: create example applications
 * `lb`: create LoopBack workspaces, applications, and models
