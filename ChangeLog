@@ -1,3 +1,26 @@
+2014-07-21, Version 2.6.0
+
+* runctl: strong-supervisor ~0.3.0 needed for runctl (Sam Roberts)
+
+* Add pm and pm-install commands (Ryan Graham)
+
+* Add deploy command (Krishna Raman)
+
+* Update README.md (chandadharap)
+
+* Sample app is now loopback-example-app (Sam Roberts)
+
+* Extend strong-cli with generator-loopback and loopback-sdk-angular-cli (Raymond Feng)
+
+* Update generated documentation. (Sam Roberts)
+
+* runctl: strong-supervisor replaces clusterctl (Sam Roberts)
+
+* Run file through fixjsstyle (Krishna Raman)
+
+* Make strong-cli catch signals and deliver to child (Krishna Raman)
+
+
 2014-07-03, Version 2.5.7
 
 * lb: update the usage of workspace and juggler API (Miroslav Bajtoš)
