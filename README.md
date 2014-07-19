@@ -1,6 +1,6 @@
 # slc
 
-`slc` is a command-line tool for development, and control of your Node application.
+`slc` is a command-line tool for development and control of your Node application.
 
 ## Install
 
