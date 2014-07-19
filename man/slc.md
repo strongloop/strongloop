@@ -24,6 +24,8 @@ Utility for StrongNode development.
 * `env`: print node environment information
 * `example`: create example applications
 * `lb`: create LoopBack workspaces, applications, and models
+* `pm`: manage deployed node applications with strong-pm
+* `pm-install`: install strong-pm as an OS service
 * `registry`: switch registries and promote packages with strong-registry
 * `run`: run a node script using strong-supervisor
 * `runctl`: control a node script using strong-supervisor

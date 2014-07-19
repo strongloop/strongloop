@@ -11,7 +11,7 @@ SSYYNNOOPPSSIISS
 
 OOPPTTIIOONNSS
        --hh, ----hheellpp
-              print usage for slc (use ssllcc ccmmdd --hh for help on ccmmdd), and exit.
+              print  usage for slc (use ssllcc ccmmdd --hh for help on ccmmdd), and exit.
 
        --vv, ----vveerrssiioonn
               print version of slc and node, and exit.
@@ -23,13 +23,19 @@ CCOOMMMMAANNDDSS
 
        +o   ddeebbuugg: debug a node script using node-inspector
 
+       +o   ddeeppllooyy: deploy a node application package using strong-deploy
+
        +o   eennvv: print node environment information
 
        +o   eexxaammppllee: create example applications
 
        +o   llbb: create LoopBack workspaces, applications, and models
 
-       +o   rreeggiissttrryy:  switch  registries and promote packages with strong-reg-
+       +o   ppmm: manage deployed node applications with strong-pm
+
+       +o   ppmm--iinnssttaallll: install strong-pm as an OS service
+
+       +o   rreeggiissttrryy: switch registries and promote packages  with  strong-reg-
            istry
 
        +o   rruunn: run a node script using strong-supervisor
