@@ -1,6 +1,6 @@
 # slc
 
-`slc` is a command-line tool for application development with StrongLoop Suite.
+`slc` is a command-line tool for development, and control of your Node application.
 
 ## Install
 
