@@ -85,27 +85,11 @@ describe('lb', function() {
     it('creates a loopback datasource', function(done) {
       createDataSource('test-ds-project', 'test-ds', 'mongodb', done);
     });
+    it('creates a loopback datasource without a connector argument', function(done) {
+      createDataSource('test-ds-project', 'test-ds', null, done);
+    });
     it('fails without a name argument', function(done) {
       assertFailsWithoutName('datasource', done);
-    });
-    it('fails without a connector argument', function(done) {
-      var projectName = 'test-ds-project';
-      var dataSourceName = 'test-ds';
-      async.waterfall([
-        createDataSource.bind(null, projectName, dataSourceName, ''),
-        function(stdout, code, callback) {
-          assert(code > 0);
-          callback();
-        },
-        Project.loadFromFiles.bind(Project, sandbox.path(projectName)),
-        function(project, cb) {
-          project.getDataSourceByName(dataSourceName, cb);
-        },
-        function(ds, cb) {
-          assert(!ds, 'datasource should not be created');
-          cb();
-        }
-      ], done);
     });
   });
 
@@ -192,7 +176,11 @@ function createDataSource(projectName, dsName, connectorName, done) {
   createProject(projectName, function(err) {
     if(err) return done(err);
 
-    spawnCli(['lb', 'datasource', dsName, '--connector', connectorName], sandbox.path(projectName))
+    var args = ['lb', 'datasource', dsName];
+    if(connectorName) {
+      args.push('--connector', connectorName);
+    }
+    spawnCli(args, sandbox.path(projectName))
       .run(function(err, stdout, code) {
         if (err) return done(err);
         if(connectorName) assert.equal(code, 0);
