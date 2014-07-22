@@ -1,3 +1,8 @@
+2014-07-22, Version 2.6.1
+
+* Fix the doc link (Raymond Feng)
+
+
 2014-07-21, Version 2.6.0
 
 * runctl: strong-supervisor ~0.3.0 needed for runctl (Sam Roberts)
