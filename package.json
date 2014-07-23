@@ -42,12 +42,11 @@
     "optimist": "~0.5.0",
     "prompt": "~0.2.11",
     "read": "~1.0.5",
-    "shelljs": "~0.3.0",
     "strong-build": "~0.1.0",
     "strong-deploy": "~0.1.0",
     "strong-pm": "~0.1.0",
     "strong-registry": "1.x",
-    "strong-supervisor": "~0.3.0",
+    "strong-supervisor": "~0.3.1",
     "which": "~1.0.5"
   },
   "devDependencies": {
