@@ -1,3 +1,12 @@
+2014-07-24, Version 2.6.3
+
+* Fix `slc --version` (Krishna Raman)
+
+* Update to use direct deps. instead of peer deps. (Krishna Raman)
+
+* Update package license to match LICENSE.md (Sam Roberts)
+
+
 2014-07-22, Version 2.6.2
 
 * Add a notice to `slc example` command (Raymond Feng)
