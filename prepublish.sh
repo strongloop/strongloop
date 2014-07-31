@@ -12,7 +12,7 @@ do
   # Remove old data
   rm -rf data/$e
 
-  npm install "strongloop/$e#production" && mv node_modules/$e data/
+  npm install --ignore-scripts "strongloop/$e#production" && mv node_modules/$e data/
 
   # Remove the dependencies, we don't package them
   rm -rf data/$e/node_modules
