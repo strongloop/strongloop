@@ -31,7 +31,7 @@ Utility for StrongNode development.
 * `run`: run a node script using strong-supervisor
 * `runctl`: control a node script using strong-supervisor
 * `strongops`: save StrongOps API key into strongloop.json
-* `update`: bring strong-cli and it's dependencies up-to-date
+* `update`: bring strongloop and it's dependencies up-to-date
 
 ### EXAMPLES
 

@@ -15,5 +15,5 @@ mv *.tgz ../
 : git hf release finish x.y.z
 : npm publish "(from master branch?)"
 : npm cache clear
-: npm install -g strong-cli
+: npm install -g strongloop
 : SLC=`which slc` npm test

@@ -1,16 +1,16 @@
 {
-  "name": "strong-cli",
+  "name": "strongloop",
   "version": "2.6.3",
   "description": "StrongLoop command line interface",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/strongloop/strong-cli.git"
+    "url": "git://github.com/strongloop/strongloop.git"
   },
   "author": "engineering@strongloop.com",
   "license": {
     "name": "Dual Artistic/StrongLoop",
-    "url": "https://github.com/strongloop/strong-cli/blob/master/LICENSE.md"
+    "url": "https://github.com/strongloop/strongloop/blob/master/LICENSE.md"
   },
   "readmeFilename": "README.md",
   "bin": {
@@ -48,7 +48,7 @@
     "strong-deploy": "~0.1.0",
     "strong-pm": "~0.1.0",
     "strong-registry": "1.x",
-    "strong-supervisor": "~0.3.1",
+    "strong-supervisor": "~0.3.2",
     "which": "~1.0.5",
     "generator-loopback": "1.x",
     "loopback-sdk-angular-cli": "1.x",
