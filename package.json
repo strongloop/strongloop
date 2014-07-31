@@ -48,8 +48,7 @@
     "strong-registry": "1.x",
     "strong-supervisor": "~0.3.1",
     "which": "~1.0.5",
-    "generator-loopback": "1.x",
-    "yeoman-generator": "^0.16.0"
+    "generator-loopback": "1.x"
   },
   "devDependencies": {
     "jshint": "~2.1.10",
