@@ -34,7 +34,7 @@ describe('version', function() {
           __REPORT_DEPENDENCIES.length + 1;
 
         assert.equal(status, 0);
-        var PEERS = Object.keys(require('../package.json').peerDependencies);
+        var PEERS = Object.keys(require('../package.json').peerDependencies || []);
         assert.equal(stdout.length, 1 + expectedDepsLength + PEERS.length);
         var line0 = stdout[0];
         assertMatch(line0, /^strong-cli v[.0-9]* .node v.+$/);
