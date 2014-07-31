@@ -14,7 +14,9 @@
   },
   "readmeFilename": "README.md",
   "bin": {
-    "slc": "./bin/slc"
+    "slc": "./bin/slc",
+    "lb-ng": "./node_modules/loopback-sdk-angular-cli/bin/lb-ng",
+    "lb-ng-doc": "./node_modules/loopback-sdk-angular-cli/bin/lb-ng-doc"
   },
   "scripts": {
     "lint": "jshint --exclude test/sandbox *.js lib test",
@@ -49,6 +51,7 @@
     "strong-supervisor": "~0.3.1",
     "which": "~1.0.5",
     "generator-loopback": "1.x",
+    "loopback-sdk-angular-cli": "1.x",
     "nopt": "~3.0.1"
   },
   "devDependencies": {
@@ -59,8 +62,5 @@
     "strong-install": "~0.6.3",
     "chai-fs": "0.0.3",
     "chai-json-schema": "~1.0.7"
-  },
-  "peerDependencies": {
-    "loopback-sdk-angular-cli": "1.x"
   }
 }
