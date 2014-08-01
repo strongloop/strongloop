@@ -31,6 +31,8 @@ CCOOMMMMAANNDDSS
 
        +o   llbb: create LoopBack workspaces, applications, and models
 
+       +o   llooooppbbaacckk create LoopBack 2.x applications, datasources, models, acls, and relations
+
        +o   ppmm: manage deployed node applications with strong-pm
 
        +o   ppmm--iinnssttaallll: install strong-pm as an OS service
@@ -47,7 +49,9 @@ CCOOMMMMAANNDDSS
        +o   uuppddaattee: bring strong-cli and it's dependencies up-to-date
 
 EEXXAAMMPPLLEESS
-           $ slc example
+           $ slc loopback
+           $ slc loopback:model
+           $ slc loopback:example
            $ slc lb project mywebapp
            $ slc run app.js
            $ slc run --cluster=CPUs app.js

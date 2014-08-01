@@ -23,7 +23,8 @@ Utility for StrongNode development.
 * `deploy`: deploy a node application package using strong-deploy
 * `env`: print node environment information
 * `example`: create example applications
-* `lb`: create LoopBack workspaces, applications, and models
+* `lb`: create LoopBack 1.x workspaces, applications, and models (deprecated)
+* `loopback`: create LoopBack 2.x applications, datasources, models, acls, and relations
 * `pm`: manage deployed node applications with strong-pm
 * `pm-install`: install strong-pm as an OS service
 * `registry`: switch registries and promote packages with strong-registry
@@ -34,7 +35,9 @@ Utility for StrongNode development.
 
 ### EXAMPLES
 
-        $ slc example
+        $ slc loopback
+        $ slc loopback:model
+        $ slc loopback:example
         $ slc lb project mywebapp
         $ slc run app.js
         $ slc run --cluster=CPUs app.js
