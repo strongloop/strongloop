@@ -11,7 +11,7 @@ SSYYNNOOPPSSIISS
 
 OOPPTTIIOONNSS
        --hh, ----hheellpp
-              print  usage for slc (use ssllcc ccmmdd --hh for help on ccmmdd), and exit.
+              print usage for slc (use ssllcc ccmmdd --hh for help on ccmmdd), and exit.
 
        --vv, ----vveerrssiioonn
               print version of slc and node, and exit.
@@ -29,15 +29,17 @@ CCOOMMMMAANNDDSS
 
        +o   eexxaammppllee: create example applications
 
-       +o   llbb: create LoopBack workspaces, applications, and models
+       +o   llbb:  create LoopBack 1.x workspaces, applications, and models (dep-
+           recated)
 
-       +o   llooooppbbaacckk create LoopBack 2.x applications, datasources, models, acls, and relations
+       +o   llooooppbbaacckk: create LoopBack 2.x  applications,  datasources,  models,
+           acls, and relations
 
        +o   ppmm: manage deployed node applications with strong-pm
 
        +o   ppmm--iinnssttaallll: install strong-pm as an OS service
 
-       +o   rreeggiissttrryy: switch registries and promote packages  with  strong-reg-
+       +o   rreeggiissttrryy:  switch  registries and promote packages with strong-reg-
            istry
 
        +o   rruunn: run a node script using strong-supervisor
@@ -46,7 +48,7 @@ CCOOMMMMAANNDDSS
 
        +o   ssttrroonnggooppss: save StrongOps API key into strongloop.json
 
-       +o   uuppddaattee: bring strong-cli and it's dependencies up-to-date
+       +o   uuppddaattee: bring strongloop and it's dependencies up-to-date
 
 EEXXAAMMPPLLEESS
            $ slc loopback
@@ -58,4 +60,4 @@ EEXXAAMMPPLLEESS
            $ slc runctl status
            $ slc debug app.js
 
-                                   July 2014                             SLC()
+                                  August 2014                            SLC()
