@@ -1,3 +1,9 @@
+2014-08-06, Version 2.7.1
+=========================
+
+ * Add homepage and keywords to package.json (Krishna Raman)
+
+
 2014-08-05, Version 2.7.0
 =========================
 
