@@ -1,20 +1,22 @@
 {
-  "name": "strong-cli",
-  "version": "2.6.3",
+  "name": "strongloop",
+  "version": "2.7.0",
   "description": "StrongLoop command line interface",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/strongloop/strong-cli.git"
+    "url": "git://github.com/strongloop/strongloop.git"
   },
   "author": "engineering@strongloop.com",
   "license": {
     "name": "Dual Artistic/StrongLoop",
-    "url": "https://github.com/strongloop/strong-cli/blob/master/LICENSE.md"
+    "url": "https://github.com/strongloop/strongloop/blob/master/LICENSE.md"
   },
   "readmeFilename": "README.md",
   "bin": {
-    "slc": "./bin/slc"
+    "slc": "./bin/slc",
+    "lb-ng": "./node_modules/loopback-sdk-angular-cli/bin/lb-ng",
+    "lb-ng-doc": "./node_modules/loopback-sdk-angular-cli/bin/lb-ng-doc"
   },
   "scripts": {
     "lint": "jshint --exclude test/sandbox *.js lib test",
@@ -46,8 +48,11 @@
     "strong-deploy": "~0.1.0",
     "strong-pm": "~0.1.0",
     "strong-registry": "1.x",
-    "strong-supervisor": "~0.3.1",
-    "which": "~1.0.5"
+    "strong-supervisor": "~0.3.2",
+    "which": "~1.0.5",
+    "generator-loopback": "1.x",
+    "loopback-sdk-angular-cli": "1.x",
+    "nopt": "~3.0.1"
   },
   "devDependencies": {
     "jshint": "~2.1.10",
@@ -57,9 +62,5 @@
     "strong-install": "~0.6.3",
     "chai-fs": "0.0.3",
     "chai-json-schema": "~1.0.7"
-  },
-  "peerDependencies": {
-    "generator-loopback": "1.x",
-    "loopback-sdk-angular-cli": "1.x"
   }
 }

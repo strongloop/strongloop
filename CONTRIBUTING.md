@@ -1,9 +1,9 @@
 ### Contributing ###
 
-Thank you for your interest in strong-cli, an open source project
+Thank you for your interest in strongloop, an open source project
 administered by StrongLoop.
 
-Contributing to strong-cli is easy. In a few simple steps:
+Contributing to strongloop is easy. In a few simple steps:
 
   * Ensure that your effort is aligned with the project's roadmap by
     talking to the maintainers, especially if you are going to spend a

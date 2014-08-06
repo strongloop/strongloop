@@ -1,4 +1,4 @@
-strong-cli uses a dual license model.
+strongloop uses a dual license model.
 
 You may use this library under the terms of the [Artistic 2.0 license][],
 or under the terms of the [StrongLoop Subscription Agreement][].

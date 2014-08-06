@@ -1,6 +1,6 @@
-## slc update -- Bring strong-cli up-to-date
+## slc update -- Bring strongloop up-to-date
 
-Does an `npm install -g` of strong-cli, and all of it's dependencies, in order
+Does an `npm install -g` of strongloop, and all of it's dependencies, in order
 to bring the slc command up-to-date.
 
 ### SYNOPSIS
@@ -14,6 +14,6 @@ to bring the slc command up-to-date.
 
 ### EXAMPLES
 
-Update to latest version of strong-cli and all it's dependencies:
+Update to latest version of strongloop and all it's dependencies:
 
         % slc update
