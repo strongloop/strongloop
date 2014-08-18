@@ -1,6 +1,6 @@
-## slc -- Utility for StrongNode development
+## slc -- StrongLoop Controller
 
-Utility for StrongNode development.
+Command-line tool for development and control of a Node application.
 
 ### SYNOPSIS
 
