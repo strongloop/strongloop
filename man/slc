@@ -1,9 +1,9 @@
 SLC()                                                                    SLC()
 
 NNAAMMEE
-       ssllcc - Utility for StrongNode development
+       ssllcc - StrongLoop Controller
 
-       Utility for StrongNode development.
+       Command-line tool for development and control of a Node application.
 
 SSYYNNOOPPSSIISS
        slc [-h|--help|-v|--version] [...]
