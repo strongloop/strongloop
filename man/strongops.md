@@ -30,9 +30,8 @@ set by default, if no other save options exist.
 * `--global`:
   Saves StrongOps account credentials in a `~/strongloop.json` file.
 
-See [strong-agent](http://docs.strongloop.com/display/DOC/Working+with+strong-agent)
-for a description of the format of the `package.json` and `strongloop.json`
-properties used by StrongOps.
+See http://docs.strongloop.com/ for a description of the format of the 
+`package.json` and `strongloop.json` properties that StrongOps uses.
 
 ### EXAMPLES
 
@@ -41,7 +40,7 @@ credentials are saved in the `./strongloop.json` file:
 
         $ slc strongops
 
-By using the options for email and password, you can have a
-non-interactive registration, e.g. that will not prompt:
+Use the `--email` and `--password` options for non-interactive  registration 
+with no prompts:
 
         $ slc strongops --email "bw@example.com" --password "12345678"
