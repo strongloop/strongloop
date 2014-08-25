@@ -57,7 +57,7 @@
     "cpr": "~0.1.1",
     "debug": "~0.7.2",
     "fs.extra": "~1.2.1",
-    "inflection": "~1.2.6", 
+    "inflection": "~1.2.6",
     "ini": "~1.1.0",
     "is2": "~0.0.3",
     "json-file-plus": "~0.2.2",
@@ -77,7 +77,8 @@
     "which": "~1.0.5",
     "generator-loopback": "1.x",
     "loopback-sdk-angular-cli": "1.x",
-    "nopt": "~3.0.1"
+    "nopt": "~3.0.1",
+    "strong-studio": "strongloop/strong-studio"
   },
   "devDependencies": {
     "jshint": "~2.1.10",
@@ -86,6 +87,7 @@
     "nexpect": "strongloop/nexpect",
     "strong-install": "~0.6.3",
     "chai-fs": "0.0.3",
-    "chai-json-schema": "~1.0.7"
+    "chai-json-schema": "~1.0.7",
+    "request": "^2.40.0"
   }
 }
