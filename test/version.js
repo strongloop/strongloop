@@ -37,7 +37,7 @@ describe('version', function() {
         var PEERS = Object.keys(require('../package.json').peerDependencies || []);
         assert.equal(stdout.length, 1 + expectedDepsLength + PEERS.length);
         var line0 = stdout[0];
-        assertMatch(line0, /^strongloop v[.0-9]* .node v.+$/);
+        assertMatch(line0, /^strongloop v[-.0-9]* .node v.+$/);
         assertContains(line0, process.version);
         return done();
       });
