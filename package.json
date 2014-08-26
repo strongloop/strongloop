@@ -72,6 +72,7 @@
     "optimist": "~0.5.0",
     "prompt": "~0.2.11",
     "read": "~1.0.5",
+    "strong-agent": "~0.4.14",
     "strong-build": "~0.1.0",
     "strong-deploy": "~0.1.0",
     "strong-pm": "~0.1.0",
