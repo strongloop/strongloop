@@ -18,6 +18,12 @@ There are no interactive prompts for data specified on the command line.
   address found in your `~/.gitconfig` or `~/.npmrc` is offered as the default.
 * `--password`:
   Specify your StrongOps password, e.g.: `--password 12345678`
+* `--license`:
+  Write the specified strong-agent license key instead of authenticating with
+  the StrongOps servers and storing a StrongOps agent API key. If both types of
+  keys are required, `slc strongops` can be run again without the `--license`
+  option and the file will be updated with additional credentials.
+  e.g.: `--license XXXXXYYYYYYZZZZZZ`.
 * `--nosave`:
   Prevent saving of StrongOps account credentials, this overrides any save
   option.
@@ -30,9 +36,8 @@ set by default, if no other save options exist.
 * `--global`:
   Saves StrongOps account credentials in a `~/strongloop.json` file.
 
-See [strong-agent](http://docs.strongloop.com/display/DOC/Working+with+strong-agent)
-for a description of the format of the `package.json` and `strongloop.json`
-properties used by StrongOps.
+See http://docs.strongloop.com/ for a description of the format of the 
+`package.json` and `strongloop.json` properties that StrongOps uses.
 
 ### EXAMPLES
 
@@ -41,7 +46,12 @@ credentials are saved in the `./strongloop.json` file:
 
         $ slc strongops
 
-By using the options for email and password, you can have a
-non-interactive registration, e.g. that will not prompt:
+Use the `--email` and `--password` options for non-interactive  registration 
+with no prompts:
 
         $ slc strongops --email "bw@example.com" --password "12345678"
+
+To decode and view the details of a strong-agent license without modifying
+any files, where XXYYZZ is your license key:
+
+        $ slc strongops --nosave --license XXYYZZ

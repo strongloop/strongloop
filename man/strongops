@@ -23,8 +23,16 @@ OOPPTTIIOONNSS
        ----ppaasssswwoorrdd
               Specify your StrongOps password, e.g.: ----ppaasssswwoorrdd 1122334455667788
 
+       ----lliicceennssee
+              Write  the specified strong-agent license key instead of authen-
+              ticating with the StrongOps  servers  and  storing  a  StrongOps
+              agent API key. If both types of keys are required, ssllcc ssttrroonnggooppss
+              can be run again without the ----lliicceennssee option and the file  will
+              be   updated   with   additional  credentials.  e.g.:  ----lliicceennssee
+              XXXXXXXXXXYYYYYYYYYYYYZZZZZZZZZZZZ.
+
        ----nnoossaavvee
-              Prevent  saving of StrongOps account credentials, this overrides
+              Prevent saving of StrongOps account credentials, this  overrides
               any save option.
 
        ----llooccaall
@@ -32,25 +40,29 @@ OOPPTTIIOONNSS
               This is set by default, if no other save options exist.
 
        ----ppaacckkaaggee
-              Saves  StrongOps  account credentials in ..//ppaacckkaaggee..jjssoonn file, if
+              Saves StrongOps account credentials in ..//ppaacckkaaggee..jjssoonn  file,  if
               the file exists.
 
        ----gglloobbaall
               Saves StrongOps account credentials in a ~~//ssttrroonngglloooopp..jjssoonn file.
 
-       See      strong-agent      _h_t_t_p_:_/_/_d_o_c_s_._s_t_r_o_n_g_l_o_o_p_._c_o_m_/_d_i_s_p_l_a_y_/_D_O_C_/_W_o_r_k_-
-       _i_n_g_+_w_i_t_h_+_s_t_r_o_n_g_-_a_g_e_n_t  for  a  description  of  the format of the ppaacckk--
-       aaggee..jjssoonn and ssttrroonngglloooopp..jjssoonn properties used by StrongOps.
+       See http://docs.strongloop.com/ for a description of the format of  the
+       ppaacckkaaggee..jjssoonn and ssttrroonngglloooopp..jjssoonn properties that StrongOps uses.
 
 EEXXAAMMPPLLEESS
-       The following will have strongops prompt for the  email  and  password.
+       The  following  will  have strongops prompt for the email and password.
        The credentials are saved in the ..//ssttrroonngglloooopp..jjssoonn file:
 
                $ slc strongops
 
-       By  using the options for email and password, you can have a non-inter-
-       active registration, e.g. that will not prompt:
+       Use the ----eemmaaiill and ----ppaasssswwoorrdd options for non-interactive registration
+       with no prompts:
 
                $ slc strongops --email "bw@example.com" --password "12345678"
 
-                                   July 2014                       STRONGOPS()
+       To  decode and view the details of a strong-agent license without modi-
+       fying any files, where XXYYZZ is your license key:
+
+               $ slc strongops --nosave --license XXYYZZ
+
+                                  August 2014                      STRONGOPS()
