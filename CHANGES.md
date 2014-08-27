@@ -1,11 +1,29 @@
-2014-08-06, Version 2.7.1
-=========================
+2014-08-27, Version v2.7.2
+==========================
+
+ * deps: patch bump deploy, pm, and supervisor (Ryan Graham)
+
+ * strongops: Add --license option for saving license (Ryan Graham)
+
+ * package: alphabetize dependencies (Ryan Graham)
+
+ * test: allow pre-release versions (Ryan Graham)
+
+ * Fix broken doc link and small wording tweak (Rand McKinney)
+
+ * slc: describe as "StrongLoop Controller" (Sam Roberts)
+
+ * Fix old doc link (Rand McKinney)
+
+
+2014-08-06, Version v2.7.1
+==========================
 
  * Add homepage and keywords to package.json (Krishna Raman)
 
 
-2014-08-05, Version 2.7.0
-=========================
+2014-08-06, Version v2.7.0
+==========================
 
  * Remove peerDependencies from update command (Krishna Raman)
 
