@@ -1,3 +1,9 @@
+2014-08-27, Version v2.8.0
+==========================
+
+ * deps: upgrade strong-build to 0.2.x (Ryan Graham)
+
+
 2014-08-27, Version v2.7.2
 ==========================
 
