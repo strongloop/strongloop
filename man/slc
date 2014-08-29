@@ -37,14 +37,16 @@ CCOOMMMMAANNDDSS
 
        +o   ppmm: manage deployed node applications with strong-pm
 
+       +o   ppmmccttll: control a node application using strong-pm
+
        +o   ppmm--iinnssttaallll: install strong-pm as an OS service
 
        +o   rreeggiissttrryy:  switch  registries and promote packages with strong-reg-
            istry
 
-       +o   rruunn: run a node script using strong-supervisor
+       +o   rruunn: run a node application using strong-supervisor
 
-       +o   rruunnccttll: control a node script using strong-supervisor
+       +o   rruunnccttll: control a node application using strong-supervisor
 
        +o   ssttrroonnggooppss: save StrongOps API key into strongloop.json
 
