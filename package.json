@@ -61,7 +61,7 @@
     "inflection": "~1.2.6",
     "ini": "~1.1.0",
     "is2": "~0.0.3",
-    "json-file-plus": "~0.2.2",
+    "json-file-plus": "~1.0.0",
     "loopback-sdk-angular-cli": "1.x",
     "loopback-workspace": "~2.6.0",
     "mkdirp": "~0.3.5",
