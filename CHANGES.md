@@ -1,3 +1,13 @@
+2014-09-02, Version 2.9.0
+=========================
+
+ * package: depend on released json-file-plus 1.x (Sam Roberts)
+
+ * pmctl: control a node application using strong-pm (Sam Roberts)
+
+ * Fix strong-cli reference in update command help (Sam Roberts)
+
+
 2014-08-27, Version v2.8.0
 ==========================
 
