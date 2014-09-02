@@ -75,7 +75,7 @@
     "strong-agent": "~0.4.14",
     "strong-build": "~0.2.0",
     "strong-deploy": "~0.1.3",
-    "strong-pm": "~0.1.9",
+    "strong-pm": "^1.0.0",
     "strong-registry": "1.x",
     "strong-supervisor": "~0.3.3",
     "which": "~1.0.5"
