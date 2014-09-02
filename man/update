@@ -1,9 +1,9 @@
 UPDATE()                                                              UPDATE()
 
 NNAAMMEE
-       uuppddaattee - Bring strong-cli up-to-date
+       uuppddaattee - Bring strongloop up-to-date
 
-       Does  an nnppmm iinnssttaallll --gg of strong-cli, and all of it's dependencies, in
+       Does  an nnppmm iinnssttaallll --gg of strongloop, and all of it's dependencies, in
        order to bring the slc command up-to-date.
 
 SSYYNNOOPPSSIISS
@@ -14,8 +14,8 @@ OOPPTTIIOONNSS
               print usage information
 
 EEXXAAMMPPLLEESS
-       Update to latest version of strong-cli and all it's dependencies:
+       Update to latest version of strongloop and all it's dependencies:
 
                % slc update
 
-                                   July 2014                          UPDATE()
+                                  August 2014                         UPDATE()

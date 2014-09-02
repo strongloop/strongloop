@@ -1,6 +1,6 @@
 {
   "name": "strongloop",
-  "version": "2.8.0",
+  "version": "2.9.0",
   "description": "StrongLoop Command Line Tools",
   "homepage": "http://www.strongloop.com",
   "keywords": [
@@ -61,7 +61,7 @@
     "inflection": "~1.2.6",
     "ini": "~1.1.0",
     "is2": "~0.0.3",
-    "json-file-plus": "~0.2.2",
+    "json-file-plus": "~1.0.0",
     "loopback-sdk-angular-cli": "1.x",
     "loopback-workspace": "~2.6.0",
     "mkdirp": "~0.3.5",
@@ -75,7 +75,7 @@
     "strong-agent": "~0.4.14",
     "strong-build": "~0.2.0",
     "strong-deploy": "~0.1.3",
-    "strong-pm": "~0.1.9",
+    "strong-pm": "^1.0.0",
     "strong-registry": "1.x",
     "strong-supervisor": "~0.3.3",
     "which": "~1.0.5"

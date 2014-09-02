@@ -26,10 +26,11 @@ Command-line tool for development and control of a Node application.
 * `lb`: create LoopBack 1.x workspaces, applications, and models (deprecated)
 * `loopback`: create LoopBack 2.x applications, datasources, models, acls, and relations
 * `pm`: manage deployed node applications with strong-pm
+* `pmctl`: control a node application using strong-pm
 * `pm-install`: install strong-pm as an OS service
 * `registry`: switch registries and promote packages with strong-registry
-* `run`: run a node script using strong-supervisor
-* `runctl`: control a node script using strong-supervisor
+* `run`: run a node application using strong-supervisor
+* `runctl`: control a node application using strong-supervisor
 * `strongops`: save StrongOps API key into strongloop.json
 * `update`: bring strongloop and it's dependencies up-to-date
 
