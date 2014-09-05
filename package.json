@@ -111,7 +111,7 @@
     "strong-deploy": "~0.1.3",
     "strong-pm": "^1.0.0",
     "strong-registry": "1.x",
-    "strong-supervisor": "~0.3.3",
+    "strong-supervisor": "^1.0.0",
     "which": "~1.0.5"
   },
   "devDependencies": {
