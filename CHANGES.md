@@ -1,3 +1,11 @@
+2014-09-05, Version 2.9.1
+=========================
+
+ * package: update strong-supervisor to ^1.0.0 (Sam Roberts)
+
+ * package: sort and add keywords (Sam Roberts)
+
+
 2014-09-02, Version 2.9.0
 =========================
 
