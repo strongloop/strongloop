@@ -5,7 +5,7 @@ administered by StrongLoop.
 
 Contributing to strongloop is easy. In a few simple steps:
 
-  * Ensure that your effort is aligned with the project’s roadmap by
+  * Ensure that your effort is aligned with the project's roadmap by
     talking to the maintainers, especially if you are going to spend a
     lot of time on it.
 
