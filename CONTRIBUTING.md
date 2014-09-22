@@ -16,7 +16,7 @@ Contributing to strongloop is easy. In a few simple steps:
 
   * Submit a pull request through Github.
 
-  * [Sign the Contributor License Agreement](https://strongloop-cla.herokuapp.com/agreements/strongloop/strongloop)
+  * [Sign the Contributor License Agreement](https://cla.strongloop.com/agreements/strongloop/strongloop)
 
 ### Contributor License Agreement ###
 
