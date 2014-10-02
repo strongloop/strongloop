@@ -1,3 +1,11 @@
+2014-10-02, Version 2.9.2
+=========================
+
+ * package: update to 1.x of strongloop deps (Sam Roberts)
+
+ * Update contribution guidelines (Ryan Graham)
+
+
 2014-09-05, Version 2.9.1
 =========================
 
