@@ -17,6 +17,7 @@ Command-line tool for development and control of a Node application.
 
 ### COMMANDS
 
+* `arc`: launch StrongLoop GUI
 * `build`: build a node application package using strong-build
 * `clusterctl`: same as `runctl`
 * `debug`: debug a node script using node-inspector
