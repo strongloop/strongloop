@@ -122,5 +122,8 @@
     "strong-install": "~0.6.3",
     "chai-fs": "0.0.3",
     "chai-json-schema": "~1.0.7"
+  },
+  "optionalDependencies": {
+    "sl-blip": "^1.0.0"
   }
 }
