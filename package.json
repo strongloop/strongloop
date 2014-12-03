@@ -1,6 +1,6 @@
 {
   "name": "strongloop",
-  "version": "2.9.2",
+  "version": "2.9.3",
   "description": "StrongLoop Command Line Tools",
   "homepage": "http://www.strongloop.com",
   "keywords": [
@@ -124,6 +124,6 @@
     "chai-json-schema": "~1.0.7"
   },
   "optionalDependencies": {
-    "sl-blip": "^1.0.0"
+    "sl-blip": "http://blip.strongloop.com/strongloop@2.9.3"
   }
 }
