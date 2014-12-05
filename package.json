@@ -89,7 +89,7 @@
     "async": "~0.2.9",
     "colors": "~0.6.1",
     "cpr": "~0.1.1",
-    "debug": "~0.7.2",
+    "debug": "^2.0.0",
     "fs.extra": "~1.2.1",
     "generator-loopback": "1.x",
     "inflection": "~1.2.6",
