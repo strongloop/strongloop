@@ -1,3 +1,19 @@
+2014-12-16, Version 2.10.0
+==========================
+
+ * package: update strong-arc to ^1.x (Sam Roberts)
+
+ * Upgrade all simple dependencies (Ryan Graham)
+
+ * package: use debug v2.x in all strongloop deps (Sam Roberts)
+
+ * Include git commits in version output if available (Ryan Graham)
+
+ * Add optional dependency on sl-blip (Ryan Graham)
+
+ * Add `slc arc` command (Miroslav Bajtoš)
+
+
 2014-12-03, Version 2.9.3
 =========================
 
@@ -53,18 +69,15 @@
 
  * Fix old doc link (Rand McKinney)
 
- * Add homepage and keywords to package.json (Krishna Raman)
-
-
-2014-08-06, Version 2.7.0
-=========================
-
-
 
 2014-08-06, Version 2.7.1
 =========================
 
  * Add homepage and keywords to package.json (Krishna Raman)
+
+
+2014-08-06, Version 2.7.0
+=========================
 
  * Remove peerDependencies from update command (Krishna Raman)
 
@@ -157,18 +170,15 @@
 
  * package: correct link to license (Sam Roberts)
 
- * Revert "debug: update to node-inspector 0.8.0" (Sam Roberts)
-
-
-2014-06-19, Version 2.5.4
-=========================
-
-
 
 2014-06-19, Version 2.5.5
 =========================
 
  * Revert "debug: update to node-inspector 0.8.0" (Sam Roberts)
+
+
+2014-06-19, Version 2.5.4
+=========================
 
  * debug: update to node-inspector 0.8.0 (Sam Roberts)
 
