@@ -1,15 +1,12 @@
-# slc
+# Deprecation Notice
 
-`slc` is a command-line tool for development and control of your Node application.
+The strong-cli package has been replaced by the
+[strongloop package](https://www.npmjs.com/package/strongloop).
+For more information see the announcement:
+[An Update to the StrongLoop Installer](http://strongloop.com/strongblog/update-to-installer/)
 
-## Install
+Please [update to the latest version of strongloop](http://docs.strongloop.com/display/SL/Updating+to+the+latest+version):
 
-    npm install -g strong-cli
-
-## Documentation
-
-Use the `--help` command to get basic comand help:
-
-    slc --help
-
-For more documentation, see [Using the slc command-line tool](http://docs.strongloop.com/display/DOC/Using+the+slc+command-line+tool).
+    npm uninstall -g loopback-sdk-angular-cli
+    npm uninstall -g strong-cli
+    npm install -g strongloop
