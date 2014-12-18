@@ -1,3 +1,9 @@
+2014-12-18, Version 2.10.1
+==========================
+
+ * docs: fix bad markdown (Rand McKinney)
+
+
 2014-12-16, Version 2.10.0
 ==========================
 
@@ -69,15 +75,18 @@
 
  * Fix old doc link (Rand McKinney)
 
-
-2014-08-06, Version 2.7.1
-=========================
-
  * Add homepage and keywords to package.json (Krishna Raman)
 
 
 2014-08-06, Version 2.7.0
 =========================
+
+
+
+2014-08-06, Version 2.7.1
+=========================
+
+ * Add homepage and keywords to package.json (Krishna Raman)
 
  * Remove peerDependencies from update command (Krishna Raman)
 
@@ -272,12 +281,12 @@
  * Fix the typo (Raymond Feng)
 
 
-2014-03-07, Version 2.4.3
+2014-03-07, Version 2.4.2
 =========================
 
 
 
-2014-03-07, Version 2.4.2
+2014-03-07, Version 2.4.3
 =========================
 
  * Update completed registration message (themitchy)
