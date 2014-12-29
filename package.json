@@ -1,16 +1,16 @@
 {
   "name": "strong-cli",
-  "version": "2.6.2",
+  "version": "2.6.4",
   "description": "StrongLoop command line interface",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/strongloop/strong-cli.git"
+    "url": "git://github.com/strongloop/strongloop.git"
   },
   "author": "engineering@strongloop.com",
   "license": {
     "name": "Dual MIT/StrongLoop",
-    "url": "https://github.com/strongloop/strong-cli/blob/master/LICENSE.md"
+    "url": "https://github.com/strongloop/strongloop/blob/master/LICENSE.md"
   },
   "readmeFilename": "README.md",
   "bin": {
