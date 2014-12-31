@@ -47,7 +47,11 @@ describe('lb', function() {
         .run(function(err, stdout, code) {
           assert.equal(code, 0);
           var output = stdout.join('\n');
-          assert(output.indexOf('C\bCO\bOM\bMM\bMA\bAN\bND\bDS\bS') !== -1);
+          if (process.platform === 'win32') {
+            assert(output.indexOf('COMMANDS') !== -1);
+          } else {
+            assert(output.indexOf('C\bCO\bOM\bMM\bMA\bAN\bND\bDS\bS') !== -1);
+          }
           done();
         });
     });
