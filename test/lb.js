@@ -16,7 +16,7 @@ var Project = require('loopback-workspace').models.Project;
 
 describe('lb', function() {
   // bump timeout
-  this.timeout(20000);
+  this.timeout(60000);
 
   describe('lb workspace', function() {
     beforeEach(sandbox.reset);
