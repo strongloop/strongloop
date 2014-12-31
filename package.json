@@ -122,8 +122,7 @@
     "jshint": "^2.5.10",
     "mocha": "^2.0.1",
     "nexpect": "^0.4.2",
-    "shelljs": "^0.3.0",
-    "strong-install": "~0.6.3"
+    "shelljs": "^0.3.0"
   },
   "optionalDependencies": {
     "sl-blip": "http://blip.strongloop.com/strongloop@2.10.1"
