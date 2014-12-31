@@ -45,6 +45,7 @@ describe('lb', function() {
     it('should be consistent with slc help', function (done) {
       spawnCli(['lb', 'help'], process.cwd())
         .run(function(err, stdout, code) {
+          assert.ifError(err, 'should not error');
           assert.equal(code, 0);
           var output = stdout.join('\n');
           if (process.platform === 'win32') {
