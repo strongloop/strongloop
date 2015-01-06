@@ -28,7 +28,12 @@ function spawnCli(args, inPath) {
   var expect = nspawn(node, nodeArgs, opts);
   expect._run = expect.run;
   expect.run = function(callback) {
-    var child = this._run(callback);
+    var child = this._run(function() {
+      if (callback) {
+        callback.apply(this, arguments);
+        callback = null;
+      }
+    });
     child.stdout.on('data', function(data) {
       debug('nspawn stdout:', data.toString());
     });
