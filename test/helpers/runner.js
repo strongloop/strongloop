@@ -25,7 +25,7 @@ function spawnCli(args, inPath) {
   debug('nspawn node <%s> args <%s> at cwd <%s>', node, nodeArgs, opts.cwd);
   // Use debug() to output verbose log info, instead of what nexpect does -
   // process.stdout.write(), not distinguishing between stderr and stdout.
-  var expect = nspawn(node, nodeArgs, opts);
+  var expect = nspawn([node].concat(nodeArgs), opts);
   expect._run = expect.run;
   expect.run = function(callback) {
     var child = this._run(function() {
