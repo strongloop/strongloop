@@ -1,6 +1,6 @@
 {
   "name": "strongloop",
-  "version": "2.10.1",
+  "version": "2.10.2",
   "description": "StrongLoop Command Line Tools",
   "homepage": "http://www.strongloop.com",
   "keywords": [
@@ -80,7 +80,7 @@
   "scripts": {
     "lint": "jshint --exclude test/sandbox *.js lib test",
     "test": "mocha --reporter spec",
-    "prepublish": "./prepublish.sh"
+    "prepublish": "node ./prepublish.js"
   },
   "bundledDependencies": [
     "nodefly-register"
@@ -122,9 +122,9 @@
     "jshint": "^2.5.10",
     "mocha": "^2.0.1",
     "nexpect": "^0.4.2",
-    "strong-install": "~0.6.3"
+    "shelljs": "^0.3.0"
   },
   "optionalDependencies": {
-    "sl-blip": "http://blip.strongloop.com/strongloop@2.10.1"
+    "sl-blip": "http://blip.strongloop.com/strongloop@2.10.2"
   }
 }

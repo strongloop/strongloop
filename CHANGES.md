@@ -1,3 +1,27 @@
+2015-01-13, Version 2.10.2
+==========================
+
+ * test: pass cmd as array (Ryan Graham)
+
+ * test: ensure nexpect only calls callback once (Ryan Graham)
+
+ * test: assert spawn does not error (Ryan Graham)
+
+ * test: don't expect raw output on Windows (Ryan Graham)
+
+ * test: bump lb timeout for Windows VMs (Ryan Graham)
+
+ * package: remove strong-install devDepenency (Ryan Graham)
+
+ * package: replace shell script with shelljs script (Ryan Graham)
+
+ * fixup! (Sam Roberts)
+
+ * package: use git clone to get example app (Sam Roberts)
+
+ * Fix bad CLA URL in CONTRIBUTING.md (Ryan Graham)
+
+
 2014-12-18, Version 2.10.1
 ==========================
 
@@ -75,18 +99,15 @@
 
  * Fix old doc link (Rand McKinney)
 
- * Add homepage and keywords to package.json (Krishna Raman)
-
-
-2014-08-06, Version 2.7.0
-=========================
-
-
 
 2014-08-06, Version 2.7.1
 =========================
 
  * Add homepage and keywords to package.json (Krishna Raman)
+
+
+2014-08-06, Version 2.7.0
+=========================
 
  * Remove peerDependencies from update command (Krishna Raman)
 
@@ -126,18 +147,15 @@
 
  * Update package license to match LICENSE.md (Sam Roberts)
 
- * Add a notice to `slc example` command (Raymond Feng)
-
-
-2014-07-22, Version 2.6.1
-=========================
-
-
 
 2014-07-22, Version 2.6.2
 =========================
 
  * Add a notice to `slc example` command (Raymond Feng)
+
+
+2014-07-22, Version 2.6.1
+=========================
 
  * Fix the doc link (Raymond Feng)
 
@@ -351,15 +369,6 @@
 
  * Delete hard newline. (Rand McKinney)
 
- * Update strong-cluster-control dependency to 0.3.0 (Sam Roberts)
-
- * Update strong-cluster-control version to ~0.3.0 (Sam Roberts)
-
-
-2014-01-27, Version 2.2.1
-=========================
-
-
 
 2014-01-27, Version 2.2.2
 =========================
@@ -367,6 +376,10 @@
  * Update strong-cluster-control dependency to 0.3.0 (Sam Roberts)
 
  * Update strong-cluster-control version to ~0.3.0 (Sam Roberts)
+
+
+2014-01-27, Version 2.2.1
+=========================
 
  * Upgrade loopback-workspace dependency to ~2.3.0 (Sam Roberts)
 
@@ -533,10 +546,6 @@
 
  * Added clusterctl.md to docs for new clusterctl sub-command in SLC 1.1. (Rand McKinney)
 
-
-2013-11-05, Version strongloopsuite-1.1.0-7
-===========================================
-
  * Updated release tag (cgole)
 
  * Fix error in string literal syntax (Sam Roberts)
@@ -547,7 +556,16 @@
 2013-11-05, Version strongloopsuite-1.1.0-6
 ===========================================
 
+
+
+2013-11-05, Version strongloopsuite-1.1.0-7
+===========================================
+
  * Updated release tag (cgole)
+
+ * Fix error in string literal syntax (Sam Roberts)
+
+ * Regenerate lb man page from markdown (Sam Roberts)
 
 
 2013-11-04, Version strongloopsuite-1.1.0-5
@@ -567,13 +585,6 @@
 
  * Print npm version, and npm environment (Sam Roberts)
 
- * updated package.json to sls 1.1.0-3 (emma wu)
-
-
-2013-10-31, Version strongloopsuite-1.1.0-2
-===========================================
-
-
 
 2013-10-31, Version strongloopsuite-1.1.0-3
 ===========================================
@@ -589,6 +600,17 @@
 
 2013-10-31, Version strongloopsuite-1.1.0-1
 ===========================================
+
+
+
+2013-10-31, Version strongloopsuite-1.1.0-2
+===========================================
+
+ * New release tag +2 (cgole)
+
+ * Make sample npm deps be complete (Sam Roberts)
+
+ * Add more verbose description of "next steps" (Sam Roberts)
 
  * Fetching slc-create from re branch (cgole)
 

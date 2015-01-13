@@ -16,7 +16,7 @@ var Project = require('loopback-workspace').models.Project;
 
 describe('lb', function() {
   // bump timeout
-  this.timeout(20000);
+  this.timeout(60000);
 
   describe('lb workspace', function() {
     beforeEach(sandbox.reset);
@@ -45,9 +45,14 @@ describe('lb', function() {
     it('should be consistent with slc help', function (done) {
       spawnCli(['lb', 'help'], process.cwd())
         .run(function(err, stdout, code) {
+          assert.ifError(err, 'should not error');
           assert.equal(code, 0);
           var output = stdout.join('\n');
-          assert(output.indexOf('C\bCO\bOM\bMM\bMA\bAN\bND\bDS\bS') !== -1);
+          if (process.platform === 'win32') {
+            assert(output.indexOf('COMMANDS') !== -1);
+          } else {
+            assert(output.indexOf('C\bCO\bOM\bMM\bMA\bAN\bND\bDS\bS') !== -1);
+          }
           done();
         });
     });
