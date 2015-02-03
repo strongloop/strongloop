@@ -1,4 +1,10 @@
-2015-01-13, Version 2.10.2
+2015-02-03, Version 2.10.3
+==========================
+
+ * slc: rewrite usage message (Sam Roberts)
+
+
+2015-01-12, Version 2.10.2
 ==========================
 
  * test: pass cmd as array (Ryan Graham)
@@ -288,23 +294,23 @@
  * example: remove non-loopback examples (Sam Roberts)
 
 
-2014-03-10, Version 2.4.5
+2014-03-10, Version 2.4.4
 =========================
 
 
 
-2014-03-10, Version 2.4.4
+2014-03-10, Version 2.4.5
 =========================
 
  * Fix the typo (Raymond Feng)
 
 
-2014-03-07, Version 2.4.2
+2014-03-07, Version 2.4.3
 =========================
 
 
 
-2014-03-07, Version 2.4.3
+2014-03-07, Version 2.4.2
 =========================
 
  * Update completed registration message (themitchy)
