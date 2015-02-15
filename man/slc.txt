@@ -88,6 +88,6 @@ alternatives:
 
   update: update slc (replaced by `npm install -g strongloop`)
 
-  env: print node environment information (occaisonally used by support)
+  env: print node environment information (occasionally used by support)
 
   clusterctl: same as `runctl`
