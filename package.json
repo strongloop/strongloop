@@ -79,8 +79,7 @@
   },
   "scripts": {
     "lint": "jshint --exclude test/sandbox *.js lib test",
-    "test": "mocha --reporter spec",
-    "prepublish": "node ./prepublish.js"
+    "test": "mocha --reporter spec"
   },
   "bundledDependencies": [
     "nodefly-register"
