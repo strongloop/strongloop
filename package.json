@@ -87,17 +87,13 @@
   "dependencies": {
     "async": "^0.9.0",
     "colors": "^1.0.3",
-    "cpr": "^0.3.2",
     "debug": "^2.1.0",
     "fs.extra": "~1.2.1",
     "generator-loopback": "1.x",
-    "inflection": "^1.5.2",
     "ini": "^1.3.2",
     "is2": "~0.0.3",
     "json-file-plus": "^2.0.0",
     "loopback-sdk-angular-cli": "1.x",
-    "loopback-workspace": "~2.6.0",
-    "mkdirp": "^0.5.0",
     "node-inspector": "~0.7.0",
     "nodefly-register": "~0.3.2",
     "nopt": "~3.0.1",
@@ -115,13 +111,9 @@
     "which": "~1.0.5"
   },
   "devDependencies": {
-    "chai": "^1.10.0",
-    "chai-fs": "^0.1.0",
-    "chai-json-schema": "^1.1.0",
     "jshint": "^2.5.10",
     "mocha": "^2.0.1",
-    "nexpect": "^0.4.2",
-    "shelljs": "^0.3.0"
+    "nexpect": "^0.4.2"
   },
   "optionalDependencies": {
     "sl-blip": "http://blip.strongloop.com/strongloop@2.10.3"
