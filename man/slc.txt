@@ -90,4 +90,4 @@ alternatives:
 
   env: print node environment information (occasionally used by support)
 
-  clusterctl: same as `runctl`
+  clusterctl: replaced with `runctl`
