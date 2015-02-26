@@ -76,18 +76,3 @@ tooling and integrations with StrongLoop features:
 
     Switch between npm registries and promote packages between them. Useful
     as a component of DevOps/CI pipelines, or from the command line.
-
-
-These commands from earlier versions of slc have now been replaced with
-alternatives:
-
-  example: create example applications (replaced by
-  https://github.com/strongloop/loopback-example)
-
-  lb: LoopBack 1.x scaffolding (replaced by `slc loopback`)
-
-  update: update slc (replaced by `npm install -g strongloop`)
-
-  env: print node environment information (occasionally used by support)
-
-  clusterctl: replaced with `runctl`
