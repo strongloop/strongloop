@@ -1,0 +1,7 @@
+usage: slc update [-h|--help]
+
+Obsolete, replaced with direct npm install: npm install -g strongloop
+
+Options:
+
+  -h, --help    Print usage information.
