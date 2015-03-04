@@ -78,7 +78,7 @@
     "lb-ng-doc": "./node_modules/loopback-sdk-angular-cli/bin/lb-ng-doc"
   },
   "scripts": {
-    "lint": "jshint --exclude test/sandbox *.js lib test",
+    "lint": "eslint lib bin && jscs lib bin",
     "test": "mocha --reporter spec"
   },
   "bundledDependencies": [
