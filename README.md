@@ -11,9 +11,7 @@ application.
 
 See the official [StrongLoop documentation](http://docs.strongloop.com/).
 
-Use the `--help` command to get basic comand help:
-
-    slc --help
+## Usage
 
 ```
 usage: slc <-h|--help|-v|--version>
@@ -38,6 +36,11 @@ Commands:
     Create LoopBack 2.x applications, datasources, models, ACLs, and relations.
 
   debug: Node.js application debugger
+
+  start: start a node application under a local process manager
+
+    Start a local process manager, if necessary, and run the application
+    in-place.
 
   build: package a node application for deployment
 

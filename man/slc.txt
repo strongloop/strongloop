@@ -21,6 +21,11 @@ Commands:
 
   debug: Node.js application debugger
 
+  start: start a node application under a local process manager
+
+    Start a local process manager, if necessary, and run the application
+    in-place.
+
   build: package a node application for deployment
 
     Packages a node application as an npm tarball or into a git deploy branch.
