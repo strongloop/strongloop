@@ -112,7 +112,8 @@
     "which": "~1.0.5"
   },
   "devDependencies": {
-    "jshint": "^2.5.10",
+    "eslint": "^0.16.1",
+    "jscs": "^1.11.3",
     "mocha": "^2.0.1",
     "nexpect": "^0.4.2"
   },
