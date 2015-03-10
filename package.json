@@ -105,7 +105,7 @@
     "strong-arc": "^1.0.0",
     "strong-build": "^1.0.0",
     "strong-deploy": "^1.0.0",
-    "strong-pm": "^2.0.0",
+    "strong-pm": "^3.0.0",
     "strong-registry": "^1.0.0",
     "strong-start": "^1.0.0",
     "strong-supervisor": "^1.0.0",
