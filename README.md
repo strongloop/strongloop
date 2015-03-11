@@ -54,7 +54,7 @@ Commands:
     command), or to any PaaS that can accept a `git push` of a node
     application.
 
-  pmctl: control a node application hosted by the process manager
+  ctl: control a node application hosted by the process manager
 
     Run-time remote control of clustering, profiling, logging, restart, etc.
     See the `pm-install` and `pm` commands.
