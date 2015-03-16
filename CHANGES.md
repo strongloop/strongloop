@@ -1,3 +1,9 @@
+2015-03-16, Version 3.0.1
+=========================
+
+ * package: remove npm dependency (Sam Roberts)
+
+
 2015-03-16, Version 3.0.0
 =========================
 
