@@ -97,7 +97,6 @@
     "node-inspector": "~0.7.0",
     "nodefly-register": "~0.3.2",
     "nopt": "~3.0.1",
-    "npm": "~1.4.28",
     "optimist": "^0.6.1",
     "prompt": "~0.2.11",
     "read": "~1.0.5",
