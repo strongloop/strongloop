@@ -1,6 +1,6 @@
 {
   "name": "strongloop",
-  "version": "2.10.3",
+  "version": "3.0.0",
   "description": "StrongLoop Command Line Tools",
   "homepage": "http://www.strongloop.com",
   "keywords": [
@@ -118,6 +118,6 @@
     "nexpect": "^0.4.2"
   },
   "optionalDependencies": {
-    "sl-blip": "http://blip.strongloop.com/strongloop@2.10.3"
+    "sl-blip": "http://blip.strongloop.com/strongloop@3.0.0"
   }
 }

@@ -1,3 +1,35 @@
+2015-03-16, Version 3.0.0
+=========================
+
+ * Rename `slc pmctl` to `slc ctl` (Sam Roberts)
+
+ * Remove redundant set of CMD in env (Sam Roberts)
+
+ * package: add missing lint dependencies (Ryan Graham)
+
+ * deps: bump strong-pm to ^3.0.0 (Ryan Graham)
+
+ * Add `slc start` command (Sam Roberts)
+
+ * package: lint with eslint and jscs (Sam Roberts)
+
+ * man: update man page formats (Sam Roberts)
+
+ * clusterctl: remove obsolete clusterctl alias (Sam Roberts)
+
+ * lb: remove obsolete lb 1.x scaffolder (Sam Roberts)
+
+ * example: remove obsolete loopback 1.x command (Sam Roberts)
+
+ * Correct doc link. (Rand McKinney)
+
+ * Fix typo in slc.txt (Jorrit Schippers)
+
+ * Unbundle adm-zip, upstream has been fixed (Ryan Graham)
+
+ * Bundle adm-zip as workaround for broken dependency (Ryan Graham)
+
+
 2015-02-03, Version 2.10.3
 ==========================
 
@@ -294,12 +326,12 @@
  * example: remove non-loopback examples (Sam Roberts)
 
 
-2014-03-10, Version 2.4.4
+2014-03-10, Version 2.4.5
 =========================
 
 
 
-2014-03-10, Version 2.4.5
+2014-03-10, Version 2.4.4
 =========================
 
  * Fix the typo (Raymond Feng)
@@ -552,6 +584,10 @@
 
  * Added clusterctl.md to docs for new clusterctl sub-command in SLC 1.1. (Rand McKinney)
 
+
+2013-11-05, Version strongloopsuite-1.1.0-7
+===========================================
+
  * Updated release tag (cgole)
 
  * Fix error in string literal syntax (Sam Roberts)
@@ -562,16 +598,7 @@
 2013-11-05, Version strongloopsuite-1.1.0-6
 ===========================================
 
-
-
-2013-11-05, Version strongloopsuite-1.1.0-7
-===========================================
-
  * Updated release tag (cgole)
-
- * Fix error in string literal syntax (Sam Roberts)
-
- * Regenerate lb man page from markdown (Sam Roberts)
 
 
 2013-11-04, Version strongloopsuite-1.1.0-5
@@ -597,17 +624,6 @@
 
  * updated package.json to sls 1.1.0-3 (emma wu)
 
- * New release tag +2 (cgole)
-
- * Make sample npm deps be complete (Sam Roberts)
-
- * Add more verbose description of "next steps" (Sam Roberts)
-
-
-2013-10-31, Version strongloopsuite-1.1.0-1
-===========================================
-
-
 
 2013-10-31, Version strongloopsuite-1.1.0-2
 ===========================================
@@ -617,6 +633,10 @@
  * Make sample npm deps be complete (Sam Roberts)
 
  * Add more verbose description of "next steps" (Sam Roberts)
+
+
+2013-10-31, Version strongloopsuite-1.1.0-1
+===========================================
 
  * Fetching slc-create from re branch (cgole)
 
@@ -715,12 +735,6 @@
  * Added --colors flag. Made --nocolors the default. (Edmond Meinfelder)
 
 
-2013-09-17, Version strongloopsuite-1.0.0-5
-===========================================
-
- * Update tag for slc-create (cgole)
-
-
 2013-09-12, Version strongloopsuite-1.0.0-4
 ===========================================
 
@@ -799,12 +813,6 @@
  * Change to handle quit option and added cmd option '--register'. (Edmond Meinfelder)
 
  * Document the --no-install option to slc create (Sam Roberts)
-
-
-2013-09-03, Version 1.2.0
-=========================
-
- * Updated slc-create version to v1.2 (cgole)
 
  * Update dates on man pages (Sam Roberts)
 
@@ -979,38 +987,6 @@
  * debug: use node-inspector API to build URL (Miroslav Bajtos)
 
 
-2013-08-19, Version 1.1.4
-=========================
-
- * Updated slnode version to 1.1.4-1 (cgole)
-
- * Reverting change 7ba663dc8f0c25ab04f2a58ce968d858378efb7f (cgole)
-
- * package.json: use sl-v1.1 branch of our npm fork. (Miroslav Bajtos)
-
-
-2013-08-12, Version 1.1.3
-=========================
-
- * Updated slnode version to 1.1.3-1 (cgole)
-
-
-2013-08-07, Version 1.1.2
-=========================
-
- * Release v1.1.2 (Linqing Lu)
-
-
-2013-07-31, Version 1.1.1
-=========================
-
- * updated package.json to use slnode-create from branch v1.1 (cgole)
-
- * Change slnode version from 1.1.0-1 to 1.1.1-1 (cgole)
-
- * Update node-inspector to 0.3.2 from preview (Sam Roberts)
-
-
 2013-07-16, Version 1.1.0
 =========================
 
@@ -1035,12 +1011,6 @@
  * Converted old commands to the new command format. (Michael Schoonmaker)
 
  * Added a new, less agressive CommandLoader. (Michael Schoonmaker)
-
-
-2013-06-14, Version 1.0.2
-=========================
-
- * Updated slnode version number to 1.0.2-1 (Sam Roberts)
 
 
 2013-05-29, Version 1.0.1
