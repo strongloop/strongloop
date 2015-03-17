@@ -1,4 +1,10 @@
-2015-03-17, Version 3.0.3
+2015-03-17, Version 3.0.4
+=========================
+
+ * bin: fix 'slc build' linking (Ryan Graham)
+
+
+2015-03-16, Version 3.0.3
 =========================
 
  * Revert update to strong-build 2.x (Ryan Graham)
