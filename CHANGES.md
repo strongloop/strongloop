@@ -1,4 +1,12 @@
-2015-03-17, Version 3.0.2
+2015-03-17, Version 3.0.3
+=========================
+
+ * Revert update to strong-build 2.x (Ryan Graham)
+
+ * package: include a .eslintignore file (Sam Roberts)
+
+
+2015-03-16, Version 3.0.2
 =========================
 
  * Update to strong-build 2.x (Sam Roberts)
