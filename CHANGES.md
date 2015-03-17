@@ -1,3 +1,11 @@
+2015-03-17, Version 3.0.2
+=========================
+
+ * Update to strong-build 2.x (Sam Roberts)
+
+ * package: update lint rule to work with CI (Sam Roberts)
+
+
 2015-03-16, Version 3.0.1
 =========================
 
