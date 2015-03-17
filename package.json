@@ -78,7 +78,7 @@
     "lb-ng-doc": "./node_modules/loopback-sdk-angular-cli/bin/lb-ng-doc"
   },
   "scripts": {
-    "lint": "eslint lib bin && jscs lib bin",
+    "lint": "eslint . && jscs .",
     "test": "mocha --reporter spec"
   },
   "bundledDependencies": [
@@ -111,7 +111,7 @@
     "which": "~1.0.5"
   },
   "devDependencies": {
-    "eslint": "^0.16.1",
+    "eslint": "^0.17.0",
     "jscs": "^1.11.3",
     "mocha": "^2.0.1",
     "nexpect": "^0.4.2"
