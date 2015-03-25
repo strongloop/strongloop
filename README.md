@@ -1,15 +1,31 @@
 # slc -- StrongLoop Controller
 
-`slc` is a command-line tool for development and control of your Node
-application.
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/strongloop/chat?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-## Install
+`slc` is the command shell for the StrongLoop Process Manager, strong-pm, and
+the LoopBack framework.
+
+It includes both a CLI and a GUI.
+
+For more details, see http://strong-pm.io and http://loopback.io.
+
+## Installation
+
+It can be installed with:
 
     npm install -g strongloop
 
-## Documentation
 
-See the official [StrongLoop documentation](http://docs.strongloop.com/).
+## Resources
+
+- LoopBack:
+  - [website](http://loopback.io)
+  - [resources](https://github.com/strongloop/loopback#resources)
+
+- Process Manager, strong-pm:
+  - [website](http://strong-pm.io)
+  - [resources](https://github.com/strongloop/strong-pm#resources)
+
 
 ## Usage
 
@@ -25,9 +41,9 @@ Options:
 
 Commands:
 
-  arc: StrongLoop UI, an alternative to the CLI
+  arc: StrongLoop GUI, an alternative to the CLI
 
-    Launch the StrongLoop UI, a graphical alternative to the `loopback`,
+    Launch the StrongLoop GUI, a graphical alternative to the `loopback`,
     `build`, `deploy`, and `pmctl` commands, that also offers run-time
     profiling and debugging.
 
@@ -98,3 +114,14 @@ tooling and integrations with StrongLoop features:
     Switch between npm registries and promote packages between them. Useful
     as a component of DevOps/CI pipelines, or from the command line.
 ```
+
+
+## License
+
+strongloop uses a dual license model.
+
+You may use this library under the terms of the [Artistic 2.0 license][],
+or under the terms of the [StrongLoop Subscription Agreement][].
+
+[Artistic 2.0 license]: http://opensource.org/licenses/Artistic-2.0
+[StrongLoop Subscription Agreement]: http://strongloop.com/license

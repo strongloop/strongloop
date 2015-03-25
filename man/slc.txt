@@ -9,9 +9,9 @@ Options:
 
 Commands:
 
-  arc: StrongLoop UI, an alternative to the CLI
+  arc: StrongLoop GUI, an alternative to the CLI
 
-    Launch the StrongLoop UI, a graphical alternative to the `loopback`,
+    Launch the StrongLoop GUI, a graphical alternative to the `loopback`,
     `build`, `deploy`, and `ctl` commands, that also offers run-time
     profiling and debugging.
 
