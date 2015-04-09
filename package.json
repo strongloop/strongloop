@@ -104,6 +104,7 @@
     "strong-arc": "^1.0.0",
     "strong-build": "^1.0.3",
     "strong-deploy": "^1.0.0",
+    "strong-mesh-models": "^5.0.0",
     "strong-pm": "^3.0.0",
     "strong-registry": "^1.0.0",
     "strong-start": "^1.0.0",
