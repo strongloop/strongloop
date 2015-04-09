@@ -1,4 +1,12 @@
-2015-03-17, Version 3.0.4
+2015-04-09, Version 3.0.5
+=========================
+
+ * Use strong-mesh-models for 'slc ctl' (Ryan Graham)
+
+ * Update README for strong-pm.io (Sam Roberts)
+
+
+2015-03-16, Version 3.0.4
 =========================
 
  * bin: fix 'slc build' linking (Ryan Graham)
