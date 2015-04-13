@@ -1,3 +1,9 @@
+2015-04-13, Version 3.0.6
+=========================
+
+ * package: unbundle nodefly-register (Ryan Graham)
+
+
 2015-04-09, Version 3.0.5
 =========================
 
