@@ -115,6 +115,27 @@
     "nexpect": "^0.4.2"
   },
   "optionalDependencies": {
-    "sl-blip": "http://blip.strongloop.com/strongloop@3.0.6"
+    "sl-blip": "http://blip.strongloop.com/strongloop@3.0.6",
+    "acorn": "^0.9.0",
+    "ansi-regex": "^1.1.1",
+    "bluebird": "^2.9.24",
+    "brace-expansion": "^1.1.0",
+    "core-util-is": "^1.0.1",
+    "inflight": "^1.0.4",
+    "inherits": "^2.0.1",
+    "lodash": "^2.4.1",
+    "loopback": "^2.17.0",
+    "loopback-boot": "^2.7.0",
+    "loopback-datasource-juggler": "^2.26.0",
+    "loopback-explorer": "^1.7.0",
+    "loopback-workspace": "^3.11.0",
+    "mime-db": "~1.8.0",
+    "mime-types": "^2.0.10",
+    "minimatch": "^2.0.4",
+    "ms": "0.7.0",
+    "once": "^1.3.1",
+    "qs": "^2.4.1",
+    "readable-stream": "^1.0.33",
+    "wrappy": "^1.0.1"
   }
 }
