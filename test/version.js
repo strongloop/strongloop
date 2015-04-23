@@ -3,8 +3,7 @@
 var assert = require('assert');
 var fs = require('fs');
 
-var sandbox = require('./helpers/sandbox.js');
-var spawnCliInSandbox = require('./helpers/runner.js').spawnCliInSandbox;
+var spawnCliInCwd = require('./helpers/runner.js').spawnCliInCwd;
 
 function assertMatch(actual, pattern, message) {
   if (!pattern.test(actual)) {
@@ -20,12 +19,8 @@ function assertContains(actual, needle, message) {
 }
 
 describe('version', function() {
-  before(function() {
-    sandbox.reset();
-  });
-
   it('should print slc and node versions', function(done) {
-    spawnCliInSandbox(['--version'])
+    spawnCliInCwd(['--version'])
       .run(function(er, stdout, status) {
         if (er) return done(er);
 
