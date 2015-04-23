@@ -1,3 +1,13 @@
+2015-04-23, Version 3.1.0
+=========================
+
+ * deps: upgrade hoisted lodash to 3.x (Ryan Graham)
+
+ * test: don't use sandbox for 'slc --version' (Ryan Graham)
+
+ * deps: hoist common sub-dependencies (Ryan Graham)
+
+
 2015-04-13, Version 3.0.6
 =========================
 
