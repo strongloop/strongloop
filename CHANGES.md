@@ -1,3 +1,9 @@
+2015-04-24, Version 3.1.1
+=========================
+
+ * deps: hoist express-middleware up to top level (Ryan Graham)
+
+
 2015-04-23, Version 3.1.0
 =========================
 
