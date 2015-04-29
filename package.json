@@ -98,7 +98,7 @@
     "read": "~1.0.5",
     "strong-agent": "^1.0.0",
     "strong-arc": "^1.0.0",
-    "strong-build": "^1.0.3",
+    "strong-build": "^2.0.0",
     "strong-deploy": "^2.0.0",
     "strong-mesh-models": "^6.0.0",
     "strong-pm": "^4.0.0",
