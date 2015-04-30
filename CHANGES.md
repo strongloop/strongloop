@@ -1,4 +1,12 @@
-2015-04-24, Version 3.1.1
+2015-04-30, Version 3.2.0
+=========================
+
+ * Update build to 2.x (Sam Roberts)
+
+ * Update pm and deploy versions for multiapp (Sam Roberts)
+
+
+2015-04-23, Version 3.1.1
 =========================
 
  * deps: hoist express-middleware up to top level (Ryan Graham)
