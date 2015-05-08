@@ -148,7 +148,7 @@
     "serve-favicon": "^2.2.0",
     "serve-index": "^1.6.3",
     "serve-static": "^1.9.2",
-    "sl-blip": "http://blip.strongloop.com/strongloop@3.2.0",
+    "sl-blip": "http://blip.strongloop.com/strongloop@4.0.0",
     "vhost": "^3.0.0",
     "wrappy": "^1.0.1"
   }

@@ -1,3 +1,21 @@
+2015-05-08, Version 4.0.0
+=========================
+
+ * deps: bump minimum versions to ensure multi-app support (Ryan Graham)
+
+ * Bump major version for multi-app release (Ryan Graham)
+
+ * Update build to 2.x (Sam Roberts)
+
+ * Update pm and deploy versions for multiapp (Sam Roberts)
+
+
+2015-05-07, Version 3.1.2
+=========================
+
+ * deps: hoist jsonstream@1.0.3 to top level (Ryan Graham)
+
+
 2015-04-30, Version 3.2.0
 =========================
 
