@@ -1,3 +1,9 @@
+2015-05-08, Version 4.0.1
+=========================
+
+ * deps: fix multi-app strong-pm dependency (Ryan Graham)
+
+
 2015-05-08, Version 4.0.0
 =========================
 
