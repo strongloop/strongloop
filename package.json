@@ -139,6 +139,7 @@
     "mime-db": "~1.8.0",
     "mime-types": "^2.0.10",
     "minimatch": "^2.0.4",
+    "minkelite": "^1.0.0",
     "morgan": "^1.5.2",
     "ms": "0.7.0",
     "once": "^1.3.1",
