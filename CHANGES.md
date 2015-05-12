@@ -1,3 +1,9 @@
+2015-05-12, Version 4.0.2
+=========================
+
+ * deps: hoist minkelite dependency (Ryan Graham)
+
+
 2015-05-08, Version 4.0.1
 =========================
 
