@@ -1,3 +1,9 @@
+2015-05-13, Version 4.0.3
+=========================
+
+ * update json-file-plus, which, and eslint (Ryan Graham)
+
+
 2015-05-12, Version 4.0.2
 =========================
 
