@@ -1,3 +1,13 @@
+2015-06-03, Version 4.0.4
+=========================
+
+ * package: lint fixups (Sam Roberts)
+
+ * package: bump strong-supervisor to 2.x (Sam Roberts)
+
+ * Bump mesh-models version (Krishna Raman)
+
+
 2015-05-13, Version 4.0.3
 =========================
 
