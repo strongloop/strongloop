@@ -67,10 +67,7 @@
     "url": "git://github.com/strongloop/strongloop.git"
   },
   "author": "engineering@strongloop.com",
-  "license": {
-    "name": "Dual Artistic/StrongLoop",
-    "url": "https://github.com/strongloop/strongloop/blob/master/LICENSE.md"
-  },
+  "license": "(Artistic-2.0 OR LicenseRef-LICENSE.md)",
   "readmeFilename": "README.md",
   "bin": {
     "slc": "./bin/slc",
