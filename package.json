@@ -125,7 +125,7 @@
     "express-session": "^1.11.1",
     "inflight": "^1.0.4",
     "inherits": "^2.0.1",
-    "jsonstream": "^1.0.3",
+    "JSONStream": "^1.0.3",
     "lodash": "^3.0.0",
     "loopback": "^2.17.0",
     "loopback-boot": "^2.7.0",
