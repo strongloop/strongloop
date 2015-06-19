@@ -1,6 +1,6 @@
 {
   "name": "strongloop",
-  "version": "4.0.4",
+  "version": "4.0.5",
   "description": "StrongLoop Command Line Tools",
   "homepage": "http://www.strongloop.com",
   "keywords": [
@@ -146,7 +146,7 @@
     "serve-favicon": "^2.2.0",
     "serve-index": "^1.6.3",
     "serve-static": "^1.9.2",
-    "sl-blip": "http://blip.strongloop.com/strongloop@4.0.4",
+    "sl-blip": "http://blip.strongloop.com/strongloop@4.0.5",
     "vhost": "^3.0.0",
     "wrappy": "^1.0.1",
     "ws": "^0.7.2"

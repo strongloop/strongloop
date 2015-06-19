@@ -1,3 +1,13 @@
+2015-06-19, Version 4.0.5
+=========================
+
+ * Use JSONStream, the canonical name for jsonstream (Ryan Graham)
+
+ * deps: hoist ws to reduce duplication (Ryan Graham)
+
+ * use SPDX expression for package license (Ryan Graham)
+
+
 2015-06-03, Version 4.0.4
 =========================
 
