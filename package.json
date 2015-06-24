@@ -74,6 +74,7 @@
     "lb-ng-doc": "./node_modules/loopback-sdk-angular-cli/bin/lb-ng-doc"
   },
   "scripts": {
+    "postinstall": "node ./scripts/post.js",
     "pretest": "eslint --ignore-path .gitignore . && jscs .",
     "test": "tap --bail test/test-*.*"
   },
@@ -118,7 +119,6 @@
     "modern-syslog": "^1.1.2",
     "moment": "^2.10.0",
     "readable-stream": "^2.0.3",
-    "sl-blip": "http://blip.strongloop.com/strongloop@5.0.1",
     "spawn-sync": "^1.0.13",
     "sqlite3": "^3.1.0",
     "strong-debugger": "^1.0.0",
