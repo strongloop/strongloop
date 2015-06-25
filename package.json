@@ -97,11 +97,11 @@
     "strong-arc": "^1.2.0",
     "strong-build": "^2.0.0",
     "strong-deploy": "^2.2.0",
-    "strong-mesh-models": "^7.0.0",
-    "strong-pm": "^4.1.0",
+    "strong-mesh-models": "^8.0.0",
+    "strong-pm": "^5.0.0",
     "strong-registry": "^1.0.0",
     "strong-start": "^1.1.0",
-    "strong-supervisor": "^2.0.0",
+    "strong-supervisor": "^3.0.0",
     "which": "^1.1.1"
   },
   "devDependencies": {
