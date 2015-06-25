@@ -1,7 +1,5 @@
 # slc -- StrongLoop Controller
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/strongloop/chat?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 `slc` is the command shell for the StrongLoop Process Manager, strong-pm, and
 the LoopBack framework.
 
@@ -21,11 +19,12 @@ It can be installed with:
 - LoopBack:
   - [website](http://loopback.io)
   - [resources](https://github.com/strongloop/loopback#resources)
+  - [![LoopBack Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/strongloop/loopback)
 
 - Process Manager, strong-pm:
   - [website](http://strong-pm.io)
   - [resources](https://github.com/strongloop/strong-pm#resources)
-
+  - [![StrongLoop General Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/strongloop/chat)
 
 ## Usage
 
