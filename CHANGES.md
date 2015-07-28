@@ -1,4 +1,10 @@
-2015-07-28, Version 4.1.0
+2015-07-28, Version 4.1.1
+=========================
+
+ * package: update strong-deploy to 3.x (Sam Roberts)
+
+
+2015-07-27, Version 4.1.0
 =========================
 
  * docs: add link to loopback gitter room (Ryan Graham)
