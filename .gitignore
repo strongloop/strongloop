@@ -6,6 +6,7 @@
 *.pid
 *.seed
 *.xml
+.nyc_output
 .project
 .idea
 data

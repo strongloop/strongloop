@@ -76,7 +76,8 @@
   },
   "scripts": {
     "pretest": "eslint --ignore-path .gitignore . && jscs .",
-    "test": "mocha --reporter spec"
+    "test": "tap --bail --coverage --coverage-report=cobertura test/test-*.*",
+    "posttest": "nyc report --reporter=lcov && nyc report"
   },
   "dependencies": {
     "async": "^0.9.0",
@@ -103,8 +104,9 @@
   "devDependencies": {
     "eslint": "^0.21.0",
     "jscs": "^1.11.3",
-    "mocha": "^2.0.1",
-    "nexpect": "^0.4.2"
+    "nexpect": "^0.4.2",
+    "nyc": "^3.0.1",
+    "tap": "^1.3.1"
   },
   "optionalDependencies": {
     "acorn": "^0.9.0",
