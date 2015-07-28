@@ -75,12 +75,13 @@
     "lb-ng-doc": "./node_modules/loopback-sdk-angular-cli/bin/lb-ng-doc"
   },
   "scripts": {
-    "lint": "eslint . && jscs .",
+    "pretest": "eslint --ignore-path .gitignore . && jscs .",
     "test": "mocha --reporter spec"
   },
   "dependencies": {
     "async": "^0.9.0",
     "debug": "^2.1.0",
+    "eslint": "^0.24.1",
     "generator-loopback": "1.x",
     "loopback-sdk-angular-cli": "1.x",
     "node-inspector": "~0.7.0",

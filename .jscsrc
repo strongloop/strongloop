@@ -1,5 +1,5 @@
 {
-  "excludeFiles": ["lib/commands/strongops.js", "node_modules/**", "test/**"],
+  "excludeFiles": ["lib/commands/strongops.js", "node_modules/**"],
   "disallowMixedSpacesAndTabs": true,
   "disallowKeywordsOnNewLine": [],
   "requireCurlyBraces": [

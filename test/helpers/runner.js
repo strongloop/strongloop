@@ -39,7 +39,7 @@ function spawnCli(args, inPath) {
       debug('nspawn stderr:', data.toString());
     });
     return child;
-  }
+  };
   return expect;
 }
 

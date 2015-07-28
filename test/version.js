@@ -1,7 +1,7 @@
 'use strict';
 
+/*eslint-env node, mocha */
 var assert = require('assert');
-var fs = require('fs');
 
 var spawnCliInCwd = require('./helpers/runner.js').spawnCliInCwd;
 
@@ -13,7 +13,8 @@ function assertMatch(actual, pattern, message) {
 
 function assertContains(actual, needle, message) {
   if (actual.indexOf(needle) === -1) {
-    message = message || ('Expected "' + actual + '" to contain "' + needle + '"');
+    message = message ||
+      ('Expected "' + actual + '" to contain "' + needle + '"');
     assert.fail(actual, needle, message, 'contains');
   }
 }
@@ -29,7 +30,8 @@ describe('version', function() {
           __REPORT_DEPENDENCIES.length + 1;
 
         assert.equal(status, 0);
-        var PEERS = Object.keys(require('../package.json').peerDependencies || []);
+        var pkg = require('../package.json');
+        var PEERS = Object.keys(pkg.peerDependencies || {});
         assert.equal(stdout.length, 1 + expectedDepsLength + PEERS.length);
         var line0 = stdout[0];
         assertMatch(line0, /^strongloop v[-.0-9]* .node v.+$/);
