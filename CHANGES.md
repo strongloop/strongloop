@@ -1,3 +1,11 @@
+2015-07-28, Version 4.1.0
+=========================
+
+ * docs: add link to loopback gitter room (Ryan Graham)
+
+ * deps: upgrade strong-pm to 5.x (Ryan Graham)
+
+
 2015-06-19, Version 4.0.5
 =========================
 
