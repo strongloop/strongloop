@@ -61,7 +61,6 @@
     "time",
     "upstart"
   ],
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/strongloop/strongloop.git"
@@ -70,28 +69,24 @@
   "license": "(Artistic-2.0 OR LicenseRef-LICENSE.md)",
   "readmeFilename": "README.md",
   "bin": {
-    "slc": "./bin/slc",
+    "slc": "./bin/slc.js",
     "lb-ng": "./node_modules/loopback-sdk-angular-cli/bin/lb-ng",
     "lb-ng-doc": "./node_modules/loopback-sdk-angular-cli/bin/lb-ng-doc"
   },
   "scripts": {
-    "lint": "eslint . && jscs .",
-    "test": "mocha --reporter spec"
+    "pretest": "eslint --ignore-path .gitignore . && jscs .",
+    "test": "tap --bail test/test-*.*"
   },
   "dependencies": {
     "async": "^0.9.0",
-    "colors": "^1.0.3",
     "debug": "^2.1.0",
+    "eslint": "^0.24.1",
     "generator-loopback": "1.x",
-    "ini": "^1.3.2",
-    "is2": "~0.0.3",
-    "json-file-plus": "^3.0.0",
     "loopback-sdk-angular-cli": "1.x",
     "node-inspector": "~0.7.0",
     "nodefly-register": "~0.3.2",
     "nopt": "~3.0.1",
     "optimist": "^0.6.1",
-    "prompt": "~0.2.11",
     "read": "~1.0.5",
     "strong-agent": "^1.5.0",
     "strong-arc": "^1.2.0",
@@ -107,8 +102,7 @@
   "devDependencies": {
     "eslint": "^0.21.0",
     "jscs": "^1.11.3",
-    "mocha": "^2.0.1",
-    "nexpect": "^0.4.2"
+    "tap": "^1.3.1"
   },
   "optionalDependencies": {
     "acorn": "^0.9.0",

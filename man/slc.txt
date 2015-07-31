@@ -51,10 +51,6 @@ Commands:
     Datadog, Statsd, etc.). To experiment locally with the manager without
     installing, see the `pm` command.
 
-  strongops: save StrongOps API key into strongloop.json
-
-    A key is required to publish metrics to the StrongOps hosted service.
-
 
 These commands are used internally, and may be useful when building custom
 tooling and integrations with StrongLoop features:
