@@ -1,4 +1,20 @@
-2015-07-28, Version 4.1.1
+2015-07-31, Version 5.0.0
+=========================
+
+ * test: remove nexpect and nyc (Sam Roberts)
+
+ * version: report strong-mesh-models version (Sam Roberts)
+
+ * Use tap instead of mocha, and add coverage (Sam Roberts)
+
+ * package: update eslint (Sam Roberts)
+
+ * fixup, remove test artifacts of strongops tests (Sam Roberts)
+
+ * Remove strongops and its dependencies (Sam Roberts)
+
+
+2015-07-27, Version 4.1.1
 =========================
 
  * package: update strong-deploy to 3.x (Sam Roberts)
