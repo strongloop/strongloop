@@ -80,7 +80,6 @@
   "dependencies": {
     "async": "^0.9.0",
     "debug": "^2.1.0",
-    "eslint": "^0.24.1",
     "generator-loopback": "1.x",
     "loopback-sdk-angular-cli": "1.x",
     "node-inspector": "~0.7.0",
@@ -100,7 +99,7 @@
     "which": "^1.1.1"
   },
   "devDependencies": {
-    "eslint": "^0.21.0",
+    "eslint": "^1.1.0",
     "jscs": "^1.11.3",
     "tap": "^1.3.1"
   },
