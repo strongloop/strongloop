@@ -23,7 +23,7 @@ tap.test('version should print slc and node versions', function(t) {
     debug('expected: %d - %j', expected.length, expected);
     debug('reported: %d - %j', reported.length, reported);
 
-    t.assert(pkg.peerDependencies == null, 'package has no peer deps');
+    t.assert(!pkg.peerDependencies, 'package has no peer deps');
     // The strongloop and strong-agent packages are always reported in addition
     // to the strong- deps.
     t.equal(reported.length, expected.length + 2);
