@@ -66,7 +66,7 @@
     "url": "git://github.com/strongloop/strongloop.git"
   },
   "author": "engineering@strongloop.com",
-  "license": "(Artistic-2.0 OR LicenseRef-LICENSE.md)",
+  "license": "Artistic-2.0",
   "readmeFilename": "README.md",
   "bin": {
     "slc": "./bin/slc.js",
