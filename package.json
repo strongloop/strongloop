@@ -142,6 +142,6 @@
     "sl-blip": "http://blip.strongloop.com/strongloop@5.0.0",
     "vhost": "^3.0.0",
     "wrappy": "^1.0.1",
-    "ws": "^0.7.2"
+    "ws": "^0.8.0"
   }
 }
