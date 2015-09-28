@@ -1,3 +1,15 @@
+2015-09-28, Version 5.0.1
+=========================
+
+ * Update ws to 0.8, for node v4.1.x compat (Sam Roberts)
+
+ * Use strongloop conventions for licensing (Sam Roberts)
+
+ * lint: avoid == to appease the linters (Ryan Graham)
+
+ * deps: update to eslint@1 (Ryan Graham)
+
+
 2015-07-31, Version 5.0.0
 =========================
 
