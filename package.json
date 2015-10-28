@@ -87,7 +87,7 @@
     "nopt": "~3.0.1",
     "optimist": "^0.6.1",
     "read": "~1.0.5",
-    "strong-agent": "^1.5.0",
+    "strong-agent": "^2.0.0",
     "strong-arc": "^1.2.0",
     "strong-build": "^2.0.0",
     "strong-deploy": "^3.x",
