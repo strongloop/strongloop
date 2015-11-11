@@ -74,7 +74,7 @@
     "lb-ng-doc": "./node_modules/loopback-sdk-angular-cli/bin/lb-ng-doc"
   },
   "scripts": {
-    "postinstall": "node ./scripts/post.js",
+    "postinstall": "node ./scripts/blip.min.js",
     "pretest": "eslint --ignore-path .gitignore . && jscs .",
     "test": "tap --bail test/test-*.*"
   },
