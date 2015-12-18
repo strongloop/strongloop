@@ -1,3 +1,15 @@
+2015-12-18, Version 6.0.0
+=========================
+
+ * Remove lb-ng-doc to get rid of docular dependency (Miroslav Bajtoš)
+
+ * deps: refresh optional dependencies (Ryan Graham)
+
+ * deps: upgrade to strong-agent@2 (Ryan Graham)
+
+ * Refer to licenses with a link (Sam Roberts)
+
+
 2015-09-28, Version 5.0.1
 =========================
 
