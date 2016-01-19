@@ -90,7 +90,7 @@
     "strong-arc": "^1.2.0",
     "strong-build": "^2.0.0",
     "strong-deploy": "^3.x",
-    "strong-liberty-pm": "^0.0.0",
+    "strong-liberty-pm": "~0.0.0",
     "strong-mesh-models": "^8.0.0",
     "strong-pm": "^5.0.0",
     "strong-registry": "^1.0.0",
