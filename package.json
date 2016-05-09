@@ -117,7 +117,6 @@
     "modern-syslog": "^1.1.2",
     "moment": "^2.10.0",
     "readable-stream": "^2.0.3",
-    "sl-blip": "http://blip.strongloop.com/strongloop@6.0.0",
     "spawn-sync": "^1.0.13",
     "sqlite3": "^3.1.0",
     "strong-debugger": "^1.0.0",
