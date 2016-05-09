@@ -1,3 +1,13 @@
+2016-05-09, Version 6.0.1
+=========================
+
+ * remove sl-blip dependency (Ryan Graham)
+
+ * insert IBM copyright headers (Ryan Graham)
+
+ * relicense as Artistic-2.0 only (Ryan Graham)
+
+
 2015-12-18, Version 6.0.0
 =========================
 
