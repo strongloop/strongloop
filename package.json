@@ -70,7 +70,7 @@
   "readmeFilename": "README.md",
   "bin": {
     "slc": "./bin/slc.js",
-    "lb-ng": "./node_modules/loopback-sdk-angular-cli/bin/lb-ng"
+    "lb-ng": "./node_modules/loopback-sdk-angular-cli/bin/lb-ng.js"
   },
   "scripts": {
     "pretest": "eslint --ignore-path .gitignore . && jscs .",
@@ -80,7 +80,7 @@
     "async": "^0.9.0",
     "debug": "^2.1.0",
     "generator-loopback": "1.x",
-    "loopback-sdk-angular-cli": "2.x",
+    "loopback-sdk-angular-cli": "^2.1.0",
     "node-inspector": "~0.7.0",
     "nodefly-register": "~0.3.2",
     "nopt": "~3.0.1",
