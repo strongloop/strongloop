@@ -1,3 +1,11 @@
+2016-09-06, Version 6.0.2
+=========================
+
+ * bin: fix lb-ng linking (Jordan Klassen)
+
+ * Update URLs in CONTRIBUTING.md (#314) (Ryan Graham)
+
+
 2016-05-09, Version 6.0.1
 =========================
 
