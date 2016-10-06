@@ -1,3 +1,9 @@
+2016-10-06, Version 6.0.3
+=========================
+
+ * Lock sqlite version to fix global installation (#326) (Simon Ho)
+
+
 2016-09-06, Version 6.0.2
 =========================
 
