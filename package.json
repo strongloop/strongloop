@@ -118,7 +118,7 @@
     "moment": "^2.10.0",
     "readable-stream": "^2.0.3",
     "spawn-sync": "^1.0.13",
-    "sqlite3": "3.1.4",
+    "sqlite3": "^3.1.6",
     "strong-debugger": "^1.0.0",
     "strong-remoting": "^2.0.0",
     "strong-swagger-ui": "^21.0.1",
