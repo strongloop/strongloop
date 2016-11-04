@@ -1,6 +1,6 @@
 {
   "name": "strongloop",
-  "version": "6.0.3",
+  "version": "7.0.0",
   "description": "StrongLoop Command Line Tools",
   "homepage": "http://www.strongloop.com",
   "keywords": [
@@ -91,10 +91,10 @@
     "strong-build": "^2.0.0",
     "strong-deploy": "^3.x",
     "strong-mesh-models": "^8.0.0",
-    "strong-pm": "^5.0.0",
+    "strong-pm": "^6.x",
     "strong-registry": "^1.0.0",
     "strong-start": "^1.1.0",
-    "strong-supervisor": "^3.0.0",
+    "strong-supervisor": "^5.x",
     "which": "^1.1.1"
   },
   "devDependencies": {
