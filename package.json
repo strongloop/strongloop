@@ -79,7 +79,7 @@
   "dependencies": {
     "async": "^0.9.0",
     "debug": "^2.1.0",
-    "generator-loopback": "1.x",
+    "generator-loopback": "2.2.0",
     "loopback-sdk-angular-cli": "^2.1.0",
     "node-inspector": "~0.7.0",
     "nodefly-register": "~0.3.2",
