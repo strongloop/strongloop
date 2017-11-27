@@ -74,14 +74,16 @@
   },
   "scripts": {
     "pretest": "eslint --ignore-path .gitignore . && jscs .",
-    "test": "tap --bail test/test-*.*"
+    "test": "tap --bail test/test-*.*",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "async": "^0.9.0",
     "debug": "^2.1.0",
     "generator-loopback": "1.x",
     "loopback-sdk-angular-cli": "^2.1.0",
-    "node-inspector": "~0.7.0",
+    "node-inspector": "~0.12.8",
     "nodefly-register": "~0.3.2",
     "nopt": "~3.0.1",
     "optimist": "^0.6.1",
@@ -95,7 +97,8 @@
     "strong-registry": "^1.0.0",
     "strong-start": "^1.1.0",
     "strong-supervisor": "^3.0.0",
-    "which": "^1.1.1"
+    "which": "^1.1.1",
+    "snyk": "^1.52.0"
   },
   "devDependencies": {
     "eslint": "^1.1.0",
@@ -126,5 +129,6 @@
     "utf-8-validate": "^1.2.1",
     "wrappy": "1.0.1",
     "ws": "^0.8.0"
-  }
+  },
+  "snyk": true
 }
