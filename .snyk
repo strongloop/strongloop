@@ -1,0 +1,124 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.8.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:minimatch:20160620':
+    - strong-arc > strong-mesh-client > browserify > glob > minimatch:
+        patched: '2017-11-27T21:40:49.698Z'
+  'npm:ms:20151024':
+    - strong-pm > minkelite > express > debug > ms:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-pm > minkelite > express > finalhandler > debug > ms:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-start > strong-pm > minkelite > express > finalhandler > debug > ms:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-pm > minkelite > express > send > debug > ms:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-start > strong-pm > minkelite > express > send > debug > ms:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-pm > minkelite > express > serve-static > send > debug > ms:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-start > strong-pm > minkelite > express > serve-static > send > debug > ms:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-pm > minkelite > express > send > ms:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-start > strong-pm > minkelite > express > send > ms:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-pm > minkelite > express > serve-static > send > ms:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-start > strong-pm > minkelite > express > serve-static > send > ms:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-start > strong-pm > minkelite > express > debug > ms:
+        patched: '2017-11-27T21:40:49.698Z'
+  'npm:negotiator:20160616':
+    - strong-mesh-models > loopback-explorer > express > connect > serve-index > accepts > negotiator:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-start > strong-pm > minkelite > express > accepts > negotiator:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-pm > strong-mesh-models > loopback-explorer > express > connect > compression > accepts > negotiator:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-pm > minkelite > express > accepts > negotiator:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-arc > strong-mesh-client > loopback-explorer > express > connect > compression > accepts > negotiator:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-arc > strong-mesh-client > strong-nginx-controller > loopback-explorer > express > connect > compression > accepts > negotiator:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-deploy > strong-mesh-models > loopback-explorer > express > connect > compression > accepts > negotiator:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-arc > strong-deploy > strong-mesh-models > loopback-explorer > express > connect > compression > accepts > negotiator:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-start > strong-deploy > strong-mesh-models > loopback-explorer > express > connect > compression > accepts > negotiator:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-arc > strong-mesh-client > strong-mesh-models > loopback-explorer > express > connect > compression > accepts > negotiator:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-mesh-models > loopback-explorer > express > connect > compression > accepts > negotiator:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-pm > strong-mesh-models > loopback-explorer > express > connect > serve-index > accepts > negotiator:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-start > strong-pm > strong-mesh-models > loopback-explorer > express > connect > serve-index > accepts > negotiator:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-arc > strong-mesh-client > loopback-explorer > express > connect > serve-index > accepts > negotiator:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-arc > strong-mesh-client > strong-nginx-controller > loopback-explorer > express > connect > serve-index > accepts > negotiator:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-deploy > strong-mesh-models > loopback-explorer > express > connect > serve-index > accepts > negotiator:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-arc > strong-deploy > strong-mesh-models > loopback-explorer > express > connect > serve-index > accepts > negotiator:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-start > strong-deploy > strong-mesh-models > loopback-explorer > express > connect > serve-index > accepts > negotiator:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-arc > strong-mesh-client > strong-mesh-models > loopback-explorer > express > connect > serve-index > accepts > negotiator:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-start > strong-pm > strong-mesh-models > loopback-explorer > express > connect > compression > accepts > negotiator:
+        patched: '2017-11-27T21:40:49.698Z'
+  'npm:qs:20140806-1':
+    - nodefly-register > request > qs:
+        patched: '2017-11-27T21:40:49.698Z'
+  'npm:request:20160119':
+    - nodefly-register > request:
+        patched: '2017-11-27T21:40:49.698Z'
+  'npm:semver:20150403':
+    - strong-agent > semver:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-supervisor > strong-agent > semver:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-pm > strong-runner > strong-supervisor > strong-agent > semver:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-start > strong-pm > strong-runner > strong-supervisor > strong-agent > semver:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-registry > semver:
+        patched: '2017-11-27T21:40:49.698Z'
+    - loopback-sdk-angular-cli > semver:
+        patched: '2017-11-27T21:40:49.698Z'
+  'npm:send:20151103':
+    - strong-start > strong-pm > minkelite > express > send:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-pm > minkelite > express > serve-static > send:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-start > strong-pm > minkelite > express > serve-static > send:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-pm > minkelite > express > send:
+        patched: '2017-11-27T21:40:49.698Z'
+  'npm:uglify-js:20151024':
+    - strong-mesh-models > loopback-explorer > swagger-ui > handlebars > uglify-js:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-pm > strong-mesh-models > loopback-explorer > swagger-ui > handlebars > uglify-js:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-start > strong-pm > strong-mesh-models > loopback-explorer > swagger-ui > handlebars > uglify-js:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-arc > strong-mesh-client > loopback-explorer > swagger-ui > handlebars > uglify-js:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-arc > strong-mesh-client > strong-nginx-controller > loopback-explorer > swagger-ui > handlebars > uglify-js:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-deploy > strong-mesh-models > loopback-explorer > swagger-ui > handlebars > uglify-js:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-arc > strong-deploy > strong-mesh-models > loopback-explorer > swagger-ui > handlebars > uglify-js:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-start > strong-deploy > strong-mesh-models > loopback-explorer > swagger-ui > handlebars > uglify-js:
+        patched: '2017-11-27T21:40:49.698Z'
+    - strong-arc > strong-mesh-client > strong-mesh-models > loopback-explorer > swagger-ui > handlebars > uglify-js:
+        patched: '2017-11-27T21:40:49.698Z'
+  'npm:ws:20160920':
+    - strong-arc > ws:
+        patched: '2017-11-27T21:40:49.698Z'
