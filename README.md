@@ -1,7 +1,13 @@
-# slc -- StrongLoop Controller
+# slc -- StrongLoop Controller 
+
+*Note:* The `slc` **wrapper** has been deprecated. `slc` bundled together a set of features that are still available through use of the following packages:
+- [loopback](https://github.com/strongloop/loopback)
+- [strong-pm](https://github.com/strongloop/strong-pm)
+- [strong-supervisor](https://github.com/strongloop/strong-supervisor)
+- [apiconnect](https://www.npmjs.com/package/apiconnect)
 
 `slc` is the command shell for the StrongLoop Process Manager, strong-pm, and
-the LoopBack framework.
+the LoopBack framework. 
 
 It includes both a CLI and a GUI.
 
