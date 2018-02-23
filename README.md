@@ -1,5 +1,4 @@
 # slc -- StrongLoop Controller 
-
 *Note:* The `slc` **wrapper** has been deprecated. `slc` bundled together a set of features that are still available through use of the following packages:
 - [loopback](https://github.com/strongloop/loopback)
 - [strong-pm](https://github.com/strongloop/strong-pm)
