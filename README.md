@@ -7,7 +7,7 @@
 - [apiconnect](https://www.npmjs.com/package/apiconnect)
 
 `slc` is the command shell for the StrongLoop Process Manager, strong-pm, and
-the LoopBack framework. 
+the LoopBack framework.
 
 It includes both a CLI and a GUI.
 
