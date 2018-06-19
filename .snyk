@@ -1,0 +1,78 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.12.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hoek:20180212':
+    - strong-start > strong-pm > minkelite > sqlite3 > node-pre-gyp > hawk > sntp > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-pm > minkelite > sqlite3 > node-pre-gyp > hawk > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-pm > minkelite > sqlite3 > node-pre-gyp > hawk > sntp > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-pm > minkelite > sqlite3 > node-pre-gyp > hawk > cryptiles > boom > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-pm > minkelite > sqlite3 > node-pre-gyp > request > hawk > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-pm > minkelite > sqlite3 > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-pm > minkelite > sqlite3 > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-pm > minkelite > sqlite3 > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-pm > loopback-connector-sqlite3 > sqlite3 > node-pre-gyp > hawk > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-pm > loopback-connector-sqlite3 > sqlite3 > node-pre-gyp > hawk > boom > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-pm > loopback-connector-sqlite3 > sqlite3 > node-pre-gyp > hawk > sntp > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-pm > loopback-connector-sqlite3 > sqlite3 > node-pre-gyp > hawk > cryptiles > boom > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-pm > loopback-connector-sqlite3 > sqlite3 > node-pre-gyp > request > hawk > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-pm > loopback-connector-sqlite3 > sqlite3 > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-pm > loopback-connector-sqlite3 > sqlite3 > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-pm > loopback-connector-sqlite3 > sqlite3 > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-start > strong-pm > minkelite > sqlite3 > node-pre-gyp > hawk > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-start > strong-pm > minkelite > sqlite3 > node-pre-gyp > hawk > boom > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-pm > minkelite > sqlite3 > node-pre-gyp > hawk > boom > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-start > strong-pm > minkelite > sqlite3 > node-pre-gyp > hawk > cryptiles > boom > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-start > strong-pm > minkelite > sqlite3 > node-pre-gyp > request > hawk > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-start > strong-pm > minkelite > sqlite3 > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-start > strong-pm > minkelite > sqlite3 > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-start > strong-pm > minkelite > sqlite3 > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-start > strong-pm > loopback-connector-sqlite3 > sqlite3 > node-pre-gyp > hawk > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-start > strong-pm > loopback-connector-sqlite3 > sqlite3 > node-pre-gyp > hawk > boom > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-start > strong-pm > loopback-connector-sqlite3 > sqlite3 > node-pre-gyp > hawk > sntp > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-start > strong-pm > loopback-connector-sqlite3 > sqlite3 > node-pre-gyp > hawk > cryptiles > boom > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-start > strong-pm > loopback-connector-sqlite3 > sqlite3 > node-pre-gyp > request > hawk > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-start > strong-pm > loopback-connector-sqlite3 > sqlite3 > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-start > strong-pm > loopback-connector-sqlite3 > sqlite3 > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-start > strong-pm > loopback-connector-sqlite3 > sqlite3 > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-arc > less > request > hawk > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-arc > less > request > hawk > boom > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-arc > less > request > hawk > sntp > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
+    - strong-arc > less > request > hawk > cryptiles > boom > hoek:
+        patched: '2018-06-19T02:56:15.323Z'
