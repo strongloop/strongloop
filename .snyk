@@ -1,0 +1,74 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.12.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:mime:20170907':
+    - strong-deploy > strong-mesh-models > loopback-explorer > express > connect > serve-static > send > mime:
+        patched: '2018-06-26T02:56:36.271Z'
+    - nodefly-register > request > mime:
+        patched: '2018-06-26T02:56:36.271Z'
+    - node-inspector > express > accepts > mime:
+        patched: '2018-06-26T02:56:36.271Z'
+    - strong-deploy > strong-mesh-models > loopback-explorer > swagger-ui > less > mime:
+        patched: '2018-06-26T02:56:36.271Z'
+    - strong-mesh-models > loopback-explorer > swagger-ui > less > mime:
+        patched: '2018-06-26T02:56:36.271Z'
+    - strong-pm > strong-mesh-models > loopback-explorer > swagger-ui > less > mime:
+        patched: '2018-06-26T02:56:36.271Z'
+    - strong-pm > minkelite > express > send > mime:
+        patched: '2018-06-26T02:56:36.271Z'
+    - strong-pm > minkelite > express > serve-static > send > mime:
+        patched: '2018-06-26T02:56:36.271Z'
+    - strong-start > strong-deploy > strong-mesh-models > loopback-explorer > swagger-ui > less > mime:
+        patched: '2018-06-26T02:56:36.271Z'
+    - strong-start > strong-pm > strong-mesh-models > loopback-explorer > swagger-ui > less > mime:
+        patched: '2018-06-26T02:56:36.271Z'
+    - strong-start > strong-pm > minkelite > express > send > mime:
+        patched: '2018-06-26T02:56:36.271Z'
+    - strong-start > strong-pm > minkelite > express > serve-static > send > mime:
+        patched: '2018-06-26T02:56:36.271Z'
+    - strong-arc > strong-deploy > strong-mesh-models > loopback-explorer > swagger-ui > less > mime:
+        patched: '2018-06-26T02:56:36.271Z'
+    - strong-arc > strong-mesh-client > strong-mesh-models > loopback-explorer > swagger-ui > less > mime:
+        patched: '2018-06-26T02:56:36.271Z'
+    - strong-arc > strong-mesh-client > loopback-explorer > swagger-ui > less > mime:
+        patched: '2018-06-26T02:56:36.271Z'
+    - strong-arc > strong-mesh-client > strong-nginx-controller > loopback-explorer > swagger-ui > less > mime:
+        patched: '2018-06-26T02:56:36.271Z'
+    - strong-deploy > strong-mesh-models > loopback-explorer > express > send > mime:
+        patched: '2018-06-26T02:56:36.271Z'
+    - nodefly-register > request > form-data > mime:
+        patched: '2018-06-26T02:56:36.271Z'
+    - strong-mesh-models > loopback-explorer > express > send > mime:
+        patched: '2018-06-26T02:56:36.271Z'
+    - strong-mesh-models > loopback-explorer > express > connect > serve-static > send > mime:
+        patched: '2018-06-26T02:56:36.271Z'
+    - strong-pm > strong-mesh-models > loopback-explorer > express > send > mime:
+        patched: '2018-06-26T02:56:36.271Z'
+    - strong-pm > strong-mesh-models > loopback-explorer > express > connect > serve-static > send > mime:
+        patched: '2018-06-26T02:56:36.271Z'
+    - strong-start > strong-deploy > strong-mesh-models > loopback-explorer > express > send > mime:
+        patched: '2018-06-26T02:56:36.271Z'
+    - strong-start > strong-deploy > strong-mesh-models > loopback-explorer > express > connect > serve-static > send > mime:
+        patched: '2018-06-26T02:56:36.271Z'
+    - strong-start > strong-pm > strong-mesh-models > loopback-explorer > express > send > mime:
+        patched: '2018-06-26T02:56:36.271Z'
+    - strong-start > strong-pm > strong-mesh-models > loopback-explorer > express > connect > serve-static > send > mime:
+        patched: '2018-06-26T02:56:36.271Z'
+    - strong-arc > strong-deploy > strong-mesh-models > loopback-explorer > express > send > mime:
+        patched: '2018-06-26T02:56:36.271Z'
+    - strong-arc > strong-deploy > strong-mesh-models > loopback-explorer > express > connect > serve-static > send > mime:
+        patched: '2018-06-26T02:56:36.271Z'
+    - strong-arc > strong-mesh-client > strong-mesh-models > loopback-explorer > express > send > mime:
+        patched: '2018-06-26T02:56:36.271Z'
+    - strong-arc > strong-mesh-client > strong-mesh-models > loopback-explorer > express > connect > serve-static > send > mime:
+        patched: '2018-06-26T02:56:36.271Z'
+    - strong-arc > strong-mesh-client > loopback-explorer > express > send > mime:
+        patched: '2018-06-26T02:56:36.271Z'
+    - strong-arc > strong-mesh-client > loopback-explorer > express > connect > serve-static > send > mime:
+        patched: '2018-06-26T02:56:36.271Z'
+    - strong-arc > strong-mesh-client > strong-nginx-controller > loopback-explorer > express > send > mime:
+        patched: '2018-06-26T02:56:36.271Z'
+    - strong-arc > strong-mesh-client > strong-nginx-controller > loopback-explorer > express > connect > serve-static > send > mime:
+        patched: '2018-06-26T02:56:36.271Z'
